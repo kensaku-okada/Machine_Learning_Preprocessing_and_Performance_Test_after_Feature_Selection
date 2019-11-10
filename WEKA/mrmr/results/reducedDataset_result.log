@@ -1,0 +1,43 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.RerankingSearch -method 2 -blockSize 20 -rankingMeasure 0 -search "weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1"
+Relation:     ./ada_train-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-weka.filters.unsupervised.attribute.Remove-R3-9,11-14,16-26,28-30,33-39,41,43,45-49
+Instances:    4147
+Attributes:   10
+              attr0
+              attr1
+              attr9
+              attr14
+              attr26
+              attr30
+              attr31
+              attr39
+              attr41
+              attr43
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+Selected attributes: 5 
+Total Search Time in milliseconds: 21.0
+Reranking Time in milliseconds: 0.0
+Blocks searched: 1
+Attribute Evaluator during search: 	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Options of RerankingSearch:
+-method 2 -blockSize 20 -rankingMeasure 0 -search weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1 
+Attribute Subset Evaluator (supervised, Class (nominal): 10 attr43):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 3,5,6,7 : 4
+                     attr9
+                     attr26
+                     attr30
+                     attr31
+

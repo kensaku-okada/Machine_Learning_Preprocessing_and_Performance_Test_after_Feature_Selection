@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/gina-10-disc.arff.0.6.out.arff
+## Output file = datasets/gina-10-disc.arff.0.6.out.arff.0.7.out.arff
+## Threshold = 0.7
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 216 msec.
+## Selecting features = 136 msec.
+
+# Selected features
+'attr619 'attr13 'attr655 'attr878
+
+# Statistics
+## Number of instances = 3153
+## Number of features = 8
+## H(C) = 0.9998
+## H(Entire) = 6.6717
+## H(Entire, C) = 7.0490
+## I(Entire; C) = 0.6225
+## H(Selected) = 5.1378
+## H(Selected, C) = 5.6979
+## I(Selected; C) = 0.4397
+## H(Selected | C) = 4.6981
+## mu_H = 0.1527
+## mu_G = 0.2459
+## Entropy of features
+0:1.9434 1:1.8761 2:1.8954 3:1.7713 4:1.8608 5:1.6980 6:1.4424
+
+## Entropy of features and labels
+0:2.7959 1:2.7210 2:2.7350 3:2.5911 4:2.6869 5:2.5157 6:2.3037
+

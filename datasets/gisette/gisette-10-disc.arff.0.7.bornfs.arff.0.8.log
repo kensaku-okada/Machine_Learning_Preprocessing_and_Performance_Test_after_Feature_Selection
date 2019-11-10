@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/gisette-10-disc.arff.0.7.out.arff
+## Output file = datasets/gisette-10-disc.arff.0.7.out.arff.0.8.out.arff
+## Threshold = 0.8
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 217 msec.
+## Selecting features = 153 msec.
+
+# Selected features
+'attr4271 'attr511 'attr557 'attr3656 'attr3975
+
+# Statistics
+## Number of instances = 6000
+## Number of features = 8
+## H(C) = 1.0000
+## H(Entire) = 6.3421
+## H(Entire, C) = 6.6397
+## I(Entire; C) = 0.7024
+## H(Selected) = 5.3305
+## H(Selected, C) = 5.7538
+## I(Selected; C) = 0.5767
+## H(Selected | C) = 4.7538
+## mu_H = 0.1912
+## mu_G = 0.2980
+## Entropy of features
+0:1.6572 1:1.5395 2:1.7598 3:1.5558 4:1.6809 5:1.6363 6:1.7308
+
+## Entropy of features and labels
+0:2.4037 1:2.2902 2:2.4891 3:2.3019 4:2.3163 5:2.3190 6:2.3960
+

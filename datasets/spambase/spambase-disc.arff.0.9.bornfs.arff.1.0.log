@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/spambase-disc.arff.0.9.out.arff
+## Output file = datasets/spambase-disc.arff.0.9.out.arff.1.0.out.arff
+## Threshold = 1.0
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 235 msec.
+## Selecting features = 409 msec.
+
+# Selected features
+'word_freq_our 'capital_run_length_average 'capital_run_length_longest 'word_freq_000 'word_freq_george 'word_freq_free 'word_freq_money 'word_freq_hpl 'word_freq_hp 'word_freq_remove 'word_freq_your 'char_freq_$ 'char_freq_!
+
+# Statistics
+## Number of instances = 4601
+## Number of features = 14
+## H(C) = 0.9674
+## H(Entire) = 9.7013
+## H(Entire, C) = 9.8057
+## I(Entire; C) = 0.8630
+## H(Selected) = 9.7013
+## H(Selected, C) = 9.8057
+## I(Selected; C) = 0.8630
+## H(Selected | C) = 8.8383
+## mu_H = 0.1634
+## mu_G = 0.2983
+## Entropy of features
+0:1.2932 1:2.1379 2:2.3923 3:0.6337 4:0.7683 5:0.8217 6:0.6337 7:0.6631 8:1.0159 9:0.6699 10:1.4109 11:1.3081 12:1.7255
+
+## Entropy of features and labels
+0:2.1352 1:2.9076 2:3.1297 3:1.4547 4:1.6079 5:1.6017 6:1.4272 7:1.5168 8:1.8289 9:1.4240 10:2.1714 11:2.0142 12:2.4123
+

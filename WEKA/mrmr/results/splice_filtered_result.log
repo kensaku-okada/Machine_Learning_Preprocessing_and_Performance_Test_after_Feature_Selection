@@ -1,0 +1,99 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.RerankingSearch -method 0 -blockSize 20 -rankingMeasure 0 -search "weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1"
+Relation:     splice
+Instances:    3190
+Attributes:   61
+              attribute_1
+              attribute_2
+              attribute_3
+              attribute_4
+              attribute_5
+              attribute_6
+              attribute_7
+              attribute_8
+              attribute_9
+              attribute_10
+              attribute_11
+              attribute_12
+              attribute_13
+              attribute_14
+              attribute_15
+              attribute_16
+              attribute_17
+              attribute_18
+              attribute_19
+              attribute_20
+              attribute_21
+              attribute_22
+              attribute_23
+              attribute_24
+              attribute_25
+              attribute_26
+              attribute_27
+              attribute_28
+              attribute_29
+              attribute_30
+              attribute_31
+              attribute_32
+              attribute_33
+              attribute_34
+              attribute_35
+              attribute_36
+              attribute_37
+              attribute_38
+              attribute_39
+              attribute_40
+              attribute_41
+              attribute_42
+              attribute_43
+              attribute_44
+              attribute_45
+              attribute_46
+              attribute_47
+              attribute_48
+              attribute_49
+              attribute_50
+              attribute_51
+              attribute_52
+              attribute_53
+              attribute_54
+              attribute_55
+              attribute_56
+              attribute_57
+              attribute_58
+              attribute_59
+              attribute_60
+              Class
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+Selected attributes: 29 28 30 
+Total Search Time in milliseconds: 59.0
+Reranking Time in milliseconds: 22.0
+Blocks searched: 2
+Attribute Evaluator during search: 	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Options of RerankingSearch:
+-method 0 -blockSize 20 -rankingMeasure 0 -search weka.attributeSelection.GreedyStepwise -P 1,2,3 -T -1.7976931348623157E308 -N -1 -num-slots 1 
+Attribute Subset Evaluator (supervised, Class (nominal): 61 Class):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 16,21,26,28,29,30,31,32,34 : 9
+                     attribute_16
+                     attribute_21
+                     attribute_26
+                     attribute_28
+                     attribute_29
+                     attribute_30
+                     attribute_31
+                     attribute_32
+                     attribute_34
+

@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/sylva-10-disc.arff.0.6.out.arff
+## Output file = datasets/sylva-10-disc.arff.0.6.out.arff.1.0.out.arff
+## Threshold = 1.0
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 192 msec.
+## Selecting features = 45 msec.
+
+# Selected features
+'feature-182 'feature-84
+
+# Statistics
+## Number of instances = 13086
+## Number of features = 3
+## H(C) = 0.3334
+## H(Entire) = 2.7560
+## H(Entire, C) = 2.8610
+## I(Entire; C) = 0.2285
+## H(Selected) = 2.7560
+## H(Selected, C) = 2.8610
+## I(Selected; C) = 0.2285
+## H(Selected | C) = 2.5275
+## mu_H = 0.1531
+## mu_G = 0.2879
+## Entropy of features
+0:2.4758 1:0.3313
+
+## Entropy of features and labels
+0:2.6312 1:0.5647
+

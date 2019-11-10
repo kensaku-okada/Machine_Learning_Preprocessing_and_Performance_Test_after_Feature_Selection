@@ -1,0 +1,75 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.RerankingSearch -method 2 -blockSize 20 -rankingMeasure 0 -search "weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1"
+Relation:     cylinder-bands
+Instances:    540
+Attributes:   40
+              timestamp
+              cylinder_number
+              customer
+              job_number
+              grain_screened
+              ink_color
+              proof_on_ctd_ink
+              blade_mfg
+              cylinder_division
+              paper_type
+              ink_type
+              direct_steam
+              solvent_type
+              type_on_cylinder
+              press_type
+              press
+              unit_number
+              cylinder_size
+              paper_mill_location
+              plating_tank
+              proof_cut
+              viscosity
+              caliper
+              ink_temperature
+              humifity
+              roughness
+              blade_pressure
+              varnish_pct
+              press_speed
+              ink_pct
+              solvent_pct
+              ESA_Voltage
+              ESA_Amperage
+              wax
+              hardener
+              roller_durometer
+              current_density
+              anode_space_ratio
+              chrome_content
+              band_type
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+Selected attributes: 1 0 28 3 
+Total Search Time in milliseconds: 25.0
+Reranking Time in milliseconds: 1.0
+Blocks searched: 2
+Attribute Evaluator during search: 	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Options of RerankingSearch:
+-method 2 -blockSize 20 -rankingMeasure 0 -search weka.attributeSelection.GreedyStepwise -P 1,2,3,4 -T -1.7976931348623157E308 -N -1 -num-slots 1 
+Attribute Subset Evaluator (supervised, Class (nominal): 40 band_type):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 1,2,4,29,30,34 : 6
+                     timestamp
+                     cylinder_number
+                     job_number
+                     press_speed
+                     ink_pct
+                     wax
+

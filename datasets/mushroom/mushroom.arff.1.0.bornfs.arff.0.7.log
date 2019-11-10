@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/mushroom.arff.1.0.out.arff
+## Output file = datasets/mushroom.arff.1.0.out.arff.0.7.out.arff
+## Threshold = 0.7
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 198 msec.
+## Selecting features = 43 msec.
+
+# Selected features
+'odor
+
+# Statistics
+## Number of instances = 8124
+## Number of features = 7
+## H(C) = 0.9991
+## H(Entire) = 6.8635
+## H(Entire, C) = 6.8635
+## I(Entire; C) = 0.9991
+## H(Selected) = 2.3194
+## H(Selected, C) = 2.4124
+## I(Selected; C) = 0.9061
+## H(Selected | C) = 1.4133
+## mu_H = 0.5461
+## mu_G = 0.5952
+## Entropy of features
+0:1.9782 1:1.3991 2:3.0304 3:2.2032 4:0.8923 5:2.3194
+
+## Entropy of features and labels
+0:2.7358 1:2.1263 2:3.6125 3:2.7216 4:1.6612 5:2.4124
+

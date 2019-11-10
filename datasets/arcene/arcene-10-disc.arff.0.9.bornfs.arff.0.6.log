@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/arcene-10-disc.arff.0.9.out.arff
+## Output file = datasets/arcene-10-disc.arff.0.9.out.arff.0.6.out.arff
+## Threshold = 0.6
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 179 msec.
+## Selecting features = 51 msec.
+
+# Selected features
+'attr7563 'attr7647
+
+# Statistics
+## Number of instances = 100
+## Number of features = 6
+## H(C) = 0.9896
+## H(Entire) = 5.8861
+## H(Entire, C) = 5.9661
+## I(Entire; C) = 0.9096
+## H(Selected) = 4.1371
+## H(Selected, C) = 4.5454
+## I(Selected; C) = 0.5813
+## H(Selected | C) = 3.5558
+## mu_H = 0.2304
+## mu_G = 0.2997
+## Entropy of features
+0:2.9967 1:2.6111 2:2.8860 3:2.6908 4:2.8041
+
+## Entropy of features and labels
+0:3.6667 1:3.3023 2:3.5189 3:3.3464 4:3.4764
+

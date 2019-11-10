@@ -1,0 +1,2 @@
+file_name,classifier,accuracy,f-measure,ROC-AUC
+madelon-10-disc_mrmr.arff,SVC,0.7475,0.7612293144208039,0.7469996999699972

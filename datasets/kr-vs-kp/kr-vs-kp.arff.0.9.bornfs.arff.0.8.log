@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/kr-vs-kp.arff.0.9.out.arff
+## Output file = datasets/kr-vs-kp.arff.0.9.out.arff.0.8.out.arff
+## Threshold = 0.8
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 192 msec.
+## Selecting features = 64 msec.
+
+# Selected features
+'attribute32 'attribute10 'attribute33 'attribute21
+
+# Statistics
+## Number of instances = 3196
+## Number of features = 12
+## H(C) = 0.9986
+## H(Entire) = 7.0683
+## H(Entire, C) = 7.1634
+## I(Entire; C) = 0.9034
+## H(Selected) = 2.7749
+## H(Selected, C) = 3.0473
+## I(Selected; C) = 0.7263
+## H(Selected | C) = 2.0487
+## mu_H = 0.3949
+## mu_G = 0.4587
+## Entropy of features
+0:0.9957 1:0.8965 2:0.8361 3:0.9476 4:0.3063 5:0.2813 6:0.3063 7:0.9335 8:0.9575 9:0.6860 10:0.8859
+
+## Entropy of features and labels
+0:1.9801 1:1.8753 2:1.8191 3:1.9268 4:1.2921 5:1.2605 6:1.2738 7:1.8954 8:1.8575 9:1.4863 10:1.7765
+

@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/dexter-10-disc.arff.0.5.out.arff
+## Output file = datasets/dexter-10-disc.arff.0.5.out.arff.1.0.out.arff
+## Threshold = 1.0
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 168 msec.
+## Selecting features = 66 msec.
+
+# Selected features
+'attr13685 'attr12916 'attr15798 'attr4308
+
+# Statistics
+## Number of instances = 300
+## Number of features = 5
+## H(C) = 1.0000
+## H(Entire) = 4.0869
+## H(Entire, C) = 4.5842
+## I(Entire; C) = 0.5027
+## H(Selected) = 4.0869
+## H(Selected, C) = 4.5842
+## I(Selected; C) = 0.5027
+## H(Selected | C) = 3.5842
+## mu_H = 0.2191
+## mu_G = 0.3507
+## Entropy of features
+0:0.7960 1:2.0601 2:0.9193 3:0.8048
+
+## Entropy of features and labels
+0:1.6837 1:2.8222 2:1.7711 3:1.6850
+

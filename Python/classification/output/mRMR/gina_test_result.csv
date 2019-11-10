@@ -1,0 +1,2 @@
+file_name,classifier,accuracy,f-measure,ROC-AUC
+gina-10-disc_mrmr.arff,SVC,0.6323296354992076,0.6196721311475409,0.6319415134157371

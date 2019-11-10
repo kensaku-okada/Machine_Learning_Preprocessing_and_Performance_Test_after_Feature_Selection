@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/madelon-10-disc.arff.0.7.out.arff
+## Output file = datasets/madelon-10-disc.arff.0.7.out.arff.0.6.out.arff
+## Threshold = 0.6
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 213 msec.
+## Selecting features = 139 msec.
+
+# Selected features
+'feature-336 'feature-338 'feature-241 'feature-105
+
+# Statistics
+## Number of instances = 2000
+## Number of features = 7
+## H(C) = 1.0000
+## H(Entire) = 9.7870
+## H(Entire, C) = 10.0664
+## I(Entire; C) = 0.7206
+## H(Selected) = 8.5698
+## H(Selected, C) = 9.0411
+## I(Selected; C) = 0.5287
+## H(Selected | C) = 8.0411
+## mu_H = 0.1138
+## mu_G = 0.2128
+## Entropy of features
+0:2.7489 1:2.7520 2:2.6882 3:2.6020 4:2.5079 5:2.7330
+
+## Entropy of features and labels
+0:3.7184 1:3.7197 2:3.6502 3:3.5665 4:3.4673 5:3.6864
+

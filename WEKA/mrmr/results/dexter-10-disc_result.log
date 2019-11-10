@@ -1,0 +1,76 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.RerankingSearch -method 2 -blockSize 20 -rankingMeasure 0 -search "weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1"
+Relation:     ./dexter_train-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last
+Instances:    300
+Attributes:   20001
+              [list of attributes omitted]
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+Selected attributes: 12916 626 10244 15798 19386 4308 13685 10457 4576 19327 11668 12170 2062 4554 1244 17970 10779 268 4637 5305 10998 18894 8945 
+Total Search Time in milliseconds: 39018.0
+Reranking Time in milliseconds: 21052.0
+Blocks searched: 5
+Attribute Evaluator during search: 	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Options of RerankingSearch:
+-method 2 -blockSize 20 -rankingMeasure 0 -search weka.attributeSelection.GreedyStepwise -P 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 -T -1.7976931348623157E308 -N -1 -num-slots 1 
+Attribute Subset Evaluator (supervised, Class (nominal): 20001 CLASS):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 93,203,269,344,347,627,1092,1116,1245,1417,1793,2063,2181,2184,2547,2875,3116,3323,4177,4309,4555,4577,4638,5306,5759,6072,7687,8946,9049,10245,10458,10740,10780,10999,11525,11669,12171,12917,13686,13726,14227,15799,17971,18895,19328,19387 : 46
+                     attr92
+                     attr202
+                     attr268
+                     attr343
+                     attr346
+                     attr626
+                     attr1091
+                     attr1115
+                     attr1244
+                     attr1416
+                     attr1792
+                     attr2062
+                     attr2180
+                     attr2183
+                     attr2546
+                     attr2874
+                     attr3115
+                     attr3322
+                     attr4176
+                     attr4308
+                     attr4554
+                     attr4576
+                     attr4637
+                     attr5305
+                     attr5758
+                     attr6071
+                     attr7686
+                     attr8945
+                     attr9048
+                     attr10244
+                     attr10457
+                     attr10739
+                     attr10779
+                     attr10998
+                     attr11524
+                     attr11668
+                     attr12170
+                     attr12916
+                     attr13685
+                     attr13725
+                     attr14226
+                     attr15798
+                     attr17970
+                     attr18894
+                     attr19327
+                     attr19386
+

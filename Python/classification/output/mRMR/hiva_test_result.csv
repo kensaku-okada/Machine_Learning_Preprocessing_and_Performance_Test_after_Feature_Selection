@@ -1,0 +1,2 @@
+file_name,classifier,accuracy,f-measure,ROC-AUC
+hiva_mrmr.arff,SVC,0.9739921976592978,0.0,0.5

@@ -1,0 +1,57 @@
+C:\Users\kensa\Anaconda3\python.exe "C:/Users/kensa/Dropbox/job hunting/feelance/yoshihiro_shin/BornFS_Experiment-20191006T120031Z-001/BornFS_Experiment/Python/classification/main.py"
+os.path.abspath(os.curdir):  C:\Users\kensa\Dropbox\job hunting\feelance\yoshihiro_shin\BornFS_Experiment-20191006T120031Z-001\BornFS_Experiment
+filePath:  C:\Users\kensa\Dropbox\job hunting\feelance\yoshihiro_shin\BornFS_Experiment-20191006T120031Z-001\BornFS_Experiment\datasets\madelon\mRMR\madelon-10-disc_mrmr.arff
+dataset_directory:  C:\Users\kensa\Dropbox\job hunting\feelance\yoshihiro_shin\BornFS_Experiment-20191006T120031Z-001\BornFS_Experiment\datasets\madelon\mRMR\madelon-10-disc_mrmr.arff
+filePath:  C:\Users\kensa\Dropbox\job hunting\feelance\yoshihiro_shin\BornFS_Experiment-20191006T120031Z-001\BornFS_Experiment\datasets\madelon\mRMR\madelon-10-disc_mrmr.arff
+dataset.head(5):                 0                1 ...                6  7
+0  '(451.2-459.3]'  '(511.4-538.8]' ...   '(99.9-199.8]'  0
+1  '(467.4-475.5]'    '(456.6-484]' ...  '(399.6-499.5]'  0
+2  '(483.6-491.7]'    '(484-511.4]' ...  '(499.5-599.4]'  0
+3  '(491.7-499.8]'    '(456.6-484]' ...  '(599.4-699.3]'  1
+4  '(467.4-475.5]'    '(484-511.4]' ...  '(399.6-499.5]'  1
+
+[5 rows x 8 columns]
+type(X):  <class 'numpy.ndarray'>
+X.shape:  (2000, 7)
+type(y):  <class 'numpy.ndarray'>
+y.shape:  (2000,)
+X_binary.shape:  (2000, 70)
+X_train.shape:  (1600, 70)
+X_test.shape:  (400, 70)
+y_train.shape:  (1600,)
+y_test.shape:  (400,)
+C_params:  [0.03125, 0.125, 0.5, 2, 8, 32, 128, 512, 2048, 8192, 32768]
+gamma_params:  [3.0517578125e-05, 0.0001220703125, 0.00048828125, 0.001953125, 0.0078125, 0.03125, 0.125, 0.5, 2, 8]
+start clf.fit at :2019-10-25 01:45:46.847119
+end clf.fit at :2019-10-25 01:53:28.410406
+clf.best_params:  {'kernel': 'rbf', 'gamma': 0.03125, 'C': 128}
+clf.best_score_:  0.759375
+clf.best_estimator_:  SVC(C=128, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma=0.03125, kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+clf.best_index_:  65
+------------ start testing the model ------------
+type(y_test):  <class 'numpy.ndarray'>
+type(y_test[0]):  <class 'numpy.int32'>
+type(y_pred):  <class 'numpy.ndarray'>
+type(y_pred[0]):  <class 'numpy.int32'>
+confusionMatrixResult:  [[138  60]
+ [ 41 161]]
+Accuracy (<> F measure = f1score) is :  0.7475
+classification_report(y_test, y_pred, output_dict=False):                precision    recall  f1-score   support
+
+           0       0.77      0.70      0.73       198
+           1       0.73      0.80      0.76       202
+
+    accuracy                           0.75       400
+   macro avg       0.75      0.75      0.75       400
+weighted avg       0.75      0.75      0.75       400
+
+F measure at 0 is :  0.7320954907161804
+F measure at 1 is :  0.7612293144208039
+ROC-AUC score is :  0.7469996999699972
+------------ end testing the model ------------
+currentDir:  C:\Users\kensa\Dropbox\job hunting\feelance\yoshihiro_shin\BornFS_Experiment-20191006T120031Z-001\BornFS_Experiment\Python\classification
+
+Process finished with exit code 0

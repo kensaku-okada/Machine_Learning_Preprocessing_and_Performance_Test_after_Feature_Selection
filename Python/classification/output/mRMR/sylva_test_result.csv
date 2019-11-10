@@ -1,0 +1,2 @@
+file_name,classifier,accuracy,f-measure,ROC-AUC
+sylva-10-disc_mrmr.arff,SVC,0.9358288770053476,0.0,0.5

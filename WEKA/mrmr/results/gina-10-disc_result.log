@@ -1,0 +1,68 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.RerankingSearch -method 2 -blockSize 20 -rankingMeasure 0 -search "weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1"
+Relation:     ./gina_train-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last
+Instances:    3153
+Attributes:   971
+              [list of attributes omitted]
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+Selected attributes: 878 655 13 10 619 421 30 741 600 443 254 841 809 518 723 43 754 479 196 249 375 337 145 93 191 113 774 165 647 591 575 291 35 771 962 642 
+Total Search Time in milliseconds: 52388.0
+Reranking Time in milliseconds: 51670.0
+Blocks searched: 6
+Attribute Evaluator during search: 	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Options of RerankingSearch:
+-method 2 -blockSize 20 -rankingMeasure 0 -search weka.attributeSelection.GreedyStepwise -P 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36 -T -1.7976931348623157E308 -N -1 -num-slots 1 
+Attribute Subset Evaluator (supervised, Class (nominal): 971 CLASS):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 11,14,31,36,44,94,114,146,166,192,197,235,250,255,292,338,376,422,444,480,519,576,592,601,620,643,648,656,724,742,755,772,775,810,842,879,889,963 : 38
+                     attr10
+                     attr13
+                     attr30
+                     attr35
+                     attr43
+                     attr93
+                     attr113
+                     attr145
+                     attr165
+                     attr191
+                     attr196
+                     attr234
+                     attr249
+                     attr254
+                     attr291
+                     attr337
+                     attr375
+                     attr421
+                     attr443
+                     attr479
+                     attr518
+                     attr575
+                     attr591
+                     attr600
+                     attr619
+                     attr642
+                     attr647
+                     attr655
+                     attr723
+                     attr741
+                     attr754
+                     attr771
+                     attr774
+                     attr809
+                     attr841
+                     attr878
+                     attr888
+                     attr962
+

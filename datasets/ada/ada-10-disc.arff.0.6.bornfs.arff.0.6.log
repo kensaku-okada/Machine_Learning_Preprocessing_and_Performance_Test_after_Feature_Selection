@@ -1,0 +1,32 @@
+# Parameters
+## Input file = datasets/ada-10-disc.arff.0.6.out.arff
+## Output file = datasets/ada-10-disc.arff.0.6.out.arff.0.6.out.arff
+## Threshold = 0.6
+## Level of detail of log = hi
+
+# Run-time
+## Creating a dataset object = 219 msec.
+## Selecting features = 88 msec.
+
+# Selected features
+'attr14 'attr26 'attr43
+
+# Statistics
+## Number of instances = 4147
+## Number of features = 9
+## H(C) = 0.8083
+## H(Entire) = 8.3470
+## H(Entire, C) = 8.7131
+## I(Entire; C) = 0.4423
+## H(Selected) = 3.5884
+## H(Selected, C) = 4.1275
+## I(Selected; C) = 0.2691
+## H(Selected | C) = 3.3192
+## mu_H = 0.1335
+## mu_G = 0.2136
+## Entropy of features
+0:2.1995 1:0.5864 2:2.0909 3:0.1895 4:2.7831 5:0.9088 6:0.9772 7:0.9962
+
+## Entropy of features and labels
+0:2.9445 1:1.3470 2:2.8047 3:0.9500 4:3.4947 5:1.6158 6:1.6525 7:1.6365
+

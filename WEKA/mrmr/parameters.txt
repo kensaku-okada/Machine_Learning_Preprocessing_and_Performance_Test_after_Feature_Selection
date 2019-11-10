@@ -1,0 +1,62 @@
+
+### How to implement mRMR (Minimum-redundancy-maximum-relevance) on WEKA
+
+Attribute Evaluator
+	CfsSubsetEval
+Search Method
+	Reranking seearch (you need to install Reranking package)
+
+Parameters in Search Method
+	b
+		default (20)
+
+	InformationBaseEvaluator
+		Information Gain (this is same as Mutual Information)
+
+	rerankMethod
+		Peng's Max-Relevance and Min-Redundancy
+
+	searchAlgorithm
+		GreedyStepwile
+
+
+WEKA参考リンク
+https://weka.8497.n7.nabble.com/mRMR-Number-of-Features-selected-td43304.html (most useful)
+
+https://weka.8497.n7.nabble.com/MrmR-Feature-Selection-td37903.html
+
+https://weka.8497.n7.nabble.com/mRMR-Feature-Selection-Available-for-Weka-td20094.html
+
+--------------------
+
+### How to implement Classification
+
+SVM
+	LibSVM
+
+
+	参考：　https://www.youtube.com/watch?v=WVkD-jURBDg
+
+	http://weka.sourceforge.net/doc.stable/weka/classifiers/functions/LibSVM.html
+
+	推奨パラメータ？？？
+	
+	https://www.csie.ntu.edu.tw/~cjlin/libsvm/
+
+
+C4.5
+	it is J48 on WEKA
+	https://www.youtube.com/watch?v=_0-QAs9_F58
+
+	http://weka.sourceforge.net/doc.dev/weka/classifiers/trees/J48.html
+
+
+
+
+
+
+
+
+
+
+
