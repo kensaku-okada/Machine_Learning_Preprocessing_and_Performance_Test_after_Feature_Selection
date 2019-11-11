@@ -11,7 +11,7 @@ from sklearn.naive_bayes import GaussianNB
 # from sklearn import tree
 from sklearn.metrics import make_scorer, accuracy_score, cohen_kappa_score, precision_score, recall_score, f1_score,roc_auc_score
 ############### package for classification with cross validation ######################
-import Util, Constant
+import Util, Constant, Test, Preprocessing
 
 class my_CrossValidation:
 
@@ -57,7 +57,7 @@ def get_clssifier_type_and_param_grid(classifier_name):
 
     return classifier_type, parameters
 
-def cross_validate_k_fold(model_obj, X, y, cv_obj, fit_params):
+def cross_validate_k_fold(classifier_name, model_obj, X_train, y_train, fit_params):
     '''
     reference:
         https://www.kaggle.com/questions-and-answers/30560
@@ -70,8 +70,55 @@ def cross_validate_k_fold(model_obj, X, y, cv_obj, fit_params):
         https://blog.amedama.jp/entry/sklearn-cv-custom-metric
     '''
 
-    # ここから
+    cv_results = [0] * Constant.NUM_FOLD_CV
+    inner_roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
 
+    # split a specific fold training data into the innter train/test data
+    inner_X_train, inner_X_test, inner_y_train, inner_y_test = train_test_split(X_train, y_train, test_size=1.0 / Constant.NUM_FOLD_CV, random_state=0)
+
+    # cross validate based on the innter train data
+    cv_clf = cross_validate_hold_out(model_obj, inner_X_train, inner_y_train, fit_params)
+    # print("clf.cv_results_: ",clf.cv_results_)
+    print("clf.best_params: ", clf.best_params_)
+    print("clf.best_score_: ", clf.best_score_)
+    print("clf.best_estimator_: ", clf.best_estimator_)
+    print("clf.best_index_: ", clf.best_index_)
+    cv_results[i] = cv_clf
+
+    # test a specific fold
+    inner_y_pred = Test.get_predicted_y(classifier_name, cv_clf, inner_X_test)
+    # get roc auc sroce
+    inner_roc_auc_score = roc_auc_score(inner_y_test, inner_y_pred)
+    print ("inner ROC-AUC score is : ", inner_roc_auc_score)
+    inner_roc_auc_scores[i] = inner_roc_auc_score
+
+    ここから
+
+    # return the parameters giving the largest auc roc
+    best_clf = cv_results[inner_roc_auc_scores.argmax()]
+
+    return best_clf
+
+def cross_validate_hold_out(clssifier_type, X, y, parameters):
+    # GridSearchCV
+    # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
+    # https://qiita.com/yhyhyhjp/items/c81f7cea72a44a7bfd3a
+    # http://starpentagon.net/analytics/scikit_learn_grid_search_cv/
+    clf = GridSearchCV(estimator=clssifier_type, param_grid=parameters, cv=Constant.NUM_FOLD_CV)
+
+    print("start clf.fit at :{}".format(datetime.datetime.now()))
+    clf.fit(X, y)
+    print("end clf.fit at :{}".format(datetime.datetime.now()))
+
+    return clf
+
+def cross_validate_k_fold_old(model_obj, X, y, cv_obj, fit_params):
+    '''
+    since "fit_params" did not work with the params of gridsearchCV, this function is not userd any more!!!!!!!!!
+
+    this function is called like below.
+    clf = my_CV.cross_validate_k_fold(clssifier_type, skf, X_train, y_train, X_test, y_test, parameters)
+    '''
 
     # https://stackoverflow.com/questions/46598301/how-to-compute-precision-recall-and-f1-score-of-an-imbalanced-dataset-for-k-fold
     # https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html
@@ -91,11 +138,9 @@ def cross_validate_k_fold(model_obj, X, y, cv_obj, fit_params):
                             scoring=scoring)
     print("end cross_validate at :{}".format(datetime.datetime.now()))
 
+    print("clf: ", clf)
+    print("clf['test_accuracy'].mean(): ", clf['test_accuracy'].mean())
+    print("clf['test_f1_score'].mean(): ", clf['test_f1_score'].mean())
+    print("clf['test_roc_auc_score'].mean(): ", clf['test_roc_auc_score'].mean())
+
     return scores_skf
-
-
-
-
-
-
-

@@ -12,36 +12,9 @@ from sklearn.metrics import f1_score, classification_report, roc_auc_score, roc_
 from sklearn.naive_bayes import GaussianNB
 ############### package for testing ######################
 
-def test_model(classifier_name, clf, X_test, y_test, X_train, y_train):
+def test_model(classifier_name, clf, X_test, y_test):
 
-    if classifier_name == Constant.SVC:
-        # get the beset parameters
-        best_gamma = clf.best_params_['gamma']
-        best_kernel = clf.best_params_['kernel']
-        best_C = clf.best_params_['C']
-
-        # https://qiita.com/kenmatsu4/items/0a862a42ceb178ba7155
-        # todo is this correct?
-		# clf_test = svm.SVC(gamma=best_gamma, kernel=best_kernel, C=best_C).fit(X_test, y_test)
-        y_pred = clf.predict(X_test)
-        # is this correct?
-        # clf_test = svm.SVC(gamma=best_gamma, kernel=best_kernel, C=best_C).fit(X_train, y_train)
-        # y_pred = clf_test.predict(X_test)
-
-    elif classifier_name == Constant.NAIVE_BAYES:
-
-        # clf_test = GaussianNB().fit(X_test, y_test)
-        y_pred = clf.predict(X_test)
-
-    elif classifier_name == Constant.C4_5:
-        clf_test = None
-        y_pred = None
-        # todo implement it referring to: https://scikit-learn.org/stable/modules/tree.html#tree-algorithms-id3-c4-5-c5-0-and-cart
-        # https://www.quora.com/What-is-the-best-way-to-implement-C4-5-or-C5-0-algorithm-using-Python
-
-    else:
-        print("undefied classifier_name specified. stop the program")
-        sys.exit(0)
+    y_pred = get_predicted_y(classifier_name, clf, X_test)
 
     # print("y_test: ",y_test)
     print("type(y_test): ",type(y_test))
@@ -86,3 +59,37 @@ def test_model(classifier_name, clf, X_test, y_test, X_train, y_train):
     print ("ROC-AUC score is : ", my_roc_auc_score)
 
     return classifier_name, accuracy, f_measure, my_roc_auc_score
+
+
+def get_predicted_y(classifier_name, clf, X_test):
+
+    if classifier_name == Constant.SVC:
+        # get the beset parameters
+        best_gamma = clf.best_params_['gamma']
+        best_kernel = clf.best_params_['kernel']
+        best_C = clf.best_params_['C']
+
+        # https://qiita.com/kenmatsu4/items/0a862a42ceb178ba7155
+        # todo is this correct?
+        # clf_test = svm.SVC(gamma=best_gamma, kernel=best_kernel, C=best_C).fit(X_test, y_test)
+        y_pred = clf.predict(X_test)
+        # is this correct?
+        # clf_test = svm.SVC(gamma=best_gamma, kernel=best_kernel, C=best_C).fit(X_train, y_train)
+        # y_pred = clf_test.predict(X_test)
+
+    elif classifier_name == Constant.NAIVE_BAYES:
+
+        # clf_test = GaussianNB().fit(X_test, y_test)
+        y_pred = clf.predict(X_test)
+
+    elif classifier_name == Constant.C4_5:
+        clf_test = None
+        y_pred = None
+        # todo implement it referring to: https://scikit-learn.org/stable/modules/tree.html#tree-algorithms-id3-c4-5-c5-0-and-cart
+        # https://www.quora.com/What-is-the-best-way-to-implement-C4-5-or-C5-0-algorithm-using-Python
+
+    else:
+        print("undefied classifier_name specified. stop the program")
+        sys.exit(0)
+
+    return y_pred

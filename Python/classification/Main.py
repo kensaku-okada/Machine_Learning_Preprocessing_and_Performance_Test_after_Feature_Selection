@@ -77,7 +77,11 @@ for filePath in file_paths:
     ####################################################################
     if config.crossValidationType == "k-fold-cv":
         # skf, train_indices, test_indices = Preprocessing.get_splitted_dataset_k_fold(config, dataset)
-        skf, X_train, y_train, X_test, y_test = Preprocessing.get_splitted_dataset_k_fold(config, dataset)
+        skf, X_trains, y_trains, X_tests, y_tests = Preprocessing.get_splitted_dataset_k_fold(config, dataset)
+        print("X_trains: ",X_trains)
+        print("y_trains: ",y_trains)
+        print("X_tests: ",X_tests)
+        print("y_tests: ",y_tests)
 
     elif config.crossValidationType == "hold-out":
         X_train, X_test, y_train, y_test = Preprocessing.get_splitted_dataset_hold_out(config, dataset)
@@ -97,24 +101,30 @@ for filePath in file_paths:
         clssifier_type, parameters = my_CV.get_clssifier_type_and_param_grid(classifier_name)
 
         if config.crossValidationType == "k-fold-cv":
-            clf = my_CV.cross_validate_k_fold(clssifier_type, skf, X_train, y_train, X_test, y_test, parameters)
-            print("clf: ", clf)
-            print("clf['test_accuracy'].mean(): ",clf['test_accuracy'].mean())
-            print("clf['test_f1_score'].mean(): ",clf['test_f1_score'].mean())
-            print("clf['test_roc_auc_score'].mean(): ",clf['test_roc_auc_score'].mean())
-            sys.exit(1)
+            ####################################################################
+            ############### classification with cross validation start ######################
+            ####################################################################
+            for i in range(0, Constant.NUM_FOLD_CV):
+                X_train = X_trains[i]
+                y_train = y_trains[i]
+                clf = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, skf, X_train, y_train, parameters)
+
+
+            ###########################################################################
+            ############### classification with cross validation end ######################
+            ###########################################################################
+
+            ###########################################################################
+            ############### test the model start ####################
+            ###########################################################################
+
+
+            ###########################################################################
+            ############### test the model end ######################
+            ###########################################################################
 
         elif config.crossValidationType == "hold-out":
-            # GridSearchCV
-            # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
-            # https://qiita.com/yhyhyhjp/items/c81f7cea72a44a7bfd3a
-            # http://starpentagon.net/analytics/scikit_learn_grid_search_cv/
-            clf = GridSearchCV(estimator=clssifier_type, param_grid=parameters, cv=Constant.NUM_FOLD_CV)
-
-            print ("start clf.fit at :{}".format(datetime.datetime.now()))
-            clf.fit(X_train, y_train)
-            print ("end clf.fit at :{}".format(datetime.datetime.now()))
-
+            clf = my_CV.cross_validate_hold_out(clssifier_type, X_train, y_train, parameters)
             # print("clf.cv_results_: ",clf.cv_results_)
             print("clf.best_params: ",clf.best_params_ )
             print("clf.best_score_: ",clf.best_score_ )
