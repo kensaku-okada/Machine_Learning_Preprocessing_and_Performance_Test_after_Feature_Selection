@@ -12,7 +12,15 @@ from sklearn.metrics import f1_score, classification_report, roc_auc_score, roc_
 from sklearn.naive_bayes import GaussianNB
 ############### package for testing ######################
 
-def test_model(classifier_name, clf, X_test, y_test):
+def test_model_k_fold(classifier_name, clf, X_test, y_test):
+
+    ここから！！
+
+    pass
+
+
+
+def test_model_hold_out(classifier_name, clf, X_test, y_test):
 
     y_pred = get_predicted_y(classifier_name, clf, X_test)
 
@@ -58,7 +66,7 @@ def test_model(classifier_name, clf, X_test, y_test):
     my_roc_auc_score = roc_auc_score(y_test, y_pred)
     print ("ROC-AUC score is : ", my_roc_auc_score)
 
-    return classifier_name, accuracy, f_measure, my_roc_auc_score
+    return accuracy, f_measure, my_roc_auc_score
 
 
 def get_predicted_y(classifier_name, clf, X_test):

@@ -2,18 +2,13 @@
 #coding:utf-8
 
 import os, sys, datetime, glob, pathlib
+import numpy as np
+# import matplotlib.pyplot as plt
 # from scipy.io import arff as scipy_arff # for dense arff dataset
 import pandas as pd
 import Util, Constant, Test, Preprocessing
 import my_CrossValidation as my_CV
 import ConfigurationClass as Config
-# import matplotlib.pyplot as plt
-############### package for classification with cross validation start ######################
-from sklearn import svm
-from sklearn.model_selection import GridSearchCV, train_test_split
-from sklearn.naive_bayes import GaussianNB
-# from sklearn import tree
-############### package for classification with cross validation end ######################
 
 ############################################################
 ############### set the configuration start ###############
@@ -93,9 +88,6 @@ for filePath in file_paths:
     ############### preprocessing end ###############
     ####################################################################
 
-    ####################################################################
-    ############### classification with cross validation start ######################
-    ####################################################################
     for classifier_name in config.classifier_names:
 
         clssifier_type, parameters = my_CV.get_clssifier_type_and_param_grid(classifier_name)
@@ -104,12 +96,25 @@ for filePath in file_paths:
             ####################################################################
             ############### classification with cross validation start ######################
             ####################################################################
+            cv_clfs = [0] * Constant.NUM_FOLD_CV
+            inner_roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
+
             for i in range(0, Constant.NUM_FOLD_CV):
                 X_train = X_trains[i]
                 y_train = y_trains[i]
-                clf = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, skf, X_train, y_train, parameters)
+                cv_clf, inner_roc_auc_score = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, skf, X_train, y_train, parameters)
+                # print("clf.cv_results_: ",clf.cv_results_)
+                print("clf.best_params: ", cv_clf.best_params_)
+                print("clf.best_score_: ", cv_clf.best_score_)
+                print("clf.best_estimator_: ", cv_clf.best_estimator_)
+                print("clf.best_index_: ", cv_clf.best_index_)
+                print("inner ROC-AUC score is : ", inner_roc_auc_score)
 
+                cv_clfs[i] = cv_clf
+                inner_roc_auc_scores[i] = inner_roc_auc_score
 
+            # choose the clf parameters giving the largest auc roc
+            best_clf = cv_clfs[inner_roc_auc_scores.argmax()]
             ###########################################################################
             ############### classification with cross validation end ######################
             ###########################################################################
@@ -117,36 +122,58 @@ for filePath in file_paths:
             ###########################################################################
             ############### test the model start ####################
             ###########################################################################
+            print("------------ start testing the model ------------")
+            accuracies = np.zeros(Constant.NUM_FOLD_CV)
+            f_measures = np.zeros(Constant.NUM_FOLD_CV)
+            roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
 
+            for i in range(0, Constant.NUM_FOLD_CV):
 
+                classifier, accuracy, f_measure, my_roc_auc_score = Test.test_model_k_fold(classifier_name, best_clf, X_tests[i], y_tests[i])
+
+                accuracies[i] = accuracy
+                f_measures[i] = f_measure
+                roc_auc_scores[i] = my_roc_auc_score
+
+            average_accuracy = np.mean(accuracies)
+            average_f_measure = np.mean(f_measures)
+            average_roc_auc_score = np.mean(roc_auc_scores)
+
+            # append the test result for export
+            file_name = os.path.basename(filePath)
+            config.test_results.append([file_name ,classifier ,average_accuracy ,average_f_measure, average_roc_auc_score])
+            print("------------ end testing the model ------------")
             ###########################################################################
             ############### test the model end ######################
             ###########################################################################
 
         elif config.crossValidationType == "hold-out":
+            ####################################################################
+            ############### classification with cross validation start ######################
+            ####################################################################
             clf = my_CV.cross_validate_hold_out(clssifier_type, X_train, y_train, parameters)
             # print("clf.cv_results_: ",clf.cv_results_)
             print("clf.best_params: ",clf.best_params_ )
             print("clf.best_score_: ",clf.best_score_ )
             print("clf.best_estimator_: ",clf.best_estimator_)
             print("clf.best_index_: ",clf.best_index_)
-        ###########################################################################
-        ############### classification with cross validation end ######################
-        ###########################################################################
+            ###########################################################################
+            ############### classification with cross validation end ######################
+            ###########################################################################
 
-        ###########################################################################
-        ############### test the model start ####################
-        ###########################################################################
-        print("------------ start testing the model ------------")
-        classifier, accuracy, f_measure, my_roc_auc_score = Test.test_model(classifier_name, clf, X_test, y_test, X_train, y_train)
+            ###########################################################################
+            ############### test the model start ####################
+            ###########################################################################
+            print("------------ start testing the model ------------")
+            accuracy, f_measure, my_roc_auc_score = Test.test_model_hold_out(classifier_name, clf, X_test, y_test)
 
-        # append the test result for export
-        file_name = os.path.basename(filePath)
-        config.test_results.append([file_name ,classifier ,accuracy ,f_measure ,my_roc_auc_score])
-        print("------------ end testing the model ------------")
-        ###########################################################################
-        ############### test the model end ######################
-        ###########################################################################
+            # append the test result for export
+            file_name = os.path.basename(filePath)
+            config.test_results.append([file_name ,classifier ,accuracy ,f_measure ,my_roc_auc_score])
+            print("------------ end testing the model ------------")
+            ###########################################################################
+            ############### test the model end ######################
+            ###########################################################################
 
 ############### export the test result ###############
 header = ["file_name","classifier","accuracy","f-measure","ROC-AUC"]

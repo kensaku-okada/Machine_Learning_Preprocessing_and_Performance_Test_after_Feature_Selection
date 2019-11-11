@@ -70,34 +70,18 @@ def cross_validate_k_fold(classifier_name, model_obj, X_train, y_train, fit_para
         https://blog.amedama.jp/entry/sklearn-cv-custom-metric
     '''
 
-    cv_results = [0] * Constant.NUM_FOLD_CV
-    inner_roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
-
     # split a specific fold training data into the innter train/test data
     inner_X_train, inner_X_test, inner_y_train, inner_y_test = train_test_split(X_train, y_train, test_size=1.0 / Constant.NUM_FOLD_CV, random_state=0)
 
     # cross validate based on the innter train data
     cv_clf = cross_validate_hold_out(model_obj, inner_X_train, inner_y_train, fit_params)
-    # print("clf.cv_results_: ",clf.cv_results_)
-    print("clf.best_params: ", clf.best_params_)
-    print("clf.best_score_: ", clf.best_score_)
-    print("clf.best_estimator_: ", clf.best_estimator_)
-    print("clf.best_index_: ", clf.best_index_)
-    cv_results[i] = cv_clf
 
     # test a specific fold
     inner_y_pred = Test.get_predicted_y(classifier_name, cv_clf, inner_X_test)
     # get roc auc sroce
     inner_roc_auc_score = roc_auc_score(inner_y_test, inner_y_pred)
-    print ("inner ROC-AUC score is : ", inner_roc_auc_score)
-    inner_roc_auc_scores[i] = inner_roc_auc_score
 
-    ここから
-
-    # return the parameters giving the largest auc roc
-    best_clf = cv_results[inner_roc_auc_scores.argmax()]
-
-    return best_clf
+    return cv_clf, inner_roc_auc_score
 
 def cross_validate_hold_out(clssifier_type, X, y, parameters):
     # GridSearchCV
