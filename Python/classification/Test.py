@@ -14,10 +14,30 @@ from sklearn.naive_bayes import GaussianNB
 
 def test_model_k_fold(classifier_name, clf, X_test, y_test):
 
-    ここから！！
+    y_pred = get_predicted_y(classifier_name, clf, X_test)
+    # print("y_test: ",y_test)
+    print("type(y_test): ",type(y_test))
+    print("type(y_test[0]): ",type(y_test[0]))
+    # print("y_pred: ",y_pred)
+    print("type(y_pred): ",type(y_pred))
+    print("type(y_pred[0]): ",type(y_pred[0]))
 
-    pass
+    confusionMatrixResult = confusion_matrix(y_test, y_pred)
+    print("confusionMatrixResult: ", confusionMatrixResult)
 
+    accuracy = clf.score(X_test, y_test)
+    print("Accuracy (<> F measure = f1score) is : ", accuracy)
+
+    my_classification_report = classification_report(y_test, y_pred, output_dict=True)
+    f_measure = my_classification_report['1']['f1-score']
+    print ("classification_report(y_test, y_pred, output_dict=False): ",classification_report(y_test, y_pred, output_dict=False))
+    print ("F measure at 0 is : ",my_classification_report['0']['f1-score'])
+    print ("F measure at 1 is : ",f_measure)
+
+    my_roc_auc_score = roc_auc_score(y_test, y_pred)
+    print ("ROC-AUC score is : ", my_roc_auc_score)
+
+    return accuracy, f_measure, my_roc_auc_score
 
 
 def test_model_hold_out(classifier_name, clf, X_test, y_test):
@@ -72,10 +92,10 @@ def test_model_hold_out(classifier_name, clf, X_test, y_test):
 def get_predicted_y(classifier_name, clf, X_test):
 
     if classifier_name == Constant.SVC:
-        # get the beset parameters
-        best_gamma = clf.best_params_['gamma']
-        best_kernel = clf.best_params_['kernel']
-        best_C = clf.best_params_['C']
+        # # get the beset parameters
+        # best_gamma = clf.best_params_['gamma']
+        # best_kernel = clf.best_params_['kernel']
+        # best_C = clf.best_params_['C']
 
         # https://qiita.com/kenmatsu4/items/0a862a42ceb178ba7155
         # todo is this correct?

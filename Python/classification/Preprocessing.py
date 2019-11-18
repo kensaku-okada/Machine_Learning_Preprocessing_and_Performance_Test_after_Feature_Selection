@@ -5,7 +5,7 @@ import numpy as np
 import Util, Constant, sys
 ############### package for preprocessing ######################
 from sklearn.preprocessing import MultiLabelBinarizer, LabelEncoder, OneHotEncoder
-from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import StratifiedKFold, train_test_split
 ############### package for preprocessing ######################
 
 def get_splitted_dataset_k_fold(config, dataset):
@@ -60,7 +60,7 @@ def get_splitted_dataset_k_fold(config, dataset):
 		y_test_folds.append(y[test_index])
 
 	# print("len(test_indices): ",len(test_indices))
-	return skf, X_binary_train_folds, y_train_folds, X_binary_test_folds, y_test_folds
+	return X_binary_train_folds, y_train_folds, X_binary_test_folds, y_test_folds
 
 	# train_indices = np.array(train_indices)
 	# test_indices = np.array(train_indices)

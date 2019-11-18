@@ -18,8 +18,10 @@ config = Config.ConfigurationClass()
 config.outputDatasetType = "densed"
 # config.outputDatasetType = "sparsed"
 config.importDatasetFormat = "arff"
-# config.crossValidation = "hold-out"
-config.crossValidationType = "k-fold-cv"
+
+config.crossValidationType = "hold-out"
+# config.crossValidationType = "k-fold-cv"
+
 config.ifGetMultipleResults = False
 config.test_results = []
 # config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES, Constant.C4_5]
@@ -72,7 +74,7 @@ for filePath in file_paths:
     ####################################################################
     if config.crossValidationType == "k-fold-cv":
         # skf, train_indices, test_indices = Preprocessing.get_splitted_dataset_k_fold(config, dataset)
-        skf, X_trains, y_trains, X_tests, y_tests = Preprocessing.get_splitted_dataset_k_fold(config, dataset)
+        X_trains, y_trains, X_tests, y_tests = Preprocessing.get_splitted_dataset_k_fold(config, dataset)
         print("X_trains: ",X_trains)
         print("y_trains: ",y_trains)
         print("X_tests: ",X_tests)
@@ -102,7 +104,7 @@ for filePath in file_paths:
             for i in range(0, Constant.NUM_FOLD_CV):
                 X_train = X_trains[i]
                 y_train = y_trains[i]
-                cv_clf, inner_roc_auc_score = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, skf, X_train, y_train, parameters)
+                cv_clf, inner_roc_auc_score = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, X_train, y_train, parameters)
                 # print("clf.cv_results_: ",clf.cv_results_)
                 print("clf.best_params: ", cv_clf.best_params_)
                 print("clf.best_score_: ", cv_clf.best_score_)
@@ -129,7 +131,9 @@ for filePath in file_paths:
 
             for i in range(0, Constant.NUM_FOLD_CV):
 
-                classifier, accuracy, f_measure, my_roc_auc_score = Test.test_model_k_fold(classifier_name, best_clf, X_tests[i], y_tests[i])
+                print("i = ", i)
+
+                accuracy, f_measure, my_roc_auc_score = Test.test_model_k_fold(classifier_name, best_clf, X_tests[i], y_tests[i])
 
                 accuracies[i] = accuracy
                 f_measures[i] = f_measure
@@ -138,10 +142,13 @@ for filePath in file_paths:
             average_accuracy = np.mean(accuracies)
             average_f_measure = np.mean(f_measures)
             average_roc_auc_score = np.mean(roc_auc_scores)
+            print("average_accuracy: ",average_accuracy )
+            print("average_f_measure: ",average_f_measure )
+            print("average_roc_auc_score: ",average_roc_auc_score )
 
             # append the test result for export
             file_name = os.path.basename(filePath)
-            config.test_results.append([file_name ,classifier ,average_accuracy ,average_f_measure, average_roc_auc_score])
+            config.test_results.append([file_name ,classifier_name ,average_accuracy ,average_f_measure, average_roc_auc_score])
             print("------------ end testing the model ------------")
             ###########################################################################
             ############### test the model end ######################
@@ -169,7 +176,7 @@ for filePath in file_paths:
 
             # append the test result for export
             file_name = os.path.basename(filePath)
-            config.test_results.append([file_name ,classifier ,accuracy ,f_measure ,my_roc_auc_score])
+            config.test_results.append([file_name ,classifier_name ,accuracy ,f_measure ,my_roc_auc_score])
             print("------------ end testing the model ------------")
             ###########################################################################
             ############### test the model end ######################
