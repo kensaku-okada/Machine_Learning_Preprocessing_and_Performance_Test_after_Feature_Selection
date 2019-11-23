@@ -78,10 +78,15 @@ def cross_validate_k_fold(classifier_name, model_obj, X_train, y_train, fit_para
 
     # test a specific fold
     inner_y_pred = Test.get_predicted_y(classifier_name, cv_clf, inner_X_test)
+    print("inner_y_test: ", inner_y_test)
+    print("inner_y_pred: ", inner_y_pred)
+
     # get roc auc sroce
     inner_roc_auc_score = roc_auc_score(inner_y_test, inner_y_pred)
+    print("inner_roc_auc_score: ", inner_roc_auc_score)
 
     return cv_clf, inner_roc_auc_score
+
 
 def cross_validate_hold_out(clssifier_type, X, y, parameters):
     # GridSearchCV
@@ -95,36 +100,3 @@ def cross_validate_hold_out(clssifier_type, X, y, parameters):
     print("end clf.fit at :{}".format(datetime.datetime.now()))
 
     return clf
-
-def cross_validate_k_fold_old(model_obj, X, y, cv_obj, fit_params):
-    '''
-    since "fit_params" did not work with the params of gridsearchCV, this function is not userd any more!!!!!!!!!
-
-    this function is called like below.
-    clf = my_CV.cross_validate_k_fold(clssifier_type, skf, X_train, y_train, X_test, y_test, parameters)
-    '''
-
-    # https://stackoverflow.com/questions/46598301/how-to-compute-precision-recall-and-f1-score-of-an-imbalanced-dataset-for-k-fold
-    # https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html
-    scoring = {'accuracy': make_scorer(accuracy_score),
-               'precision': make_scorer(precision_score),
-               'recall': make_scorer(recall_score),
-               'f1_score': make_scorer(f1_score),
-               'roc_auc_score': make_scorer(roc_auc_score),
-               'kappa': make_scorer(cohen_kappa_score),
-               }
-
-    print("start cross_validate at :{}".format(datetime.datetime.now()))
-    scores_skf = cross_validate(estimator=model_obj, X=X, y=y,
-                            cv=cv_obj,
-                            n_jobs = -1,
-                            fit_params = fit_params,
-                            scoring=scoring)
-    print("end cross_validate at :{}".format(datetime.datetime.now()))
-
-    print("clf: ", clf)
-    print("clf['test_accuracy'].mean(): ", clf['test_accuracy'].mean())
-    print("clf['test_f1_score'].mean(): ", clf['test_f1_score'].mean())
-    print("clf['test_roc_auc_score'].mean(): ", clf['test_roc_auc_score'].mean())
-
-    return scores_skf

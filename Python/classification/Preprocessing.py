@@ -20,8 +20,9 @@ def get_splitted_dataset_k_fold(config, dataset):
 	# just change the data type of y from string to int
 	y = y.astype(np.int32)
 
-	# binarize the data to resolve the following error
-	X_binary = MultiLabelBinarizer().fit_transform(X)
+	# one-hot the data to resolve the following error
+	# X_binary = MultiLabelBinarizer().fit_transform(X)
+	X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
 	print("X_binary.shape: ", X_binary.shape)
 
 	# convert from Byte code to String, and from String to int, which is necessary only when the date is byte type.

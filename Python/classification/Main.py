@@ -19,8 +19,8 @@ config.outputDatasetType = "densed"
 # config.outputDatasetType = "sparsed"
 config.importDatasetFormat = "arff"
 
-config.crossValidationType = "hold-out"
-# config.crossValidationType = "k-fold-cv"
+# config.crossValidationType = "hold-out"
+config.crossValidationType = "k-fold-cv"
 
 config.ifGetMultipleResults = False
 config.test_results = []
