@@ -15,7 +15,7 @@ import ConfigurationClass as Config
 ############################################################
 # configuration instance
 config = Config.ConfigurationClass()
-config.outputDatasetType = "densed"
+config.outputDatasetType = "dense"
 # config.outputDatasetType = "sparsed"
 config.importDatasetFormat = "arff"
 

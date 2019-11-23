@@ -32,7 +32,7 @@ def importArffData(filePath, config):
     return: dataset as pandas
     '''
 
-    if config.outputDatasetType == "densed":
+    if config.outputDatasetType == "dense":
         # dataset = scipy_arff.loadarff(filePath)
         # # print("dataset[1]: ", dataset[1])
         # df = pd.DataFrame(dataset[0])
