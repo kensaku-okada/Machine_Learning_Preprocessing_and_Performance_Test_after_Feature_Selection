@@ -57,7 +57,7 @@ def get_clssifier_type_and_param_grid(classifier_name):
 
     return classifier_type, parameters
 
-def cross_validate_k_fold(classifier_name, model_obj, X_train, y_train, fit_params):
+def cross_validate_k_fold(classifier_name, clssifier_type, X_train, y_train, fit_params):
     '''
     reference:
         https://www.kaggle.com/questions-and-answers/30560
@@ -74,7 +74,7 @@ def cross_validate_k_fold(classifier_name, model_obj, X_train, y_train, fit_para
     inner_X_train, inner_X_test, inner_y_train, inner_y_test = train_test_split(X_train, y_train, test_size=1.0 / Constant.NUM_FOLD_CV, random_state=0)
 
     # cross validate based on the innter train data
-    cv_clf = cross_validate_hold_out(model_obj, inner_X_train, inner_y_train, fit_params)
+    cv_clf = cross_validate_hold_out(clssifier_type, inner_X_train, inner_y_train, fit_params)
 
     # test a specific fold
     inner_y_pred = Test.get_predicted_y(classifier_name, cv_clf, inner_X_test)
@@ -94,6 +94,20 @@ def cross_validate_hold_out(clssifier_type, X, y, parameters):
     # https://qiita.com/yhyhyhjp/items/c81f7cea72a44a7bfd3a
     # http://starpentagon.net/analytics/scikit_learn_grid_search_cv/
     clf = GridSearchCV(estimator=clssifier_type, param_grid=parameters, cv=Constant.NUM_FOLD_CV)
+
+    print("start clf.fit at :{}".format(datetime.datetime.now()))
+    clf.fit(X, y)
+    print("end clf.fit at :{}".format(datetime.datetime.now()))
+
+    return clf
+
+def cross_validate_hold_out_by_roc_auc(clssifier_type, X, y, parameters):
+    # GridSearchCV
+    # https://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter
+    # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
+
+    # "scoring" param determines the kind of best_score
+    clf = GridSearchCV(estimator=clssifier_type, param_grid=parameters, scoring="roc_auc", cv=Constant.NUM_FOLD_CV)
 
     print("start clf.fit at :{}".format(datetime.datetime.now()))
     clf.fit(X, y)

@@ -21,7 +21,6 @@ def get_splitted_dataset_k_fold(config, dataset):
 	y = y.astype(np.int32)
 
 	# one-hot the data to resolve the following error
-	# X_binary = MultiLabelBinarizer().fit_transform(X)
 	X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
 	print("X_binary.shape: ", X_binary.shape)
 

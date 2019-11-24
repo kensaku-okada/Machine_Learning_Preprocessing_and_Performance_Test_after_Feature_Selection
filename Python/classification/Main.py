@@ -104,18 +104,20 @@ for filePath in file_paths:
             for i in range(0, Constant.NUM_FOLD_CV):
                 X_train = X_trains[i]
                 y_train = y_trains[i]
-                cv_clf, inner_roc_auc_score = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, X_train, y_train, parameters)
+                # cv_clf, inner_roc_auc_score = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, X_train, y_train, parameters)
+                cv_clf = my_CV.cross_validate_hold_out_by_roc_auc(clssifier_type, X_train, y_train, parameters)
                 # print("clf.cv_results_: ",clf.cv_results_)
                 print("clf.best_params: ", cv_clf.best_params_)
-                print("clf.best_score_: ", cv_clf.best_score_)
+                print("clf.best_score_ (ROC-AUC score): ", cv_clf.best_score_)
                 print("clf.best_estimator_: ", cv_clf.best_estimator_)
                 print("clf.best_index_: ", cv_clf.best_index_)
-                print("inner ROC-AUC score is : ", inner_roc_auc_score)
 
-                cv_clfs[i] = cv_clf
-                inner_roc_auc_scores[i] = inner_roc_auc_score
+                # cv_clfs[i] = cv_clf
+                # https://www.pynote.info/entry/sklearn-grid-search-cv
+                cv_clfs[i] = cv_clf.best_estimator_
+                inner_roc_auc_scores[i] = cv_clf.best_score_
 
-            # choose the clf parameters giving the largest auc roc
+            # choose the clf giving the largest auc roc
             best_clf = cv_clfs[inner_roc_auc_scores.argmax()]
             ###########################################################################
             ############### classification with cross validation end ######################
