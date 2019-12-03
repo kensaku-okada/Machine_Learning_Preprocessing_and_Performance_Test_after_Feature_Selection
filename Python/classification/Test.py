@@ -34,10 +34,10 @@ def test_model_k_fold(classifier_name, clf, X_test, y_test):
     print ("F measure at 0 is : ",my_classification_report['0']['f1-score'])
     print ("F measure at 1 is : ",f_measure)
 
-    my_roc_auc_score = roc_auc_score(y_test, y_pred)
-    print ("ROC-AUC score is : ", my_roc_auc_score)
+    # my_roc_auc_score = roc_auc_score(y_test, y_pred)
+    # print ("ROC-AUC score is : ", my_roc_auc_score)
 
-    return accuracy, f_measure, my_roc_auc_score
+    return confusionMatrixResult, accuracy, f_measure
 
 
 def test_model_hold_out(classifier_name, clf, X_test, y_test):
@@ -83,6 +83,7 @@ def test_model_hold_out(classifier_name, clf, X_test, y_test):
     #########################################################
     # https://note.nkmk.me/python-sklearn-roc-curve-auc-score/
     fpr_all, tpr_all, thresholds_all = roc_curve(y_test, y_pred, drop_intermediate=False)
+    # this parameter substitution is wrong !!!!!!!!!!!!!!
     my_roc_auc_score = roc_auc_score(y_test, y_pred)
     print ("ROC-AUC score is : ", my_roc_auc_score)
 
@@ -121,3 +122,34 @@ def get_predicted_y(classifier_name, clf, X_test):
         sys.exit(0)
 
     return y_pred
+
+def get_overall_accuracy(confusionMatrixes):
+    # https://note.nkmk.me/python-sklearn-confusion-matrix-score/
+    TN = sum([confusionMatrix[0][0] for confusionMatrix in confusionMatrixes])
+    FN = sum([confusionMatrix[1][0] for confusionMatrix in confusionMatrixes])
+    FP = sum([confusionMatrix[0][1] for confusionMatrix in confusionMatrixes])
+    TP = sum([confusionMatrix[1][1] for confusionMatrix in confusionMatrixes])
+
+    # source: https://www.python-course.eu/confusion_matrix.php
+    overall_accuracy = (TN+TP) / (TN+FN+FP+TP)
+
+    return overall_accuracy
+
+
+def get_overall_f_measure(confusionMatrixes):
+    # https://note.nkmk.me/python-sklearn-confusion-matrix-score/
+    TN = sum([confusionMatrix[0][0] for confusionMatrix in confusionMatrixes])
+    FN = sum([confusionMatrix[1][0] for confusionMatrix in confusionMatrixes])
+    FP = sum([confusionMatrix[0][1] for confusionMatrix in confusionMatrixes])
+    TP = sum([confusionMatrix[1][1] for confusionMatrix in confusionMatrixes])
+
+    overall_f_measure = 2.0 * TP / (2.0 * TP + FN + FP)
+
+    # # source: https://www.python-course.eu/confusion_matrix.php
+    # precision = TP / (TP+FP)
+    # recall = TP / (TP+FN)
+    #
+    # # https://medium.com/hugo-ferreiras-blog/confusion-matrix-and-other-metrics-in-machine-learning-894688cb1c0a
+    # overall_f_measure = 2.0*precision*recall / (precision+recall)
+
+    return overall_f_measure

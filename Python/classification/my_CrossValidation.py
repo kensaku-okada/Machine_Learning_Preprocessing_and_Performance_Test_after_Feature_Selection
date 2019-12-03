@@ -89,29 +89,22 @@ def cross_validate_k_fold(classifier_name, clssifier_type, X_train, y_train, fit
     return cv_clf, inner_roc_auc_score
 
 
-def cross_validate_hold_out(clssifier_type, X, y, parameters):
-    # GridSearchCV
-    # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
-    # https://qiita.com/yhyhyhjp/items/c81f7cea72a44a7bfd3a
-    # http://starpentagon.net/analytics/scikit_learn_grid_search_cv/
-    clf = GridSearchCV(estimator=clssifier_type, param_grid=parameters, cv=Constant.NUM_FOLD_CV)
-
-    print("start clf.fit at :{}".format(datetime.datetime.now()))
-    clf.fit(X, y)
-    print("end clf.fit at :{}".format(datetime.datetime.now()))
-
-    return clf
-
-def cross_validate_hold_out_by_roc_auc(clssifier_type, X, y, parameters):
+def cross_validate_hold_out(clssifier_type, X, y, parameters, scoring=None):
     # GridSearchCV
     # https://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter
     # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
-
-    # "scoring" param determines the kind of best_score
-    clf = GridSearchCV(estimator=clssifier_type, param_grid=parameters, scoring="roc_auc", cv=Constant.NUM_FOLD_CV)
+    # https://qiita.com/yhyhyhjp/items/c81f7cea72a44a7bfd3a
+    # http://starpentagon.net/analytics/scikit_learn_grid_search_cv/
+    clf = GridSearchCV(estimator=clssifier_type, param_grid=parameters, cv=Constant.NUM_FOLD_CV, scoring=scoring)
 
     print("start clf.fit at :{}".format(datetime.datetime.now()))
     clf.fit(X, y)
     print("end clf.fit at :{}".format(datetime.datetime.now()))
 
     return clf
+
+def cross_validate_hold_out_by_accuracy(clssifier_type, X, y, parameters):
+    return cross_validate_hold_out(clssifier_type, X, y, parameters, scoring="accuracy")
+
+def cross_validate_hold_out_by_roc_auc(clssifier_type, X, y, parameters):
+    return cross_validate_hold_out(clssifier_type, X, y, parameters, scoring="roc_auc")

@@ -1,3 +1,23 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-arcene-10-disc_mrmr.arff,SVC,0.9686868686868687,0.9638888888888889,0.9675
-arcene-10-disc_mrmr.arff,naive_bayes,0.9203030303030303,0.9214141414141415,0.9283333333333333
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+arcene-10-disc_mrmr.arff,SVC,0.82,0.7954545454545455,"[array([[5, 1],
+       [1, 4]], dtype=int64), array([[5, 1],
+       [0, 5]], dtype=int64), array([[6, 0],
+       [1, 4]], dtype=int64), array([[3, 3],
+       [2, 3]], dtype=int64), array([[3, 3],
+       [1, 3]], dtype=int64), array([[6, 0],
+       [1, 3]], dtype=int64), array([[5, 0],
+       [1, 3]], dtype=int64), array([[5, 0],
+       [1, 3]], dtype=int64), array([[4, 1],
+       [0, 4]], dtype=int64), array([[5, 0],
+       [1, 3]], dtype=int64)]"
+arcene-10-disc_mrmr.arff,naive_bayes,0.89,0.8817204301075268,"[array([[5, 1],
+       [1, 4]], dtype=int64), array([[5, 1],
+       [0, 5]], dtype=int64), array([[5, 1],
+       [1, 4]], dtype=int64), array([[5, 1],
+       [0, 5]], dtype=int64), array([[5, 1],
+       [0, 4]], dtype=int64), array([[6, 0],
+       [1, 3]], dtype=int64), array([[4, 1],
+       [0, 4]], dtype=int64), array([[5, 0],
+       [0, 4]], dtype=int64), array([[3, 2],
+       [0, 4]], dtype=int64), array([[5, 0],
+       [0, 4]], dtype=int64)]"

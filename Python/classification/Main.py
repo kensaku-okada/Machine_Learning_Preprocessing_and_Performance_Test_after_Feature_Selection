@@ -95,66 +95,62 @@ for filePath in file_paths:
         clssifier_type, parameters = my_CV.get_clssifier_type_and_param_grid(classifier_name)
 
         if config.crossValidationType == "k-fold-cv":
-            ####################################################################
-            ############### classification with cross validation start ######################
-            ####################################################################
             cv_clfs = [0] * Constant.NUM_FOLD_CV
-            inner_roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
+            # inner_roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
+            accuracies = np.zeros(Constant.NUM_FOLD_CV)
+            f_measures = np.zeros(Constant.NUM_FOLD_CV)
+            # roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
+            confusionMatrixes = [0] * Constant.NUM_FOLD_CV
 
             for i in range(0, Constant.NUM_FOLD_CV):
+                ####################################################################
+                ############### classification with cross validation start ######################
+                ####################################################################
                 X_train = X_trains[i]
                 y_train = y_trains[i]
                 # cv_clf, inner_roc_auc_score = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, X_train, y_train, parameters)
-                cv_clf = my_CV.cross_validate_hold_out_by_roc_auc(clssifier_type, X_train, y_train, parameters)
+                cv_clf = my_CV.cross_validate_hold_out_by_accuracy(clssifier_type, X_train, y_train, parameters)
                 # print("clf.cv_results_: ",clf.cv_results_)
                 print("clf.best_params: ", cv_clf.best_params_)
                 print("clf.best_score_ (ROC-AUC score): ", cv_clf.best_score_)
                 print("clf.best_estimator_: ", cv_clf.best_estimator_)
-                print("clf.best_index_: ", cv_clf.best_index_)
+                # print("clf.best_index_: ", cv_clf.best_index_)
 
                 # cv_clfs[i] = cv_clf
                 # https://www.pynote.info/entry/sklearn-grid-search-cv
                 cv_clfs[i] = cv_clf.best_estimator_
-                inner_roc_auc_scores[i] = cv_clf.best_score_
+                # inner_roc_auc_scores[i] = cv_clf.best_score_
                 # print("cv_clf.best_score_: ",cv_clf.best_score_)
 
-            # choose the clf giving the largest auc roc
-            best_clf = cv_clfs[inner_roc_auc_scores.argmax()]
-            ###########################################################################
-            ############### classification with cross validation end ######################
-            ###########################################################################
+                # choose the clf giving the largest auc roc
+                # best_clf = cv_clfs[inner_roc_auc_scores.argmax()]
+                ###########################################################################
+                ############### classification with cross validation end ######################
+                ###########################################################################
 
-            ###########################################################################
-            ############### test the model start ####################
-            ###########################################################################
-            print("------------ start testing the model ------------")
-            accuracies = np.zeros(Constant.NUM_FOLD_CV)
-            f_measures = np.zeros(Constant.NUM_FOLD_CV)
-            roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
-
-            for i in range(0, Constant.NUM_FOLD_CV):
+                ###########################################################################
+                ############### test the model start ####################
+                ###########################################################################
+                print("------------ start testing the model ------------")
                 print("i = ", i)
-
-                accuracy, f_measure, my_roc_auc_score = Test.test_model_k_fold(classifier_name, best_clf, X_tests[i], y_tests[i])
+                confusionMatrixResult, accuracy, f_measure = Test.test_model_k_fold(classifier_name, cv_clf.best_estimator_, X_tests[i], y_tests[i])
 
                 accuracies[i] = accuracy
                 f_measures[i] = f_measure
-                roc_auc_scores[i] = my_roc_auc_score
+                confusionMatrixes[i] = confusionMatrixResult
+                print("------------ end testing the model ------------")
+                ###########################################################################
+                ############### test the model end ######################
+                ###########################################################################
 
-            average_accuracy = np.mean(accuracies)
-            average_f_measure = np.mean(f_measures)
-            average_roc_auc_score = np.mean(roc_auc_scores)
-            print("average_accuracy: ",average_accuracy )
-            print("average_f_measure: ",average_f_measure )
-            print("average_roc_auc_score: ",average_roc_auc_score )
+            overall_accuracy = Test.get_overall_accuracy(confusionMatrixes)
+            overall_f_measure = Test.get_overall_f_measure(confusionMatrixes)
+            print("overall_accuracy: ",overall_accuracy)
+            print("overall_f_measure: ",overall_f_measure)
 
             # append the test result for export
             file_name = os.path.basename(filePath)
-            config.test_results.append([file_name ,classifier_name ,average_accuracy ,average_f_measure, average_roc_auc_score])
-            print("------------ end testing the model ------------")
-            ###########################################################################
-            ############### test the model end ######################
-            ###########################################################################
+            config.test_results.append([file_name ,classifier_name ,overall_accuracy,overall_f_measure, confusionMatrixes])
 
         elif config.crossValidationType == "hold-out":
             ####################################################################
@@ -185,7 +181,7 @@ for filePath in file_paths:
             ###########################################################################
 
 ############### export the test result ###############
-header = ["file_name","classifier","accuracy","f-measure","ROC-AUC"]
+header = ["file_name","classifier","accuracy","f-measure","confusionMatrixes"]
 # https://note.nkmk.me/python-pathlib-name-suffix-parent/
 Util.exportCSVFile(config.test_results, header, fileName=dataset_directory.parents[1].name + "_test_result")
 
