@@ -1,0 +1,31 @@
+# Parameters
+## Input file = dexter-10-disc.arff
+## Output file = out/dexter-10-disc.arff-su-0.9-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.9
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 356,326,465 nsec
+## Sorting features = 30,399,344 nsec
+## Sorting instances = 6,298,588 nsec
+## Selecting features = 111,323,821 nsec
+
+# 135features selected.
+# Selected features
+'attr7478 'attr19391 'attr13766 'attr17620 'attr18814 'attr605 'attr5526 'attr12132 'attr2532 'attr4415 'attr17013 'attr17522 'attr6034 'attr15291 'attr19508 'attr17712 'attr5084 'attr8587 'attr15481 'attr3132 'attr15383 'attr15921 'attr706 'attr13264 'attr10011 'attr19848 'attr3992 'attr6731 'attr16590 'attr12481 'attr12848 'attr7068 'attr6383 'attr19515 'attr12412 'attr13356 'attr18913 'attr10871 'attr8085 'attr3291 'attr8168 'attr19421 'attr19680 'attr10802 'attr11746 'attr19254 'attr11310 'attr13780 'attr11657 'attr15056 'attr1773 'attr11402 'attr12062 'attr5456 'attr17903 'attr14048 'attr19864 'attr202 'attr9290 'attr5181 'attr10271 'attr4604 'attr6913 'attr7857 'attr8874 'attr10461 'attr8267 'attr6922 'attr12956 'attr18155 'attr17299 'attr1202 'attr11570 'attr15253 'attr2302 'attr19347 'attr11050 'attr14837 'attr19101 'attr10996 'attr10301 'attr9662 'attr14752 'attr15089 'attr3601 'attr6854 'attr17652 'attr13293 'attr1370 'attr827 'attr16550 'attr19118 'attr18942 'attr9053 'attr4552 'attr1896 'attr18617 'attr5838 'attr6527 'attr2496 'attr45 'attr12634 'attr19027 'attr6619 'attr10231 'attr10930 'attr8227 'attr17509 'attr7551 'attr15722 'attr11716 'attr19224 'attr18368 'attr3025 'attr4918 'attr14967 'attr3630 'attr19481 'attr2084 'attr6276 'attr13675 'attr11620 'attr2616 'attr19571 'attr18655 'attr19849 'attr12244 'attr14297 'attr6311 'attr10119 'attr10128 'attr19260 'attr5737 'attr10195 'attr18750
+
+# Statistics
+## Number of instances = 300
+## Number of features = 20001
+## H(C) = 1.0000
+## H(Entire) = 8.2288
+## H(Entire, C) = 8.2288
+## I(Entire; C) = 1.0000
+## H(Selected) = 4.1773
+## H(Selected, C) = 4.4191
+## I(Selected; C) = 0.7583
+## H(Selected | C) = 3.4191
+## mu_H = 0.2929
+## mu_G = 0.3710

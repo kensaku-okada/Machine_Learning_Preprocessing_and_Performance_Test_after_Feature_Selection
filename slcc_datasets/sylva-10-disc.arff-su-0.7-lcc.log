@@ -1,0 +1,31 @@
+# Parameters
+## Input file = sylva-10-disc.arff
+## Output file = out/sylva-10-disc.arff-su-0.7-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.7
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 766,121,002 nsec
+## Sorting features = 9,153,312 nsec
+## Sorting instances = 66,797,228 nsec
+## Selecting features = 94,678,672 nsec
+
+# 6features selected.
+# Selected features
+'feature-20 'feature-84 'feature-172 'feature-197 'feature-51 'feature-64
+
+# Statistics
+## Number of instances = 13086
+## Number of features = 217
+## H(C) = 0.3334
+## H(Entire) = 13.6757
+## H(Entire, C) = 13.6757
+## I(Entire; C) = 0.3334
+## H(Selected) = 1.0639
+## H(Selected, C) = 1.1255
+## I(Selected; C) = 0.2719
+## H(Selected | C) = 0.7921
+## mu_H = 0.3891
+## mu_G = 0.4564

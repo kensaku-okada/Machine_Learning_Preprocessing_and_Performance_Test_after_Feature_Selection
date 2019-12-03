@@ -1,0 +1,37 @@
+# Parameters
+## Input file = madelon-10-disc.arff
+## Output file = out/madelon-10-disc.arff-noise-1.0-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = negative noise
+## Threshold = 1.0
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 783,746,434 nsec
+## Sorting features = 4,728,329,361 nsec
+## Sorting instances = 81,617,842 nsec
+## Selecting features = 161,889,757 nsec
+
+# 8features selected.
+# Selected features
+'feature-105 'feature-493 'feature-336 'feature-338 'feature-453 'feature-64 'feature-297 'feature-474
+
+# Statistics
+## Number of instances = 2000
+## Number of features = 501
+## H(C) = 1.0000
+## H(Entire) = 10.9658
+## H(Entire, C) = 10.9658
+## I(Entire; C) = 1.0000
+## H(Selected) = 10.9648
+## H(Selected, C) = 10.9648
+## I(Selected; C) = 1.0000
+## H(Selected | C) = 9.9648
+## mu_H = 0.1672
+## mu_G = 0.3020
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:341189788:499 'sortCases:64923896:499 'findBorder:83216502:499 'sortAttrs:386653743:498 'sortCases:4537773:498 'findBorder:20949061:498 'sortAttrs:364007996:497 'sortCases:4302752:497 'findBorder:18067889:497 'sortAttrs:447466567:496 'sortCases:3178053:496 'findBorder:16350793:496 'sortAttrs:711760048:495 'sortCases:1665430:495 'findBorder:9308273:495 'sortAttrs:938041813:494 'sortCases:844659:494 'findBorder:4835241:494 'sortAttrs:864505684:493 'sortCases:879985:493 'findBorder:4652805:493 'sortAttrs:584083635:311 'sortCases:829465:311 'findBorder:4131362:311 'sortAttrs:90620087:58 'sortCases:455829:58 'findBorder:377831:58

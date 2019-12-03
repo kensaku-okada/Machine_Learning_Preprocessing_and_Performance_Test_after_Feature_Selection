@@ -1,0 +1,31 @@
+# Parameters
+## Input file = hiva.arff
+## Output file = out/hiva.arff-su-0.6-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 644,266,002 nsec
+## Sorting features = 16,773,501 nsec
+## Sorting instances = 31,979,190 nsec
+## Selecting features = 306,455,174 nsec
+
+# 61features selected.
+# Selected features
+'attr783 'attr1594 'attr1136 'attr962 'attr707 'attr1199 'attr1264 'attr168 'attr1443 'attr1036 'attr460 'attr1441 'attr1322 'attr1072 'attr924 'attr83 'attr907 'attr253 'attr1178 'attr1541 'attr164 'attr1235 'attr204 'attr497 'attr1258 'attr1128 'attr167 'attr380 'attr528 'attr371 'attr1204 'attr272 'attr1045 'attr587 'attr1243 'attr139 'attr1344 'attr583 'attr22 'attr751 'attr596 'attr17 'attr597 'attr1507 'attr404 'attr1197 'attr283 'attr1124 'attr1144 'attr1132 'attr66 'attr559 'attr358 'attr1605 'attr21 'attr1231 'attr368 'attr534 'attr1208 'attr459 'attr767
+
+# Statistics
+## Number of instances = 3845
+## Number of features = 1618
+## H(C) = 0.2194
+## H(Entire) = 11.8973
+## H(Entire, C) = 11.8973
+## I(Entire; C) = 0.2194
+## H(Selected) = 3.7639
+## H(Selected, C) = 3.8518
+## I(Selected; C) = 0.1315
+## H(Selected | C) = 3.6324
+## mu_H = 0.0660
+## mu_G = 0.1447

@@ -1,0 +1,37 @@
+# Parameters
+## Input file = gina-10-disc.arff
+## Output file = out/gina-10-disc.arff-ratio-0.7-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.7
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 833,402,095 nsec
+## Sorting features = 1,004,313,975 nsec
+## Sorting instances = 29,902,217 nsec
+## Selecting features = 72,105,353 nsec
+
+# 11features selected.
+# Selected features
+'attr78 'attr75 'attr73 'attr67 'attr63 'attr56 'attr49 'attr32 'attr14 'attr11 'attr7
+
+# Statistics
+## Number of instances = 3153
+## Number of features = 971
+## H(C) = 0.9998
+## H(Entire) = 11.6225
+## H(Entire, C) = 11.6225
+## I(Entire; C) = 0.9998
+## H(Selected) = 8.5613
+## H(Selected, C) = 8.8386
+## I(Selected; C) = 0.7225
+## H(Selected | C) = 7.8388
+## mu_H = 0.1511
+## mu_G = 0.2470
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:579526490:969 'sortCases:13148855:969 'findBorder:33436271:969 'sortAttrs:57641036:77 'sortCases:6644276:77 'findBorder:10796229:77 'sortAttrs:48144832:74 'sortCases:2228611:74 'findBorder:6141921:74 'sortAttrs:41651468:72 'sortCases:1544850:72 'findBorder:3915683:72 'sortAttrs:61960621:66 'sortCases:1602734:66 'findBorder:5310783:66 'sortAttrs:65399382:62 'sortCases:1077643:62 'findBorder:4364229:62 'sortAttrs:57313696:55 'sortCases:940022:55 'findBorder:1969890:55 'sortAttrs:34503516:48 'sortCases:635339:48 'findBorder:1661232:48 'sortAttrs:27339744:31 'sortCases:576677:31 'findBorder:1461693:31 'sortAttrs:12383235:13 'sortCases:472979:13 'findBorder:1326087:13 'sortAttrs:11005247:10 'sortCases:471720:10 'findBorder:1419790:10 'sortAttrs:7444708:6 'sortCases:558511:6 'findBorder:301545:6

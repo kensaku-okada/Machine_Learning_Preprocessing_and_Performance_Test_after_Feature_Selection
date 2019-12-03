@@ -1,0 +1,37 @@
+# Parameters
+## Input file = ada-10-disc.arff
+## Output file = out/ada-10-disc.arff-relevance-0.6-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 263,294,897 nsec
+## Sorting features = 387,555,955 nsec
+## Sorting instances = 34,619,532 nsec
+## Selecting features = 84,466,410 nsec
+
+# 19features selected.
+# Selected features
+'attr34 'attr31 'attr28 'attr23 'attr20 'attr19 'attr18 'attr17 'attr16 'attr15 'attr12 'attr11 'attr10 'attr9 'attr7 'attr6 'attr4 'attr3 'attr2
+
+# Statistics
+## Number of instances = 4147
+## Number of features = 49
+## H(C) = 0.8083
+## H(Entire) = 11.6776
+## H(Entire, C) = 11.7524
+## I(Entire; C) = 0.7335
+## H(Selected) = 10.0527
+## H(Selected, C) = 10.3456
+## I(Selected; C) = 0.5153
+## H(Selected | C) = 9.5373
+## mu_H = 0.0956
+## mu_G = 0.1898
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:54873008:47 'sortCases:15524510:47 'findBorder:20422153:47 'sortAttrs:20848383:33 'sortCases:1865529:33 'findBorder:10768746:33 'sortAttrs:24292260:30 'sortCases:1781762:30 'findBorder:6670913:30 'sortAttrs:26423937:27 'sortCases:1499759:27 'findBorder:6385791:27 'sortAttrs:21670153:22 'sortCases:1191439:22 'findBorder:3629778:22 'sortAttrs:25304998:19 'sortCases:1038968:19 'findBorder:2771737:19 'sortAttrs:28703360:18 'sortCases:931614:18 'findBorder:2373380:18 'sortAttrs:19101270:17 'sortCases:807402:17 'findBorder:1949672:17 'sortAttrs:15909035:16 'sortCases:700743:16 'findBorder:2267340:16 'sortAttrs:15626932:15 'sortCases:948194:15 'findBorder:3332852:15 'sortAttrs:17599712:14 'sortCases:954949:14 'findBorder:3016829:14 'sortAttrs:17508809:11 'sortCases:941784:11 'findBorder:3322790:11 'sortAttrs:19922243:10 'sortCases:1114051:10 'findBorder:3252933:10 'sortAttrs:14420116:9 'sortCases:1118707:9 'findBorder:3107498:9 'sortAttrs:12731504:8 'sortCases:675838:8 'findBorder:2921705:8 'sortAttrs:10931973:6 'sortCases:626207:6 'findBorder:1874152:6 'sortAttrs:12411528:5 'sortCases:813103:5 'findBorder:2186570:5 'sortAttrs:11861909:3 'sortCases:663206:3 'findBorder:1681523:3 'sortAttrs:8096511:2 'sortCases:742737:2 'findBorder:1800783:2 'sortAttrs:9318314:1 'sortCases:679030:1 'findBorder:729265:1

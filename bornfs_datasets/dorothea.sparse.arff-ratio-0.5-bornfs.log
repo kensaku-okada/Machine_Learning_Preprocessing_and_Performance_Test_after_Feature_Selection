@@ -1,0 +1,37 @@
+# Parameters
+## Input file = dorothea.sparse.arff
+## Output file = out/dorothea.sparse.arff-ratio-0.5-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 4,167,298,806 nsec
+## Sorting features = 26,081,792,048 nsec
+## Sorting instances = 9,706,810 nsec
+## Selecting features = 34,708,235 nsec
+
+# 6features selected.
+# Selected features
+'attr11893 'attr11889 'attr11887 'attr11886 'attr11882 'attr11881
+
+# Statistics
+## Number of instances = 800
+## Number of features = 100001
+## H(C) = 0.4610
+## H(Entire) = 9.6439
+## H(Entire, C) = 9.6439
+## I(Entire; C) = 0.4610
+## H(Selected) = 0.6534
+## H(Selected, C) = 0.8825
+## I(Selected; C) = 0.2320
+## H(Selected | C) = 0.4214
+## mu_H = 0.4163
+## mu_G = 0.4227
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:14383545175:99999 'sortCases:4172972:99999 'findBorder:13397276:99999 'sortAttrs:1848291108:11892 'sortCases:1349415:11892 'findBorder:5401038:11892 'sortAttrs:1295237757:11888 'sortCases:729213:11888 'findBorder:3883455:11888 'sortAttrs:1394663800:11886 'sortCases:895692:11886 'findBorder:3892571:11886 'sortAttrs:2230403210:11885 'sortCases:900447:11885 'findBorder:3867806:11885 'sortAttrs:2246675312:11881 'sortCases:1038030:11881 'findBorder:4053953:11881 'sortAttrs:2682975686:11880 'sortCases:621041:11880 'findBorder:212136:11880

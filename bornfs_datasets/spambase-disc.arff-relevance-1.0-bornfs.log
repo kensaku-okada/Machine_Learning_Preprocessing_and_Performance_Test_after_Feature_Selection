@@ -1,0 +1,37 @@
+# Parameters
+## Input file = spambase-disc.arff
+## Output file = out/spambase-disc.arff-relevance-1.0-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 1.0
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 283,671,139 nsec
+## Sorting features = 1,336,060,372 nsec
+## Sorting instances = 60,943,028 nsec
+## Selecting features = 299,575,127 nsec
+
+# 57features selected.
+# Selected features
+'word_freq_table 'word_freq_parts 'word_freq_direct 'word_freq_3d 'char_freq_; 'char_freq_[ 'word_freq_conference 'word_freq_technology 'word_freq_415 'word_freq_857 'word_freq_original 'word_freq_telnet 'word_freq_650 'word_freq_85 'word_freq_pm 'word_freq_cs 'word_freq_font 'word_freq_labs 'word_freq_lab 'word_freq_data 'word_freq_1999 'word_freq_project 'word_freq_meeting 'word_freq_hpl 'word_freq_report 'word_freq_people 'word_freq_addresses 'char_freq_# 'word_freq_hp 'word_freq_make 'word_freq_credit 'word_freq_order 'word_freq_receive 'word_freq_over 'word_freq_internet 'word_freq_money 'word_freq_mail 'word_freq_email 'word_freq_address 'word_freq_000 'word_freq_business 'word_freq_all 'word_freq_edu 'word_freq_will 'word_freq_our 'word_freq_remove 'word_freq_george 'char_freq_$ 'word_freq_re 'char_freq_( 'word_freq_your 'word_freq_free 'word_freq_you 'char_freq_! 'capital_run_length_longest 'capital_run_length_average 'capital_run_length_total
+
+# Statistics
+## Number of instances = 4601
+## Number of features = 58
+## H(C) = 0.9674
+## H(Entire) = 11.4334
+## H(Entire, C) = 11.4434
+## I(Entire; C) = 0.9574
+## H(Selected) = 11.4334
+## H(Selected, C) = 11.4434
+## I(Selected; C) = 0.9574
+## H(Selected | C) = 10.4760
+## mu_H = 0.1545
+## mu_G = 0.2894
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:56141617:56 'sortCases:15262307:56 'findBorder:35433256:56 'sortAttrs:29935416:55 'sortCases:1308261:55 'findBorder:10861092:55 'sortAttrs:24851438:54 'sortCases:1028665:54 'findBorder:18126845:54 'sortAttrs:29668844:53 'sortCases:1471881:53 'findBorder:12807455:53 'sortAttrs:34605769:52 'sortCases:1787312:52 'findBorder:8132370:52 'sortAttrs:28585365:51 'sortCases:1829684:51 'findBorder:7812576:51 'sortAttrs:31155478:50 'sortCases:1439030:50 'findBorder:8795594:50 'sortAttrs:29366002:49 'sortCases:1665409:49 'findBorder:8618503:49 'sortAttrs:30232706:48 'sortCases:1740949:48 'findBorder:6715124:48 'sortAttrs:27961682:47 'sortCases:1311328:47 'findBorder:6335419:47 'sortAttrs:27419776:46 'sortCases:1167354:46 'findBorder:8492601:46 'sortAttrs:31614741:45 'sortCases:1303067:45 'findBorder:6284050:45 'sortAttrs:24240937:44 'sortCases:1183845:44 'findBorder:6081999:44 'sortAttrs:33933336:43 'sortCases:1131691:43 'findBorder:5431497:43 'sortAttrs:34545860:42 'sortCases:1098477:42 'findBorder:5555199:42 'sortAttrs:34511293:41 'sortCases:808572:41 'findBorder:9562018:41 'sortAttrs:28666024:40 'sortCases:909299:40 'findBorder:5170889:40 'sortAttrs:31420946:39 'sortCases:1099882:39 'findBorder:4773339:39 'sortAttrs:31318889:38 'sortCases:1096547:38 'findBorder:4681141:38 'sortAttrs:32366795:37 'sortCases:733834:37 'findBorder:7295337:37 'sortAttrs:32331591:36 'sortCases:1466681:36 'findBorder:4816430:36 'sortAttrs:28332925:35 'sortCases:1028645:35 'findBorder:4574347:35 'sortAttrs:27622243:34 'sortCases:1027301:34 'findBorder:4602337:34 'sortAttrs:31845378:33 'sortCases:905850:33 'findBorder:6934261:33 'sortAttrs:30584571:32 'sortCases:902697:32 'findBorder:4182805:32 'sortAttrs:25251683:31 'sortCases:936024:31 'findBorder:3312495:31 'sortAttrs:24353870:30 'sortCases:799952:30 'findBorder:3175254:30 'sortAttrs:23871836:29 'sortCases:844240:29 'findBorder:3229498:29 'sortAttrs:27107992:28 'sortCases:808583:28 'findBorder:2757575:28 'sortAttrs:20917899:27 'sortCases:734344:27 'findBorder:2463418:27 'sortAttrs:20287728:26 'sortCases:769768:26 'findBorder:2498298:26 'sortAttrs:22641440:25 'sortCases:817802:25 'findBorder:2502969:25 'sortAttrs:20211204:24 'sortCases:587077:24 'findBorder:2383371:24 'sortAttrs:19577001:23 'sortCases:633700:23 'findBorder:3093489:23 'sortAttrs:21875771:22 'sortCases:461717:22 'findBorder:2658229:22 'sortAttrs:18679680:21 'sortCases:433292:21 'findBorder:2644767:21 'sortAttrs:18007124:20 'sortCases:497593:20 'findBorder:2528455:20 'sortAttrs:20702841:19 'sortCases:517938:19 'findBorder:2640762:19 'sortAttrs:18701904:18 'sortCases:491750:18 'findBorder:4162080:18 'sortAttrs:18880481:17 'sortCases:461959:17 'findBorder:5014389:17 'sortAttrs:16779861:16 'sortCases:425640:16 'findBorder:2714982:16 'sortAttrs:18559502:15 'sortCases:387876:15 'findBorder:2412201:15 'sortAttrs:25641244:14 'sortCases:517044:14 'findBorder:5374704:14 'sortAttrs:35864212:13 'sortCases:307386:13 'findBorder:2517284:13 'sortAttrs:15809453:12 'sortCases:301027:12 'findBorder:2564755:12 'sortAttrs:14656166:11 'sortCases:345561:11 'findBorder:2584093:11 'sortAttrs:17174126:10 'sortCases:360333:10 'findBorder:3244117:10 'sortAttrs:14318842:9 'sortCases:386185:9 'findBorder:2768379:9 'sortAttrs:11938484:8 'sortCases:342349:8 'findBorder:2700179:8 'sortAttrs:11316054:7 'sortCases:330351:7 'findBorder:2424785:7 'sortAttrs:11985058:6 'sortCases:329667:6 'findBorder:2318882:6 'sortAttrs:9957150:5 'sortCases:360240:5 'findBorder:2313699:5 'sortAttrs:8623152:4 'sortCases:372865:4 'findBorder:2542055:4 'sortAttrs:7156700:3 'sortCases:345359:3 'findBorder:1955607:3 'sortAttrs:5951176:2 'sortCases:366802:2 'findBorder:2024329:2 'sortAttrs:3519373:1 'sortCases:367521:1 'findBorder:1339141:1 'sortAttrs:2481743:0 'sortCases:592515:0 'findBorder:634402:0

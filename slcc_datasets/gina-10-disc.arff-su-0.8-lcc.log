@@ -1,0 +1,31 @@
+# Parameters
+## Input file = gina-10-disc.arff
+## Output file = out/gina-10-disc.arff-su-0.8-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.8
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 804,212,738 nsec
+## Sorting features = 12,975,256 nsec
+## Sorting instances = 25,965,373 nsec
+## Selecting features = 316,108,765 nsec
+
+# 102features selected.
+# Selected features
+'attr163 'attr334 'attr925 'attr821 'attr751 'attr897 'attr915 'attr222 'attr840 'attr621 'attr135 'attr947 'attr296 'attr319 'attr146 'attr811 'attr179 'attr336 'attr545 'attr176 'attr308 'attr317 'attr818 'attr356 'attr36 'attr583 'attr697 'attr798 'attr888 'attr50 'attr187 'attr97 'attr322 'attr457 'attr123 'attr618 'attr899 'attr209 'attr752 'attr688 'attr137 'attr28 'attr662 'attr490 'attr588 'attr282 'attr909 'attr661 'attr808 'attr515 'attr216 'attr172 'attr554 'attr709 'attr219 'attr42 'attr541 'attr773 'attr198 'attr910 'attr634 'attr930 'attr235 'attr787 'attr535 'attr664 'attr789 'attr104 'attr34 'attr203 'attr949 'attr883 'attr299 'attr131 'attr576 'attr351 'attr499 'attr825 'attr846 'attr392 'attr543 'attr451 'attr729 'attr136 'attr631 'attr426 'attr12 'attr952 'attr520 'attr314 'attr836 'attr195 'attr677 'attr893 'attr962 'attr642 'attr959 'attr875 'attr35 'attr800 'attr746 'attr696
+
+# Statistics
+## Number of instances = 3153
+## Number of features = 971
+## H(C) = 0.9998
+## H(Entire) = 11.6225
+## H(Entire, C) = 11.6225
+## I(Entire; C) = 0.9998
+## H(Selected) = 9.5118
+## H(Selected, C) = 9.7433
+## I(Selected; C) = 0.7682
+## H(Selected | C) = 8.7436
+## mu_H = 0.1462
+## mu_G = 0.2491

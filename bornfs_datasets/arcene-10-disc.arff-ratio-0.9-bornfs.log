@@ -1,0 +1,37 @@
+# Parameters
+## Input file = arcene-10-disc.arff
+## Output file = out/arcene-10-disc.arff-ratio-0.9-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.9
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 569,968,140 nsec
+## Sorting features = 1,672,574,264 nsec
+## Sorting instances = 7,853,256 nsec
+## Selecting features = 30,188,658 nsec
+
+# 17features selected.
+# Selected features
+'attr7071 'attr6869 'attr5784 'attr7506 'attr990 'attr3338 'attr77 'attr6772 'attr6691 'attr3276 'attr1985 'attr1867 'attr7410 'attr1600 'attr6285 'attr3762 'attr4685
+
+# Statistics
+## Number of instances = 100
+## Number of features = 10001
+## H(C) = 0.9896
+## H(Entire) = 6.6439
+## H(Entire, C) = 6.6439
+## I(Entire; C) = 0.9896
+## H(Selected) = 5.2722
+## H(Selected, C) = 5.3703
+## I(Selected; C) = 0.8916
+## H(Selected | C) = 4.3807
+## mu_H = 0.2848
+## mu_G = 0.3903
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:768684623:9999 'sortCases:2255001:9999 'findBorder:7394511:9999 'sortAttrs:42724018:223 'sortCases:550879:223 'findBorder:2827786:223 'sortAttrs:61153484:215 'sortCases:625513:215 'findBorder:1963712:215 'sortAttrs:41663332:205 'sortCases:405843:205 'findBorder:1639971:205 'sortAttrs:54491498:202 'sortCases:365740:202 'findBorder:1629431:202 'sortAttrs:57387087:200 'sortCases:384325:200 'findBorder:1157953:200 'sortAttrs:66477673:194 'sortCases:360460:194 'findBorder:1263668:194 'sortAttrs:61739753:193 'sortCases:330375:193 'findBorder:1139452:193 'sortAttrs:64470494:191 'sortCases:374373:191 'findBorder:1351086:191 'sortAttrs:69511862:186 'sortCases:280799:186 'findBorder:1394541:186 'sortAttrs:73214720:185 'sortCases:294962:185 'findBorder:1594121:185 'sortAttrs:75582565:166 'sortCases:281126:166 'findBorder:1546508:166 'sortAttrs:68754216:159 'sortCases:272983:159 'findBorder:1924720:159 'sortAttrs:61408980:157 'sortCases:239146:157 'findBorder:1047849:157 'sortAttrs:53513771:153 'sortCases:270858:153 'findBorder:1096302:153 'sortAttrs:51150408:152 'sortCases:260033:152 'findBorder:1079365:152 'sortAttrs:645780:0 'sortCases:300840:0 'findBorder:137682:0

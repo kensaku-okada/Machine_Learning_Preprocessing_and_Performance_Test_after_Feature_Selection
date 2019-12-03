@@ -1,0 +1,31 @@
+# Parameters
+## Input file = gisette-10-disc.arff
+## Output file = out/gisette-10-disc.arff-su-1.0-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 1.0
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 2,904,167,068 nsec
+## Sorting features = 24,651,461 nsec
+## Sorting instances = 46,848,047 nsec
+## Selecting features = 1,254,245,195 nsec
+
+# 354features selected.
+# Selected features
+'attr2766 'attr4103 'attr2255 'attr223 'attr3612 'attr4505 'attr1024 'attr4077 'attr4658 'attr1123 'attr4455 'attr1140 'attr1330 'attr2076 'attr3662 'attr4303 'attr4513 'attr1603 'attr4229 'attr2654 'attr3113 'attr2506 'attr1383 'attr2998 'attr4715 'attr2623 'attr4775 'attr927 'attr3778 'attr1797 'attr103 'attr3297 'attr3581 'attr2271 'attr2302 'attr3094 'attr1527 'attr3381 'attr158 'attr2931 'attr4477 'attr3483 'attr3673 'attr496 'attr2999 'attr1856 'attr1150 'attr4060 'attr3100 'attr4331 'attr1765 'attr2627 'attr4068 'attr4813 'attr3398 'attr4698 'attr3175 'attr676 'attr2364 'attr3875 'attr3861 'attr2771 'attr4886 'attr4072 'attr4043 'attr1810 'attr4019 'attr2694 'attr3394 'attr4530 'attr3547 'attr778 'attr3667 'attr3596 'attr4566 'attr4096 'attr1101 'attr2150 'attr37 'attr2441 'attr3742 'attr4033 'attr211 'attr3591 'attr708 'attr4911 'attr4807 'attr8 'attr2004 'attr3892 'attr1653 'attr4786 'attr1867 'attr3307 'attr133 'attr431 'attr2819 'attr3754 'attr423 'attr2344 'attr406 'attr1848 'attr3874 'attr2973 'attr2196 'attr2384 'attr1975 'attr2210 'attr1892 'attr4113 'attr4264 'attr1216 'attr2777 'attr4157 'attr4861 'attr2821 'attr3909 'attr2547 'attr1141 'attr1933 'attr3704 'attr1659 'attr2170 'attr4500 'attr3306 'attr1846 'attr2058 'attr1988 'attr1885 'attr124 'attr4645 'attr1176 'attr2799 'attr221 'attr2746 'attr2113 'attr1852 'attr943 'attr4032 'attr4894 'attr4210 'attr3075 'attr2874 'attr4432 'attr1214 'attr2277 'attr341 'attr311 'attr280 'attr2119 'attr4797 'attr204 'attr3383 'attr2181 'attr917 'attr4629 'attr749 'attr1202 'attr3041 'attr3116 'attr47 'attr3069 'attr2884 'attr2223 'attr73 'attr3771 'attr346 'attr3121 'attr4841 'attr3866 'attr769 'attr3393 'attr1819 'attr3952 'attr2229 'attr1477 'attr4782 'attr2870 'attr1083 'attr2609 'attr1735 'attr761 'attr1363 'attr469 'attr2731 'attr1280 'attr1715 'attr1604 'attr750 'attr1199 'attr2526 'attr3329 'attr843 'attr2563 'attr1581 'attr4361 'attr4370 'attr799 'attr4460 'attr1403 'attr2349 'attr228 'attr4955 'attr1198 'attr1820 'attr999 'attr3008 'attr1871 'attr1370 'attr4751 'attr2655 'attr3956 'attr3914 'attr4400 'attr3471 'attr4393 'attr3321 'attr3288 'attr4067 'attr619 'attr2946 'attr3039 'attr3314 'attr430 'attr4316 'attr1579 'attr990 'attr3264 'attr2047 'attr1307 'attr1019 'attr4542 'attr1817 'attr3677 'attr3526 'attr2618 'attr3332 'attr4904 'attr2457 'attr3124 'attr4222 'attr3104 'attr1341 'attr4614 'attr1190 'attr410 'attr2219 'attr4006 'attr397 'attr147 'attr1672 'attr3538 'attr3040 'attr521 'attr1947 'attr3674 'attr1338 'attr3126 'attr4360 'attr3384 'attr11 'attr2530 'attr4679 'attr2864 'attr1919 'attr4592 'attr3237 'attr3473 'attr4467 'attr1106 'attr3198 'attr2407 'attr891 'attr1387 'attr2288 'attr2900 'attr4440 'attr1562 'attr953 'attr3525 'attr1565 'attr4973 'attr237 'attr4174 'attr60 'attr1637 'attr3856 'attr411 'attr4565 'attr4423 'attr1655 'attr453 'attr1982 'attr2914 'attr2893 'attr2242 'attr4375 'attr3532 'attr4091 'attr250 'attr594 'attr2822 'attr1 'attr1410 'attr584 'attr801 'attr4660 'attr2846 'attr929 'attr2787 'attr1041 'attr1744 'attr3482 'attr2291 'attr4688 'attr1166 'attr4345 'attr321 'attr2607 'attr4721 'attr3234 'attr1626 'attr4951 'attr2300 'attr2498 'attr944 'attr789 'attr2254 'attr2928 'attr2289 'attr3386 'attr777 'attr4567 'attr1165 'attr4646 'attr3243 'attr3070 'attr2109 'attr91 'attr3099 'attr1578 'attr707 'attr3043 'attr3613 'attr491 'attr3577 'attr3598 'attr1075 'attr1733 'attr207 'attr2690 'attr4740 'attr3045 'attr1691
+
+# Statistics
+## Number of instances = 6000
+## Number of features = 5001
+## H(C) = 1.0000
+## H(Entire) = 12.5507
+## H(Entire, C) = 12.5507
+## I(Entire; C) = 1.0000
+## H(Selected) = 12.2794
+## H(Selected, C) = 12.2794
+## I(Selected; C) = 1.0000
+## H(Selected | C) = 11.2794
+## mu_H = 0.1506
+## mu_G = 0.2854

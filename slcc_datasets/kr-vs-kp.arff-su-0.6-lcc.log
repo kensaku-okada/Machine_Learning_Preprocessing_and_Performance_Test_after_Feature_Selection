@@ -1,0 +1,31 @@
+# Parameters
+## Input file = kr-vs-kp.arff
+## Output file = out/kr-vs-kp.arff-su-0.6-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 254,296,955 nsec
+## Sorting features = 7,814,135 nsec
+## Sorting instances = 26,658,823 nsec
+## Selecting features = 43,824,482 nsec
+
+# 4features selected.
+# Selected features
+'attribute21 'attribute32 'attribute16 'attribute10
+
+# Statistics
+## Number of instances = 3196
+## Number of features = 37
+## H(C) = 0.9986
+## H(Entire) = 11.6421
+## H(Entire, C) = 11.6421
+## I(Entire; C) = 0.9986
+## H(Selected) = 2.1407
+## H(Selected, C) = 2.6412
+## I(Selected; C) = 0.4981
+## H(Selected | C) = 1.6426
+## mu_H = 0.3173
+## mu_G = 0.3407

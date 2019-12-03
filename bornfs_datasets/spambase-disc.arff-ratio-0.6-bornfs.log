@@ -1,0 +1,37 @@
+# Parameters
+## Input file = spambase-disc.arff
+## Output file = out/spambase-disc.arff-ratio-0.6-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 274,383,533 nsec
+## Sorting features = 85,967,889 nsec
+## Sorting instances = 17,706,572 nsec
+## Selecting features = 29,587,390 nsec
+
+# 6features selected.
+# Selected features
+'word_freq_george 'word_freq_hpl 'char_freq_$ 'word_freq_money 'word_freq_free 'word_freq_remove
+
+# Statistics
+## Number of instances = 4601
+## Number of features = 58
+## H(C) = 0.9674
+## H(Entire) = 11.4334
+## H(Entire, C) = 11.4434
+## I(Entire; C) = 0.9574
+## H(Selected) = 4.1764
+## H(Selected, C) = 4.5622
+## I(Selected; C) = 0.5815
+## H(Selected | C) = 3.5949
+## mu_H = 0.2266
+## mu_G = 0.2908
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:55944967:56 'sortCases:13421704:56 'findBorder:16942233:56 'sortAttrs:9197455:8 'sortCases:697627:8 'findBorder:5870623:8 'sortAttrs:8521935:7 'sortCases:747870:7 'findBorder:4420245:7 'sortAttrs:5963153:3 'sortCases:917548:3 'findBorder:1294204:3 'sortAttrs:3641807:1 'sortCases:970943:1 'findBorder:743116:1 'sortAttrs:2698572:0 'sortCases:950880:0 'findBorder:316969:0

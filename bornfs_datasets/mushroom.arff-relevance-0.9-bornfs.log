@@ -1,0 +1,37 @@
+# Parameters
+## Input file = mushroom.arff
+## Output file = out/mushroom.arff-relevance-0.9-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.9
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 358,306,963 nsec
+## Sorting features = 175,054,826 nsec
+## Sorting instances = 36,389,049 nsec
+## Selecting features = 63,770,422 nsec
+
+# 5features selected.
+# Selected features
+'stalk-color-below-ring 'stalk-color-above-ring 'stalk-root 'gill-spacing 'cap-surface
+
+# Statistics
+## Number of instances = 8124
+## Number of features = 23
+## H(C) = 0.9991
+## H(Entire) = 12.9880
+## H(Entire, C) = 12.9880
+## I(Entire; C) = 0.9991
+## H(Selected) = 5.9435
+## H(Selected, C) = 5.9771
+## I(Selected; C) = 0.9655
+## H(Selected | C) = 4.9781
+## mu_H = 0.2781
+## mu_G = 0.3962
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:71174195:21 'sortCases:28494267:21 'findBorder:28568315:21 'sortAttrs:49478974:13 'sortCases:2300911:13 'findBorder:20371642:13 'sortAttrs:18259862:12 'sortCases:1839142:12 'findBorder:8278134:12 'sortAttrs:16192992:9 'sortCases:1167379:9 'findBorder:3102065:9 'sortAttrs:13530784:5 'sortCases:1311999:5 'findBorder:2987793:5 'sortAttrs:6418019:0 'sortCases:1275351:0 'findBorder:462473:0

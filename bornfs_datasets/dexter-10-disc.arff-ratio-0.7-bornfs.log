@@ -1,0 +1,37 @@
+# Parameters
+## Input file = dexter-10-disc.arff
+## Output file = out/dexter-10-disc.arff-ratio-0.7-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.7
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 523,347,807 nsec
+## Sorting features = 50,469,953,636 nsec
+## Sorting instances = 10,180,536 nsec
+## Selecting features = 46,067,066 nsec
+
+# 15features selected.
+# Selected features
+'attr17471 'attr8945 'attr4637 'attr18894 'attr13685 'attr2062 'attr1244 'attr17970 'attr15798 'attr10779 'attr19685 'attr14239 'attr10244 'attr4308 'attr626
+
+# Statistics
+## Number of instances = 300
+## Number of features = 20001
+## H(C) = 1.0000
+## H(Entire) = 8.2288
+## H(Entire, C) = 8.2288
+## I(Entire; C) = 1.0000
+## H(Selected) = 6.0094
+## H(Selected, C) = 6.3076
+## I(Selected; C) = 0.7017
+## H(Selected | C) = 5.3076
+## mu_H = 0.2002
+## mu_G = 0.2863
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:1255249198:19999 'sortCases:3137291:19999 'findBorder:8189062:19999 'sortAttrs:1445534844:12267 'sortCases:999320:12267 'findBorder:3409626:12267 'sortAttrs:2013326392:12266 'sortCases:694024:12266 'findBorder:3621977:12266 'sortAttrs:2997631713:12265 'sortCases:876597:12265 'findBorder:3795787:12265 'sortAttrs:3143580781:12264 'sortCases:657216:12264 'findBorder:4056959:12264 'sortAttrs:3821343232:12263 'sortCases:439067:12263 'findBorder:2590564:12263 'sortAttrs:4143482531:12262 'sortCases:527696:12262 'findBorder:2291751:12262 'sortAttrs:4061261868:12261 'sortCases:347458:12261 'findBorder:2623233:12261 'sortAttrs:4501715424:12260 'sortCases:443529:12260 'findBorder:3174550:12260 'sortAttrs:4677282568:12258 'sortCases:340822:12258 'findBorder:2437917:12258 'sortAttrs:4555373826:12256 'sortCases:336110:12256 'findBorder:2573878:12256 'sortAttrs:4680310783:12252 'sortCases:216783:12252 'findBorder:1929397:12252 'sortAttrs:4585685200:12251 'sortCases:647494:12251 'findBorder:3416026:12251 'sortAttrs:4587430410:12250 'sortCases:212331:12250 'findBorder:1863379:12250 'sortAttrs:744866:0 'sortCases:304798:0 'findBorder:92960:0

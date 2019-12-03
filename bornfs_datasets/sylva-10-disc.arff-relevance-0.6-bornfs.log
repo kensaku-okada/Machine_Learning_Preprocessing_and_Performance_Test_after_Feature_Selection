@@ -1,0 +1,37 @@
+# Parameters
+## Input file = sylva-10-disc.arff
+## Output file = out/sylva-10-disc.arff-relevance-0.6-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 625,341,862 nsec
+## Sorting features = 405,438,271 nsec
+## Sorting instances = 54,550,566 nsec
+## Selecting features = 80,732,963 nsec
+
+# 4features selected.
+# Selected features
+'feature-90 'feature-14 'feature-212 'feature-144
+
+# Statistics
+## Number of instances = 13086
+## Number of features = 217
+## H(C) = 0.3334
+## H(Entire) = 13.6757
+## H(Entire, C) = 13.6757
+## I(Entire; C) = 0.3334
+## H(Selected) = 2.4938
+## H(Selected, C) = 2.6184
+## I(Selected; C) = 0.2088
+## H(Selected | C) = 2.2850
+## mu_H = 0.1477
+## mu_G = 0.2290
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:337493643:215 'sortCases:46978531:215 'findBorder:62519379:215 'sortAttrs:30110711:5 'sortCases:2747475:5 'findBorder:11373001:5 'sortAttrs:13566565:3 'sortCases:1530475:3 'findBorder:3954940:3 'sortAttrs:12334307:2 'sortCases:1464517:2 'findBorder:2099158:2 'sortAttrs:11933045:1 'sortCases:1829568:1 'findBorder:786485:1

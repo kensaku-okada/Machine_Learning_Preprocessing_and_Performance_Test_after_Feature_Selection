@@ -1,0 +1,37 @@
+# Parameters
+## Input file = dexter-10-disc.arff
+## Output file = out/dexter-10-disc.arff-ratio-0.6-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 521,857,291 nsec
+## Sorting features = 29,898,486,878 nsec
+## Sorting instances = 9,294,482 nsec
+## Selecting features = 38,636,736 nsec
+
+# 10features selected.
+# Selected features
+'attr17970 'attr1244 'attr13685 'attr2062 'attr15798 'attr17487 'attr14239 'attr4308 'attr626 'attr10244
+
+# Statistics
+## Number of instances = 300
+## Number of features = 20001
+## H(C) = 1.0000
+## H(Entire) = 8.2288
+## H(Entire, C) = 8.2288
+## I(Entire; C) = 1.0000
+## H(Selected) = 4.9539
+## H(Selected, C) = 5.3519
+## I(Selected; C) = 0.6020
+## H(Selected | C) = 4.3519
+## mu_H = 0.2022
+## mu_G = 0.2705
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:1330630822:19999 'sortCases:3961317:19999 'findBorder:9548317:19999 'sortAttrs:1597616931:12260 'sortCases:1036355:12260 'findBorder:4136376:12260 'sortAttrs:3018684039:12259 'sortCases:754466:12259 'findBorder:4127312:12259 'sortAttrs:3121100124:12258 'sortCases:803259:12258 'findBorder:4348381:12258 'sortAttrs:3264555974:12257 'sortCases:605655:12257 'findBorder:4107865:12257 'sortAttrs:4076949098:12256 'sortCases:444136:12256 'findBorder:2832882:12256 'sortAttrs:4260807893:12253 'sortCases:542999:12253 'findBorder:2803106:12253 'sortAttrs:4507645521:12251 'sortCases:418925:12251 'findBorder:3271643:12251 'sortAttrs:4719630539:12250 'sortCases:394761:12250 'findBorder:3239477:12250 'sortAttrs:865937:0 'sortCases:332609:0 'findBorder:221377:0

@@ -23,6 +23,7 @@ class ConfigurationClass:
 		self._classifier_names = None
 		self._dataset_name = None
 		self._dataset_directory = None
+		self._file_paths = None
 
 	@property
 	def outputDatasetType(self):
@@ -79,3 +80,10 @@ class ConfigurationClass:
 	@dataset_directory.setter
 	def dataset_directory(self, dataset_directory):
 		self._dataset_directory = dataset_directory
+
+	@property
+	def file_paths(self):
+		return self._file_paths
+	@file_paths.setter
+	def file_paths(self, file_paths):
+		self._file_paths = file_paths

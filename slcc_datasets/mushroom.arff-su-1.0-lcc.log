@@ -1,0 +1,31 @@
+# Parameters
+## Input file = mushroom.arff
+## Output file = out/mushroom.arff-su-1.0-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 1.0
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 491,421,083 nsec
+## Sorting features = 7,579,968 nsec
+## Sorting instances = 95,235,672 nsec
+## Selecting features = 57,103,655 nsec
+
+# 5features selected.
+# Selected features
+'odor 'gill-size 'stalk-surface-above-ring 'bruises? 'spore-print-color
+
+# Statistics
+## Number of instances = 8124
+## Number of features = 23
+## H(C) = 0.9991
+## H(Entire) = 12.9880
+## H(Entire, C) = 12.9880
+## I(Entire; C) = 0.9991
+## H(Selected) = 4.6179
+## H(Selected, C) = 4.6179
+## I(Selected; C) = 0.9991
+## H(Selected | C) = 3.6188
+## mu_H = 0.3557
+## mu_G = 0.4651

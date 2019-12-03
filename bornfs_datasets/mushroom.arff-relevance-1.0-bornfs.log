@@ -1,0 +1,37 @@
+# Parameters
+## Input file = mushroom.arff
+## Output file = out/mushroom.arff-relevance-1.0-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 1.0
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 407,528,314 nsec
+## Sorting features = 454,683,930 nsec
+## Sorting instances = 55,754,333 nsec
+## Selecting features = 127,566,888 nsec
+
+# 16features selected.
+# Selected features
+'habitat 'population 'spore-print-color 'ring-type 'ring-number 'veil-color 'veil-type 'stalk-color-below-ring 'stalk-color-above-ring 'stalk-surface-below-ring 'stalk-surface-above-ring 'stalk-root 'stalk-shape 'gill-color 'gill-size 'cap-surface
+
+# Statistics
+## Number of instances = 8124
+## Number of features = 23
+## H(C) = 0.9991
+## H(Entire) = 12.9880
+## H(Entire, C) = 12.9880
+## I(Entire; C) = 0.9991
+## H(Selected) = 9.7501
+## H(Selected, C) = 9.7501
+## I(Selected; C) = 0.9991
+## H(Selected | C) = 8.7510
+## mu_H = 0.1859
+## mu_G = 0.3201
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:76014657:21 'sortCases:30085779:21 'findBorder:38484295:21 'sortAttrs:46415981:20 'sortCases:3382759:20 'findBorder:13518028:20 'sortAttrs:37007140:19 'sortCases:2657984:19 'findBorder:12289622:19 'sortAttrs:23513935:18 'sortCases:2223225:18 'findBorder:5845694:18 'sortAttrs:24735058:17 'sortCases:2333510:17 'findBorder:9923475:17 'sortAttrs:24724922:16 'sortCases:2157880:16 'findBorder:7239203:16 'sortAttrs:19137531:15 'sortCases:1723232:15 'findBorder:4383844:15 'sortAttrs:31032475:14 'sortCases:1255262:14 'findBorder:2701149:14 'sortAttrs:27229596:13 'sortCases:1739196:13 'findBorder:3585672:13 'sortAttrs:25582343:12 'sortCases:1526645:12 'findBorder:4570787:12 'sortAttrs:18645380:11 'sortCases:1125364:11 'findBorder:2931851:11 'sortAttrs:17990117:10 'sortCases:987784:10 'findBorder:3583268:10 'sortAttrs:19872121:9 'sortCases:911661:9 'findBorder:3773338:9 'sortAttrs:16014835:8 'sortCases:793254:8 'findBorder:3931210:8 'sortAttrs:18320803:7 'sortCases:859474:7 'findBorder:3832314:7 'sortAttrs:21927114:6 'sortCases:793621:6 'findBorder:5739266:6 'sortAttrs:6519922:0 'sortCases:1197703:0 'findBorder:1233872:0

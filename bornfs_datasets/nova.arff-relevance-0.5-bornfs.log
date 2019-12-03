@@ -1,0 +1,37 @@
+# Parameters
+## Input file = nova.arff
+## Output file = out/nova.arff-relevance-0.5-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 955,702,705 nsec
+## Sorting features = 2,879,588,088 nsec
+## Sorting instances = 25,283,608 nsec
+## Selecting features = 54,513,851 nsec
+
+# 15features selected.
+# Selected features
+'attr12433 'attr3690 'attr8802 'attr2572 'attr12056 'attr3207 'attr6047 'attr16505 'attr9022 'attr10398 'attr14079 'attr11206 'attr7804 'attr11497 'attr4137
+
+# Statistics
+## Number of instances = 1754
+## Number of features = 16970
+## H(C) = 0.8615
+## H(Entire) = 10.7753
+## H(Entire, C) = 10.7753
+## I(Entire; C) = 0.8615
+## H(Selected) = 2.8982
+## H(Selected, C) = 3.3254
+## I(Selected; C) = 0.4343
+## H(Selected | C) = 2.4639
+## mu_H = 0.2310
+## mu_G = 0.2749
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:2801940717:16968 'sortCases:7027902:16968 'findBorder:22811029:16968 'sortAttrs:5503357:13 'sortCases:1228379:13 'findBorder:2192635:13 'sortAttrs:4559418:12 'sortCases:1413292:12 'findBorder:2711842:12 'sortAttrs:4722968:11 'sortCases:1180091:11 'findBorder:2460394:11 'sortAttrs:5389222:10 'sortCases:1321509:10 'findBorder:2773514:10 'sortAttrs:6354841:9 'sortCases:1395870:9 'findBorder:3174148:9 'sortAttrs:6427239:8 'sortCases:1232084:8 'findBorder:2820266:8 'sortAttrs:7470589:7 'sortCases:1285619:7 'findBorder:2449827:7 'sortAttrs:8192503:6 'sortCases:1392579:6 'findBorder:2664707:6 'sortAttrs:8240458:5 'sortCases:1582235:5 'findBorder:2408499:5 'sortAttrs:5369147:4 'sortCases:1244974:4 'findBorder:2420131:4 'sortAttrs:5342272:3 'sortCases:1214962:3 'findBorder:1809747:3 'sortAttrs:4848710:2 'sortCases:1349455:2 'findBorder:1971683:2 'sortAttrs:2993071:1 'sortCases:1168250:1 'findBorder:1193228:1 'sortAttrs:2233576:0 'sortCases:1246407:0 'findBorder:652201:0

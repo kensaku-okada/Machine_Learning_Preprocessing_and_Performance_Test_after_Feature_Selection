@@ -1,0 +1,37 @@
+# Parameters
+## Input file = ada-10-disc.arff
+## Output file = out/ada-10-disc.arff-relevance-0.7-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.7
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 267,727,420 nsec
+## Sorting features = 896,230,802 nsec
+## Sorting instances = 56,861,795 nsec
+## Selecting features = 190,252,231 nsec
+
+# 46features selected.
+# Selected features
+'attr47 'attr46 'attr45 'attr44 'attr43 'attr42 'attr41 'attr40 'attr39 'attr38 'attr37 'attr36 'attr35 'attr34 'attr33 'attr32 'attr31 'attr30 'attr29 'attr28 'attr27 'attr26 'attr25 'attr24 'attr23 'attr22 'attr21 'attr20 'attr19 'attr18 'attr17 'attr16 'attr15 'attr14 'attr13 'attr12 'attr11 'attr10 'attr9 'attr8 'attr7 'attr6 'attr5 'attr4 'attr3 'attr2
+
+# Statistics
+## Number of instances = 4147
+## Number of features = 49
+## H(C) = 0.8083
+## H(Entire) = 11.6776
+## H(Entire, C) = 11.7524
+## I(Entire; C) = 0.7335
+## H(Selected) = 10.4395
+## H(Selected, C) = 10.6819
+## I(Selected; C) = 0.5659
+## H(Selected | C) = 9.8736
+## mu_H = 0.1013
+## mu_G = 0.2045
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:65452877:47 'sortCases:17656811:47 'findBorder:28661192:47 'sortAttrs:38571919:46 'sortCases:1409182:46 'findBorder:11696864:46 'sortAttrs:23207279:45 'sortCases:977436:45 'findBorder:7050668:45 'sortAttrs:29043878:44 'sortCases:2724176:44 'findBorder:10784802:44 'sortAttrs:40549985:43 'sortCases:1976094:43 'findBorder:7476876:43 'sortAttrs:32311251:42 'sortCases:1696414:42 'findBorder:7983419:42 'sortAttrs:27159104:41 'sortCases:1605409:41 'findBorder:7061056:41 'sortAttrs:22811450:40 'sortCases:1412889:40 'findBorder:10017224:40 'sortAttrs:36102445:39 'sortCases:1583184:39 'findBorder:6415035:39 'sortAttrs:26378456:38 'sortCases:1962876:38 'findBorder:5294105:38 'sortAttrs:20261804:37 'sortCases:1220774:37 'findBorder:5338901:37 'sortAttrs:19028005:36 'sortCases:1746361:36 'findBorder:5405780:36 'sortAttrs:20340549:35 'sortCases:1331650:35 'findBorder:4718604:35 'sortAttrs:20393086:34 'sortCases:1119364:34 'findBorder:5477354:34 'sortAttrs:21207096:33 'sortCases:1083969:33 'findBorder:4102621:33 'sortAttrs:15502833:32 'sortCases:827519:32 'findBorder:3329002:32 'sortAttrs:15263731:31 'sortCases:978283:31 'findBorder:3097047:31 'sortAttrs:17440296:30 'sortCases:1032615:30 'findBorder:2859484:30 'sortAttrs:20903072:29 'sortCases:903947:29 'findBorder:5079285:29 'sortAttrs:23817742:28 'sortCases:742812:28 'findBorder:2890994:28 'sortAttrs:20929344:27 'sortCases:633094:27 'findBorder:2492637:27 'sortAttrs:19532024:26 'sortCases:669644:26 'findBorder:2478165:26 'sortAttrs:23907858:25 'sortCases:682826:25 'findBorder:3252331:25 'sortAttrs:23378618:24 'sortCases:592671:24 'findBorder:2971757:24 'sortAttrs:23061981:23 'sortCases:613392:23 'findBorder:2635817:23 'sortAttrs:23683041:22 'sortCases:442897:22 'findBorder:3235936:22 'sortAttrs:13678896:21 'sortCases:673045:21 'findBorder:1822347:21 'sortAttrs:19841238:20 'sortCases:527440:20 'findBorder:1704497:20 'sortAttrs:12056465:19 'sortCases:498508:19 'findBorder:1150549:19 'sortAttrs:13143274:18 'sortCases:488660:18 'findBorder:1168536:18 'sortAttrs:12213470:17 'sortCases:490655:17 'findBorder:1144725:17 'sortAttrs:10490405:16 'sortCases:533624:16 'findBorder:1147254:16 'sortAttrs:11862254:15 'sortCases:443953:15 'findBorder:980715:15 'sortAttrs:11561958:14 'sortCases:465874:14 'findBorder:983194:14 'sortAttrs:10162796:13 'sortCases:427400:13 'findBorder:1269704:13 'sortAttrs:10144735:12 'sortCases:470154:12 'findBorder:1396919:12 'sortAttrs:11563720:11 'sortCases:507813:11 'findBorder:1642966:11 'sortAttrs:13988056:10 'sortCases:339452:10 'findBorder:1536937:10 'sortAttrs:9902329:9 'sortCases:465237:9 'findBorder:1586204:9 'sortAttrs:12030092:8 'sortCases:377392:8 'findBorder:1432142:8 'sortAttrs:11843424:7 'sortCases:323050:7 'findBorder:2068682:7 'sortAttrs:12337142:6 'sortCases:395673:6 'findBorder:1956503:6 'sortAttrs:10133537:5 'sortCases:342004:5 'findBorder:1638954:5 'sortAttrs:5929387:4 'sortCases:321774:4 'findBorder:1450251:4 'sortAttrs:5078654:3 'sortCases:299877:3 'findBorder:986284:3 'sortAttrs:3777264:2 'sortCases:303931:2 'findBorder:1013601:2 'sortAttrs:4251982:1 'sortCases:539990:1 'findBorder:364311:1

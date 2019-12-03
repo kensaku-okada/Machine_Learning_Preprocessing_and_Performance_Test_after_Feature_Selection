@@ -1,0 +1,31 @@
+# Parameters
+## Input file = ada-10-disc.arff
+## Output file = out/ada-10-disc.arff-su-0.7-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.7
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 266,239,826 nsec
+## Sorting features = 7,727,714 nsec
+## Sorting instances = 35,428,989 nsec
+## Selecting features = 132,349,242 nsec
+
+# 30features selected.
+# Selected features
+'attr31 'attr0 'attr37 'attr36 'attr11 'attr1 'attr47 'attr25 'attr35 'attr28 'attr34 'attr17 'attr22 'attr10 'attr9 'attr33 'attr43 'attr16 'attr41 'attr27 'attr44 'attr6 'attr4 'attr23 'attr26 'attr8 'attr45 'attr14 'attr3 'attr39
+
+# Statistics
+## Number of instances = 4147
+## Number of features = 49
+## H(C) = 0.8083
+## H(Entire) = 11.7524
+## H(Entire, C) = 11.7524
+## I(Entire; C) = 0.8083
+## H(Selected) = 10.6610
+## H(Selected, C) = 10.8547
+## I(Selected; C) = 0.6147
+## H(Selected | C) = 10.0464
+## mu_H = 0.1072
+## mu_G = 0.2094

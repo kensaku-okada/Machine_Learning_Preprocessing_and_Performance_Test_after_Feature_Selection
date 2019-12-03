@@ -1,0 +1,37 @@
+# Parameters
+## Input file = ada-10-disc.arff
+## Output file = out/ada-10-disc.arff-ratio-0.5-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 277,930,004 nsec
+## Sorting features = 327,918,880 nsec
+## Sorting instances = 33,589,560 nsec
+## Selecting features = 75,871,299 nsec
+
+# 13features selected.
+# Selected features
+'attr7 'attr37 'attr23 'attr22 'attr47 'attr16 'attr1 'attr29 'attr39 'attr8 'attr24 'attr43 'attr31
+
+# Statistics
+## Number of instances = 4147
+## Number of features = 49
+## H(C) = 0.8083
+## H(Entire) = 11.6776
+## H(Entire, C) = 11.7524
+## I(Entire; C) = 0.7335
+## H(Selected) = 7.9508
+## H(Selected, C) = 8.3672
+## I(Selected; C) = 0.3919
+## H(Selected | C) = 7.5589
+## mu_H = 0.0903
+## mu_G = 0.1623
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:46276963:47 'sortCases:17692132:47 'findBorder:25254336:47 'sortAttrs:33509386:31 'sortCases:1547730:31 'findBorder:7043890:31 'sortAttrs:22446105:30 'sortCases:1385412:30 'findBorder:6007910:30 'sortAttrs:24513167:29 'sortCases:1686208:29 'findBorder:5002823:29 'sortAttrs:23116172:25 'sortCases:1661247:25 'findBorder:6312512:25 'sortAttrs:29465933:23 'sortCases:1649341:23 'findBorder:4162094:23 'sortAttrs:30400843:21 'sortCases:1737029:21 'findBorder:4481217:21 'sortAttrs:26573350:20 'sortCases:1458347:20 'findBorder:3754746:20 'sortAttrs:22894478:19 'sortCases:1168389:19 'findBorder:2981710:19 'sortAttrs:30228024:18 'sortCases:1035504:18 'findBorder:5311236:18 'sortAttrs:19500825:14 'sortCases:1086680:14 'findBorder:2245341:14 'sortAttrs:15479360:8 'sortCases:759030:8 'findBorder:2545594:8 'sortAttrs:3514274:0 'sortCases:722511:0 'findBorder:767890:0

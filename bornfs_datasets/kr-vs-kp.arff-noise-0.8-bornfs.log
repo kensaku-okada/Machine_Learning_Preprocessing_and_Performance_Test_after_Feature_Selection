@@ -1,0 +1,37 @@
+# Parameters
+## Input file = kr-vs-kp.arff
+## Output file = out/kr-vs-kp.arff-noise-0.8-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = negative noise
+## Threshold = 0.8
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 262,595,582 nsec
+## Sorting features = 270,626,923 nsec
+## Sorting instances = 27,130,487 nsec
+## Selecting features = 58,614,489 nsec
+
+# 18features selected.
+# Selected features
+'attribute33 'attribute10 'attribute31 'attribute1 'attribute4 'attribute20 'attribute2 'attribute23 'attribute21 'attribute30 'attribute27 'attribute16 'attribute32 'attribute17 'attribute19 'attribute25 'attribute14 'attribute28
+
+# Statistics
+## Number of instances = 3196
+## Number of features = 37
+## H(C) = 0.9986
+## H(Entire) = 11.6421
+## H(Entire, C) = 11.6421
+## I(Entire; C) = 0.9986
+## H(Selected) = 5.8453
+## H(Selected, C) = 6.0443
+## I(Selected; C) = 0.7996
+## H(Selected | C) = 5.0457
+## mu_H = 0.2337
+## mu_G = 0.3310
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:38398349:35 'sortCases:14789323:35 'findBorder:15790170:35 'sortAttrs:16484956:23 'sortCases:1316031:23 'findBorder:11192295:23 'sortAttrs:24932592:20 'sortCases:768509:20 'findBorder:4933550:20 'sortAttrs:15117625:17 'sortCases:766553:17 'findBorder:2609032:17 'sortAttrs:18122966:16 'sortCases:793888:16 'findBorder:2291599:16 'sortAttrs:20625628:14 'sortCases:941659:14 'findBorder:2436923:14 'sortAttrs:24590398:13 'sortCases:891655:13 'findBorder:2298651:13 'sortAttrs:22556140:12 'sortCases:984033:12 'findBorder:2399349:12 'sortAttrs:17269255:11 'sortCases:1050236:11 'findBorder:2178220:11 'sortAttrs:19047603:10 'sortCases:641737:10 'findBorder:1922985:10 'sortAttrs:12762328:9 'sortCases:551560:9 'findBorder:2076855:9 'sortAttrs:9521916:8 'sortCases:497977:8 'findBorder:1754442:8 'sortAttrs:8073814:6 'sortCases:521299:6 'findBorder:1530588:6 'sortAttrs:7610717:5 'sortCases:472524:5 'findBorder:1450849:5 'sortAttrs:6214284:4 'sortCases:487835:4 'findBorder:1664915:4 'sortAttrs:5107605:3 'sortCases:473309:3 'findBorder:1002331:3 'sortAttrs:2582081:1 'sortCases:483059:1 'findBorder:694895:1 'sortAttrs:1608666:0 'sortCases:699300:0 'findBorder:386840:0

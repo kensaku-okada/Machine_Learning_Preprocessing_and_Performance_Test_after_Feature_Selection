@@ -1,0 +1,37 @@
+# Parameters
+## Input file = kr-vs-kp.arff
+## Output file = out/kr-vs-kp.arff-noise-0.6-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = negative noise
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 253,413,456 nsec
+## Sorting features = 256,855,838 nsec
+## Sorting instances = 27,001,745 nsec
+## Selecting features = 58,099,707 nsec
+
+# 17features selected.
+# Selected features
+'attribute10 'attribute31 'attribute1 'attribute4 'attribute12 'attribute20 'attribute21 'attribute2 'attribute23 'attribute27 'attribute30 'attribute3 'attribute16 'attribute32 'attribute17 'attribute25 'attribute28
+
+# Statistics
+## Number of instances = 3196
+## Number of features = 37
+## H(C) = 0.9986
+## H(Entire) = 11.6421
+## H(Entire, C) = 11.6421
+## I(Entire; C) = 0.9986
+## H(Selected) = 5.6411
+## H(Selected, C) = 6.0404
+## I(Selected; C) = 0.5993
+## H(Selected | C) = 5.0418
+## mu_H = 0.1805
+## mu_G = 0.2525
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:35625453:35 'sortCases:14502792:35 'findBorder:16799375:35 'sortAttrs:16035652:20 'sortCases:737628:20 'findBorder:8343662:20 'sortAttrs:18380659:17 'sortCases:715444:17 'findBorder:3520254:17 'sortAttrs:15529105:16 'sortCases:821365:16 'findBorder:2602239:16 'sortAttrs:14900199:15 'sortCases:919580:15 'findBorder:2220538:15 'sortAttrs:17365919:14 'sortCases:841990:14 'findBorder:2390607:14 'sortAttrs:16183252:13 'sortCases:926300:13 'findBorder:1814748:13 'sortAttrs:16372150:12 'sortCases:871218:12 'findBorder:2199068:12 'sortAttrs:17970134:11 'sortCases:834498:11 'findBorder:2126350:11 'sortAttrs:20302534:10 'sortCases:770697:10 'findBorder:1748519:10 'sortAttrs:12759476:9 'sortCases:698413:9 'findBorder:1781230:9 'sortAttrs:11672164:8 'sortCases:576506:8 'findBorder:2538599:8 'sortAttrs:10534000:7 'sortCases:789246:7 'findBorder:2043236:7 'sortAttrs:9942376:6 'sortCases:682399:6 'findBorder:1942232:6 'sortAttrs:9291617:5 'sortCases:808719:5 'findBorder:2449732:5 'sortAttrs:8853314:4 'sortCases:692137:4 'findBorder:2474702:4 'sortAttrs:5137834:2 'sortCases:812813:2 'findBorder:1104616:2

@@ -1,0 +1,37 @@
+# Parameters
+## Input file = gisette-10-disc.arff
+## Output file = out/gisette-10-disc.arff-relevance-0.5-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 4,475,200,578 nsec
+## Sorting features = 6,792,360,310 nsec
+## Sorting instances = 30,474,173 nsec
+## Selecting features = 83,994,815 nsec
+
+# 2features selected.
+# Selected features
+'attr3002 'attr3975
+
+# Statistics
+## Number of instances = 6000
+## Number of features = 5001
+## H(C) = 1.0000
+## H(Entire) = 12.5507
+## H(Entire, C) = 12.5507
+## I(Entire; C) = 1.0000
+## H(Selected) = 3.1706
+## H(Selected, C) = 3.6560
+## I(Selected; C) = 0.5146
+## H(Selected | C) = 2.6560
+## mu_H = 0.2468
+## mu_G = 0.2890
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:6779831628:4999 'sortCases:20943243:4999 'findBorder:75100106:4999 'sortAttrs:12528682:6 'sortCases:9530930:6 'findBorder:8894709:6

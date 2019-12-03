@@ -1,0 +1,31 @@
+# Parameters
+## Input file = spambase-disc.arff
+## Output file = out/spambase-disc.arff-su-0.9-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.9
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 295,787,316 nsec
+## Sorting features = 8,055,626 nsec
+## Sorting instances = 45,900,094 nsec
+## Selecting features = 128,007,365 nsec
+
+# 33features selected.
+# Selected features
+'word_freq_remove 'word_freq_money 'word_freq_3d 'word_freq_direct 'word_freq_000 'word_freq_font 'word_freq_cs 'word_freq_credit 'word_freq_free 'word_freq_meeting 'word_freq_415 'word_freq_addresses 'word_freq_lab 'word_freq_hpl 'word_freq_labs 'word_freq_85 'word_freq_receive 'word_freq_george 'word_freq_project 'char_freq_$ 'word_freq_650 'word_freq_internet 'word_freq_edu 'word_freq_pm 'word_freq_report 'word_freq_order 'word_freq_hp 'word_freq_data 'word_freq_address 'char_freq_[ 'word_freq_1999 'word_freq_business 'word_freq_people
+
+# Statistics
+## Number of instances = 4601
+## Number of features = 58
+## H(C) = 0.9674
+## H(Entire) = 11.4434
+## H(Entire, C) = 11.4434
+## I(Entire; C) = 0.9674
+## H(Selected) = 9.3089
+## H(Selected, C) = 9.4504
+## I(Selected; C) = 0.8259
+## H(Selected | C) = 8.4830
+## mu_H = 0.1607
+## mu_G = 0.2752

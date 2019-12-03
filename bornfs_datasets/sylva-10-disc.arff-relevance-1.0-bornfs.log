@@ -1,0 +1,37 @@
+# Parameters
+## Input file = sylva-10-disc.arff
+## Output file = out/sylva-10-disc.arff-relevance-1.0-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 1.0
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 672,769,706 nsec
+## Sorting features = 1,824,244,844 nsec
+## Sorting instances = 73,235,069 nsec
+## Selecting features = 241,075,238 nsec
+
+# 14features selected.
+# Selected features
+'feature-15 'feature-26 'feature-168 'feature-121 'feature-107 'feature-25 'feature-148 'feature-67 'feature-118 'feature-28 'feature-164 'feature-50 'feature-32 'feature-212
+
+# Statistics
+## Number of instances = 13086
+## Number of features = 217
+## H(C) = 0.3334
+## H(Entire) = 13.6757
+## H(Entire, C) = 13.6757
+## I(Entire; C) = 0.3334
+## H(Selected) = 13.6390
+## H(Selected, C) = 13.6390
+## I(Selected; C) = 0.3334
+## H(Selected | C) = 13.3056
+## mu_H = 0.0477
+## mu_G = 0.1564
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:362817201:215 'sortCases:51497804:215 'findBorder:94559875:215 'sortAttrs:260373601:103 'sortCases:2962571:103 'findBorder:20474610:103 'sortAttrs:194599687:60 'sortCases:2837230:60 'findBorder:18661782:60 'sortAttrs:87232383:31 'sortCases:2531732:31 'findBorder:13630862:31 'sortAttrs:82412309:30 'sortCases:2091480:30 'findBorder:10647065:30 'sortAttrs:60908752:29 'sortCases:1907136:29 'findBorder:7652610:29 'sortAttrs:79393079:28 'sortCases:1513229:28 'findBorder:11377634:28 'sortAttrs:55883047:25 'sortCases:1573067:25 'findBorder:7913486:25 'sortAttrs:79850693:23 'sortCases:1331556:23 'findBorder:8676668:23 'sortAttrs:82030508:21 'sortCases:1370102:21 'findBorder:9043028:21 'sortAttrs:97523152:16 'sortCases:846514:16 'findBorder:10885175:16 'sortAttrs:128026967:15 'sortCases:846288:15 'findBorder:8742288:15 'sortAttrs:110036611:14 'sortCases:652800:14 'findBorder:9560263:14 'sortAttrs:113908754:7 'sortCases:623132:7 'findBorder:7339350:7 'sortAttrs:29248100:2 'sortCases:650428:2 'findBorder:1910542:2

@@ -1,0 +1,31 @@
+# Parameters
+## Input file = hiva.arff
+## Output file = out/hiva.arff-su-0.9-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.9
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 680,606,091 nsec
+## Sorting features = 18,686,588 nsec
+## Sorting instances = 32,253,701 nsec
+## Selecting features = 528,641,221 nsec
+
+# 105features selected.
+# Selected features
+'attr557 'attr1199 'attr1264 'attr1443 'attr1036 'attr1056 'attr645 'attr460 'attr839 'attr1322 'attr1072 'attr9 'attr1419 'attr907 'attr1116 'attr1178 'attr1541 'attr1235 'attr795 'attr497 'attr1258 'attr100 'attr380 'attr528 'attr371 'attr514 'attr107 'attr272 'attr148 'attr587 'attr1243 'attr1344 'attr223 'attr583 'attr761 'attr22 'attr596 'attr597 'attr619 'attr246 'attr1507 'attr404 'attr1197 'attr908 'attr1124 'attr317 'attr1279 'attr345 'attr1132 'attr559 'attr274 'attr21 'attr1231 'attr368 'attr534 'attr1472 'attr1382 'attr767 'attr612 'attr157 'attr1073 'attr473 'attr586 'attr411 'attr234 'attr89 'attr1390 'attr754 'attr662 'attr894 'attr4 'attr1613 'attr782 'attr684 'attr909 'attr704 'attr847 'attr631 'attr947 'attr554 'attr321 'attr499 'attr742 'attr539 'attr1357 'attr1249 'attr598 'attr961 'attr898 'attr466 'attr1355 'attr542 'attr296 'attr12 'attr463 'attr901 'attr989 'attr661 'attr432 'attr630 'attr519 'attr1361 'attr1143 'attr790 'attr63
+
+# Statistics
+## Number of instances = 3845
+## Number of features = 1618
+## H(C) = 0.2194
+## H(Entire) = 11.8973
+## H(Entire, C) = 11.8973
+## I(Entire; C) = 0.2194
+## H(Selected) = 7.5615
+## H(Selected, C) = 7.5850
+## I(Selected; C) = 0.1959
+## H(Selected | C) = 7.3656
+## mu_H = 0.0504
+## mu_G = 0.1521

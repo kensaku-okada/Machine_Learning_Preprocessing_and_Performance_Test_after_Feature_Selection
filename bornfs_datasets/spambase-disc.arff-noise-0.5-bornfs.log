@@ -1,0 +1,37 @@
+# Parameters
+## Input file = spambase-disc.arff
+## Output file = out/spambase-disc.arff-noise-0.5-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = negative noise
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 292,407,219 nsec
+## Sorting features = 241,966,107 nsec
+## Sorting instances = 25,852,278 nsec
+## Selecting features = 49,909,796 nsec
+
+# 16features selected.
+# Selected features
+'word_freq_hp 'word_freq_000 'word_freq_email 'word_freq_business 'word_freq_free 'word_freq_addresses 'word_freq_report 'word_freq_people 'word_freq_will 'word_freq_receive 'word_freq_mail 'word_freq_order 'word_freq_internet 'word_freq_over 'word_freq_our 'word_freq_3d
+
+# Statistics
+## Number of instances = 4601
+## Number of features = 58
+## H(C) = 0.9674
+## H(Entire) = 11.4334
+## H(Entire, C) = 11.4434
+## I(Entire; C) = 0.9574
+## H(Selected) = 4.4314
+## H(Selected, C) = 4.9200
+## I(Selected; C) = 0.4788
+## H(Selected | C) = 3.9526
+## mu_H = 0.1777
+## mu_G = 0.2324
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:59437576:56 'sortCases:14717853:56 'findBorder:16870213:56 'sortAttrs:17429589:23 'sortCases:1127959:23 'findBorder:6780733:23 'sortAttrs:15724985:21 'sortCases:817086:21 'findBorder:4569024:21 'sortAttrs:12404377:16 'sortCases:979932:16 'findBorder:3485594:16 'sortAttrs:14019924:15 'sortCases:688131:15 'findBorder:2129678:15 'sortAttrs:14872669:14 'sortCases:993759:14 'findBorder:1807604:14 'sortAttrs:15983515:13 'sortCases:726738:13 'findBorder:1551730:13 'sortAttrs:15223224:12 'sortCases:732206:12 'findBorder:1501934:12 'sortAttrs:14209888:11 'sortCases:738760:11 'findBorder:1755655:11 'sortAttrs:12385037:10 'sortCases:574023:10 'findBorder:1531589:10 'sortAttrs:11779516:9 'sortCases:531480:9 'findBorder:1463955:9 'sortAttrs:13504087:8 'sortCases:653174:8 'findBorder:1559989:8 'sortAttrs:7503726:7 'sortCases:529816:7 'findBorder:1268934:7 'sortAttrs:6026541:6 'sortCases:525999:6 'findBorder:1306225:6 'sortAttrs:4693430:4 'sortCases:460001:4 'findBorder:1083450:4 'sortAttrs:4247417:3 'sortCases:507667:3 'findBorder:961640:3 'sortAttrs:2520606:2 'sortCases:547694:2 'findBorder:281849:2

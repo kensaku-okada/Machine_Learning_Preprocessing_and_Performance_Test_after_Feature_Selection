@@ -1,0 +1,31 @@
+# Parameters
+## Input file = nova.arff
+## Output file = out/nova.arff-su-0.8-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.8
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 503,201,873 nsec
+## Sorting features = 38,232,865 nsec
+## Sorting instances = 19,484,870 nsec
+## Selecting features = 400,464,767 nsec
+
+# 399features selected.
+# Selected features
+'attr1941 'attr4509 'attr14368 'attr9787 'attr10430 'attr11374 'attr6793 'attr10259 'attr15307 'attr522 'attr3907 'attr7042 'attr6186 'attr13585 'attr3726 'attr6724 'attr16583 'attr4493 'attr6117 'attr2693 'attr8685 'attr13775 'attr10781 'attr75 'attr14973 'attr2086 'attr1768 'attr12414 'attr3215 'attr11558 'attr14806 'attr7485 'attr14884 'attr3831 'attr9368 'attr16003 'attr3307 'attr14281 'attr7391 'attr13959 'attr12481 'attr10965 'attr10020 'attr4608 'attr3130 'attr4583 'attr5967 'attr4166 'attr6558 'attr12763 'attr1867 'attr9375 'attr15580 'attr16010 'attr7859 'attr5114 'attr11657 'attr6821 'attr3665 'attr2980 'attr4604 'attr14463 'attr12154 'attr7167 'attr6056 'attr8365 'attr7421 'attr12853 'attr13797 'attr1081 'attr6922 'attr4872 'attr6755 'attr16100 'attr4955 'attr7004 'attr4010 'attr5204 'attr2210 'attr8280 'attr6480 'attr4964 'attr12255 'attr1970 'attr4102 'attr11501 'attr9380 'attr14470 'attr12161 'attr7261 'attr8455 'attr13545 'attr6939 'attr5647 'attr10996 'attr11935 'attr6238 'attr8547 'attr5553 'attr6854 'attr11337 'attr6756 'attr4447 'attr13988 'attr6946 'attr2837 'attr733 'attr12093 'attr8554 'attr13477 'attr8744 'attr14494 'attr12978 'attr10742 'attr13995 'attr15878 'attr4644 'attr1650 'attr9496 'attr16640 'attr4550 'attr8751 'attr10759 'attr11267 'attr3717 'attr14515 'attr14593 'attr10768 'attr13482 'attr3442 'attr1392 'attr2008 'attr10424 'attr13393 'attr9785 'attr14875 'attr15305 'attr7985 'attr11964 'attr7040 'attr16322 'attr505 'attr10007 'attr6624 'attr3630 'attr10520 'attr15191 'attr8585 'attr1507 'attr14105 'attr16414 'attr11449 'attr6633 'attr14804 'attr9107 'attr14965 'attr11971 'attr5007 'attr5775 'attr15404 'attr11980 'attr6283 'attr6723 'attr13955 'attr4765 'attr5704 'attr8957 'attr4158 'attr6980 'attr2112 'attr13100 'attr536 'attr4346 'attr5711 'attr1171 'attr11142 'attr16528 'attr5803 'attr6570 'attr11998 'attr4344 'attr12687 'attr10896 'attr1697 'attr11326 'attr5889 'attr8270 'attr10988 'attr11393 'attr12435 'attr11579 'attr14479 'attr917 'attr2051 'attr5554 'attr4189 'attr10408 'attr15686 'attr4187 'attr11077 'attr3600 'attr12094 'attr5742 'attr5928 'attr9327 'attr15106 'attr15805 'attr409 'attr7878 'attr11774 'attr11167 'attr3617 'attr5926 'attr6434 'attr8292 'attr10413 'attr4976 'attr11259 'attr11430 'attr6609 'attr15812 'attr6178 'attr11013 'attr11967 'attr4215 'attr14612 'attr10581 'attr14773 'attr7193 'attr3622 'attr16049 'attr10247 'attr7030 'attr4658 'attr11454 'attr13763 'attr4412 'attr10162 'attr16056 'attr6880 'attr8611 'attr14801 'attr12937 'attr4755 'attr5801 'attr12236 'attr6989 'attr11389 'attr5697 'attr9199 'attr1000 'attr4253 'attr14195 'attr12942 'attr11577 'attr14825 'attr11742 'attr13194 'attr3418 'attr6235 'attr3241 'attr16206 'attr5736 'attr2825 'attr15868 'attr12707 'attr4442 'attr4025 'attr7787 'attr2415 'attr3609 'attr11775 'attr11349 'attr3783 'attr12272 'attr10756 'attr6683 'attr1820 'attr8575 'attr3364 'attr12039 'attr14953 'attr1410 'attr16845 'attr8163 'attr16589 'attr12743 'attr6797 'attr16426 'attr5163 'attr7662 'attr5695 'attr5787 'attr12241 'attr616 'attr11041 'attr16431 'attr5026 'attr2550 'attr2124 'attr6477 'attr3836 'attr4525 'attr3840 'attr807 'attr3678 'attr4440 'attr10380 'attr213 'attr16714 'attr15603 'attr4457 'attr11598 'attr15702 'attr661 'attr16644 'attr12895 'attr5672 'attr14351 'attr13328 'attr1419 'attr2250 'attr10593 'attr3643 'attr6460 'attr2351 'attr8343 'attr16940 'attr14719 'attr5179 'attr363 'attr15072 'attr16011 'attr7103 'attr15102 'attr1212 'attr9429 'attr14519 'attr8144 'attr11109 'attr16235 'attr4226 'attr16930 'attr9878 'attr8517 'attr1008 'attr6290 'attr4073 'attr15405 'attr4165 'attr14746 'attr3756 'attr10995 'attr16194 'attr16293 'attr14424 'attr15877 'attr16468 'attr12633 'attr2341 'attr16849 'attr15649 'attr15844 'attr16789 'attr15526 'attr15941 'attr15873 'attr16915 'attr14859 'attr1917 'attr16057 'attr3791 'attr9013 'attr3211 'attr8164 'attr6045 'attr13628 'attr14384 'attr4718 'attr12965 'attr473 'attr7183 'attr16380 'attr6265 'attr16055 'attr12829 'attr7562 'attr1245 'attr6546 'attr15491 'attr8787 'attr3395 'attr11149 'attr6066 'attr16282 'attr9392 'attr6932 'attr11511 'attr9858
+
+# Statistics
+## Number of instances = 1754
+## Number of features = 16970
+## H(C) = 0.8615
+## H(Entire) = 10.7753
+## H(Entire, C) = 10.7753
+## I(Entire; C) = 0.8615
+## H(Selected) = 2.7391
+## H(Selected, C) = 3.0326
+## I(Selected; C) = 0.5680
+## H(Selected | C) = 2.1711
+## mu_H = 0.3155
+## mu_G = 0.3697

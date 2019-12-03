@@ -1,0 +1,37 @@
+# Parameters
+## Input file = kr-vs-kp.arff
+## Output file = out/kr-vs-kp.arff-ratio-0.7-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.7
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 254,386,510 nsec
+## Sorting features = 51,229,495 nsec
+## Sorting instances = 20,590,145 nsec
+## Selecting features = 21,318,295 nsec
+
+# 4features selected.
+# Selected features
+'attribute32 'attribute33 'attribute10 'attribute21
+
+# Statistics
+## Number of instances = 3196
+## Number of features = 37
+## H(C) = 0.9986
+## H(Entire) = 11.6421
+## H(Entire, C) = 11.6421
+## I(Entire; C) = 0.9986
+## H(Selected) = 2.7749
+## H(Selected, C) = 3.0473
+## I(Selected; C) = 0.7263
+## H(Selected | C) = 2.0487
+## mu_H = 0.3849
+## mu_G = 0.4363
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:33671814:35 'sortCases:17531306:35 'findBorder:14170893:35 'sortAttrs:8670550:4 'sortCases:1386622:4 'findBorder:4103868:4 'sortAttrs:5794302:1 'sortCases:958059:1 'findBorder:2080749:1 'sortAttrs:3092829:0 'sortCases:714158:0 'findBorder:962785:0

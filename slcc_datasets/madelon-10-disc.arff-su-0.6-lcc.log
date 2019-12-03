@@ -1,0 +1,31 @@
+# Parameters
+## Input file = madelon-10-disc.arff
+## Output file = out/madelon-10-disc.arff-su-0.6-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 823,912,178 nsec
+## Sorting features = 11,302,535 nsec
+## Sorting instances = 19,648,184 nsec
+## Selecting features = 63,834,712 nsec
+
+# 7features selected.
+# Selected features
+'feature-90 'feature-423 'feature-276 'feature-404 'feature-228 'feature-332 'feature-309
+
+# Statistics
+## Number of instances = 2000
+## Number of features = 501
+## H(C) = 1.0000
+## H(Entire) = 10.9658
+## H(Entire, C) = 10.9658
+## I(Entire; C) = 1.0000
+## H(Selected) = 10.0541
+## H(Selected, C) = 10.4070
+## I(Selected; C) = 0.6471
+## H(Selected | C) = 9.4070
+## mu_H = 0.1171
+## mu_G = 0.2041

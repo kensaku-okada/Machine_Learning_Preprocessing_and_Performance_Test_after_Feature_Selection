@@ -1,0 +1,31 @@
+# Parameters
+## Input file = spambase-disc.arff
+## Output file = out/spambase-disc.arff-su-0.5-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 299,129,229 nsec
+## Sorting features = 8,342,662 nsec
+## Sorting instances = 45,792,615 nsec
+## Selecting features = 23,186,913 nsec
+
+# 2features selected.
+# Selected features
+'word_freq_remove 'word_freq_money
+
+# Statistics
+## Number of instances = 4601
+## Number of features = 58
+## H(C) = 0.9674
+## H(Entire) = 11.4434
+## H(Entire, C) = 11.4434
+## I(Entire; C) = 0.9674
+## H(Selected) = 1.2395
+## H(Selected, C) = 1.8797
+## I(Selected; C) = 0.3272
+## H(Selected | C) = 0.9123
+## mu_H = 0.2965
+## mu_G = 0.2988

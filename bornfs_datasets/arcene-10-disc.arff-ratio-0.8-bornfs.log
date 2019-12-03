@@ -1,0 +1,37 @@
+# Parameters
+## Input file = arcene-10-disc.arff
+## Output file = out/arcene-10-disc.arff-ratio-0.8-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.8
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 579,515,710 nsec
+## Sorting features = 1,130,744,544 nsec
+## Sorting instances = 8,397,404 nsec
+## Selecting features = 25,006,063 nsec
+
+# 16features selected.
+# Selected features
+'attr3248 'attr990 'attr9671 'attr7506 'attr77 'attr3338 'attr1608 'attr7812 'attr3276 'attr6691 'attr4685 'attr5961 'attr6987 'attr1600 'attr7866 'attr7651
+
+# Statistics
+## Number of instances = 100
+## Number of features = 10001
+## H(C) = 0.9896
+## H(Entire) = 6.6439
+## H(Entire, C) = 6.6439
+## I(Entire; C) = 0.9896
+## H(Selected) = 4.7169
+## H(Selected, C) = 4.9145
+## I(Selected; C) = 0.7920
+## H(Selected | C) = 3.9249
+## mu_H = 0.2776
+## mu_G = 0.3666
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:771998321:9999 'sortCases:2616085:9999 'findBorder:9370061:9999 'sortAttrs:22069415:172 'sortCases:520626:172 'findBorder:1572907:172 'sortAttrs:57098095:171 'sortCases:351861:171 'findBorder:1167822:171 'sortAttrs:52922514:168 'sortCases:456519:168 'findBorder:1588160:168 'sortAttrs:50193213:167 'sortCases:599616:167 'findBorder:1599593:167 'sortAttrs:59331670:164 'sortCases:574055:164 'findBorder:2278621:164 'sortAttrs:55199325:159 'sortCases:397536:159 'findBorder:1124406:159 'sortAttrs:16001008:46 'sortCases:460742:46 'findBorder:1033855:46 'sortAttrs:11389332:30 'sortCases:367546:30 'findBorder:887550:30 'sortAttrs:11941138:29 'sortCases:379619:29 'findBorder:978381:29 'sortAttrs:6816758:15 'sortCases:269328:15 'findBorder:789462:15 'sortAttrs:6366787:13 'sortCases:299875:13 'findBorder:912461:13 'sortAttrs:5727182:11 'sortCases:267282:11 'findBorder:711222:11 'sortAttrs:1617834:2 'sortCases:269902:2 'findBorder:511044:2 'sortAttrs:1200707:1 'sortCases:276595:1 'findBorder:329063:1 'sortAttrs:871245:0 'sortCases:290217:0 'findBorder:151455:0

@@ -1,0 +1,37 @@
+# Parameters
+## Input file = dexter-10-disc.arff
+## Output file = out/dexter-10-disc.arff-relevance-0.5-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 545,671,992 nsec
+## Sorting features = 1,300,723,718 nsec
+## Sorting instances = 5,732,184 nsec
+## Selecting features = 12,271,698 nsec
+
+# 4features selected.
+# Selected features
+'attr4308 'attr19386 'attr15798 'attr12916
+
+# Statistics
+## Number of instances = 300
+## Number of features = 20001
+## H(C) = 1.0000
+## H(Entire) = 8.2288
+## H(Entire, C) = 8.2288
+## I(Entire; C) = 1.0000
+## H(Selected) = 4.6151
+## H(Selected, C) = 5.0641
+## I(Selected; C) = 0.5510
+## H(Selected | C) = 4.0641
+## mu_H = 0.1963
+## mu_G = 0.2565
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:1288711107:19999 'sortCases:3272856:19999 'findBorder:10011882:19999 'sortAttrs:6067790:8 'sortCases:910816:8 'findBorder:954259:8 'sortAttrs:4573151:5 'sortCases:690415:5 'findBorder:1056918:5 'sortAttrs:1371670:0 'sortCases:858097:0 'findBorder:248639:0

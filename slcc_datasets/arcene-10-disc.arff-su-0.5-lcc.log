@@ -1,0 +1,31 @@
+# Parameters
+## Input file = arcene-10-disc.arff
+## Output file = out/arcene-10-disc.arff-su-0.5-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 885,993,533 nsec
+## Sorting features = 38,175,093 nsec
+## Sorting instances = 5,106,037 nsec
+## Selecting features = 32,329,683 nsec
+
+# 20features selected.
+# Selected features
+'attr6148 'attr7956 'attr7634 'attr9176 'attr5137 'attr6853 'attr8409 'attr3648 'attr519 'attr8018 'attr1836 'attr1608 'attr1684 'attr2182 'attr7410 'attr2454 'attr3248 'attr7460 'attr1867 'attr6285
+
+# Statistics
+## Number of instances = 100
+## Number of features = 10001
+## H(C) = 0.9896
+## H(Entire) = 6.6439
+## H(Entire, C) = 6.6439
+## I(Entire; C) = 0.9896
+## H(Selected) = 1.7412
+## H(Selected, C) = 2.4107
+## I(Selected; C) = 0.3202
+## H(Selected | C) = 1.4211
+## mu_H = 0.2345
+## mu_G = 0.2439

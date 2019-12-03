@@ -1,0 +1,37 @@
+# Parameters
+## Input file = mushroom.arff
+## Output file = out/mushroom.arff-ratio-1.0-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 1.0
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 388,372,419 nsec
+## Sorting features = 596,615,564 nsec
+## Sorting instances = 50,733,411 nsec
+## Selecting features = 118,853,439 nsec
+
+# 16features selected.
+# Selected features
+'stalk-shape 'cap-color 'cap-shape 'veil-color 'stalk-color-above-ring 'gill-attachment 'veil-type 'stalk-color-below-ring 'cap-surface 'gill-color 'stalk-surface-above-ring 'stalk-surface-below-ring 'habitat 'bruises? 'gill-size 'stalk-root
+
+# Statistics
+## Number of instances = 8124
+## Number of features = 23
+## H(C) = 0.9991
+## H(Entire) = 12.9880
+## H(Entire, C) = 12.9880
+## I(Entire; C) = 0.9991
+## H(Selected) = 11.2840
+## H(Selected, C) = 11.2840
+## I(Selected; C) = 0.9991
+## H(Selected | C) = 10.2850
+## mu_H = 0.1627
+## mu_G = 0.2976
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:83462288:21 'sortCases:25994956:21 'findBorder:28435127:21 'sortAttrs:41564161:20 'sortCases:2196857:20 'findBorder:7524459:20 'sortAttrs:48695478:19 'sortCases:1663280:19 'findBorder:7446849:19 'sortAttrs:58376171:18 'sortCases:1571184:18 'findBorder:5836127:18 'sortAttrs:36654503:17 'sortCases:1636553:17 'findBorder:5518685:17 'sortAttrs:41868601:16 'sortCases:1533689:16 'findBorder:4702070:16 'sortAttrs:28802113:15 'sortCases:1575491:15 'findBorder:4124050:15 'sortAttrs:22706703:14 'sortCases:1143830:14 'findBorder:3098366:14 'sortAttrs:23987687:13 'sortCases:1296639:13 'findBorder:3423582:13 'sortAttrs:30717656:12 'sortCases:1249504:12 'findBorder:5455358:12 'sortAttrs:51184787:11 'sortCases:1697072:11 'findBorder:12618120:11 'sortAttrs:46957530:10 'sortCases:1419510:10 'findBorder:9090868:10 'sortAttrs:32049920:9 'sortCases:2594125:9 'findBorder:10895178:9 'sortAttrs:23879295:8 'sortCases:1537405:8 'findBorder:4256943:8 'sortAttrs:16518768:2 'sortCases:2582976:2 'findBorder:4789776:2 'sortAttrs:9189903:0 'sortCases:1040340:0 'findBorder:1637881:0

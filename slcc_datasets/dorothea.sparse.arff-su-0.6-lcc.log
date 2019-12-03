@@ -1,0 +1,31 @@
+# Parameters
+## Input file = dorothea.sparse.arff
+## Output file = out/dorothea.sparse.arff-su-0.6-lcc.arff
+## Algorithm = lcc
+## Sorting measure = su
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 2,298,263,798 nsec
+## Sorting features = 198,760,015 nsec
+## Sorting instances = 11,118,560 nsec
+## Selecting features = 22,560,928 nsec
+
+# 7features selected.
+# Selected features
+'attr25761 'attr98300 'attr411 'attr75363 'attr2525 'attr76940 'attr51397
+
+# Statistics
+## Number of instances = 800
+## Number of features = 100001
+## H(C) = 0.4610
+## H(Entire) = 9.6439
+## H(Entire, C) = 9.6439
+## I(Entire; C) = 0.4610
+## H(Selected) = 0.9469
+## H(Selected, C) = 1.1598
+## I(Selected; C) = 0.2481
+## H(Selected | C) = 0.6988
+## mu_H = 0.3524
+## mu_G = 0.3755

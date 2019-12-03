@@ -1,0 +1,37 @@
+# Parameters
+## Input file = spambase-disc.arff
+## Output file = out/spambase-disc.arff-noise-0.6-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = negative noise
+## Threshold = 0.6
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 264,272,439 nsec
+## Sorting features = 333,428,819 nsec
+## Sorting instances = 27,369,266 nsec
+## Selecting features = 57,672,933 nsec
+
+# 21features selected.
+# Selected features
+'word_freq_george 'word_freq_hpl 'word_freq_hp 'word_freq_money 'word_freq_000 'word_freq_font 'word_freq_credit 'word_freq_you 'word_freq_email 'word_freq_business 'word_freq_free 'word_freq_addresses 'word_freq_report 'word_freq_people 'word_freq_receive 'word_freq_mail 'word_freq_order 'word_freq_internet 'word_freq_remove 'word_freq_our 'word_freq_3d
+
+# Statistics
+## Number of instances = 4601
+## Number of features = 58
+## H(C) = 0.9674
+## H(Entire) = 11.4334
+## H(Entire, C) = 11.4434
+## I(Entire; C) = 0.9574
+## H(Selected) = 6.0213
+## H(Selected, C) = 6.4140
+## I(Selected; C) = 0.5747
+## H(Selected | C) = 5.4467
+## mu_H = 0.1647
+## mu_G = 0.2393
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:61660804:56 'sortCases:13801804:56 'findBorder:20948196:56 'sortAttrs:18156803:25 'sortCases:1149228:25 'findBorder:3959888:25 'sortAttrs:19273556:24 'sortCases:1159002:24 'findBorder:3641411:24 'sortAttrs:19923134:23 'sortCases:825774:23 'findBorder:2967492:23 'sortAttrs:21198879:22 'sortCases:1046625:22 'findBorder:3117074:22 'sortAttrs:23618305:21 'sortCases:1045305:21 'findBorder:2163006:21 'sortAttrs:20962991:20 'sortCases:864596:20 'findBorder:1900790:20 'sortAttrs:17058702:18 'sortCases:845332:18 'findBorder:1631528:18 'sortAttrs:14671237:17 'sortCases:711911:17 'findBorder:1490015:17 'sortAttrs:19526782:16 'sortCases:632998:16 'findBorder:1829014:16 'sortAttrs:14002916:15 'sortCases:546632:15 'findBorder:1653966:15 'sortAttrs:13870998:14 'sortCases:555162:14 'findBorder:1674930:14 'sortAttrs:12058184:13 'sortCases:441405:13 'findBorder:1578476:13 'sortAttrs:11841866:12 'sortCases:476356:12 'findBorder:1825811:12 'sortAttrs:12738301:11 'sortCases:489595:11 'findBorder:1401906:11 'sortAttrs:7421462:9 'sortCases:461313:9 'findBorder:1494642:9 'sortAttrs:8521437:8 'sortCases:444071:8 'findBorder:1168989:8 'sortAttrs:5378128:7 'sortCases:352321:7 'findBorder:748788:7 'sortAttrs:3884823:6 'sortCases:372864:6 'findBorder:697717:6 'sortAttrs:3016944:5 'sortCases:373852:5 'findBorder:880173:5 'sortAttrs:2452422:3 'sortCases:398156:3 'findBorder:707825:3 'sortAttrs:2190145:2 'sortCases:374964:2 'findBorder:191296:2

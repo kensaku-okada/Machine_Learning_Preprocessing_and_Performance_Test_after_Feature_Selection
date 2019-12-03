@@ -1,0 +1,37 @@
+# Parameters
+## Input file = mushroom.arff
+## Output file = out/mushroom.arff-ratio-0.7-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.7
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 378,967,045 nsec
+## Sorting features = 110,026,590 nsec
+## Sorting instances = 32,047,876 nsec
+## Selecting features = 40,903,385 nsec
+
+# 3features selected.
+# Selected features
+'gill-color 'gill-spacing 'cap-surface
+
+# Statistics
+## Number of instances = 8124
+## Number of features = 23
+## H(C) = 0.9991
+## H(Entire) = 12.9880
+## H(Entire, C) = 12.9880
+## I(Entire; C) = 0.9991
+## H(Selected) = 2.7967
+## H(Selected, C) = 3.0394
+## I(Selected; C) = 0.7563
+## H(Selected | C) = 2.0404
+## mu_H = 0.3985
+## mu_G = 0.4525
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:72732338:21 'sortCases:26401640:21 'findBorder:24106680:21 'sortAttrs:24337634:7 'sortCases:2361780:7 'findBorder:11745609:7 'sortAttrs:10072469:5 'sortCases:1922176:5 'findBorder:4307270:5 'sortAttrs:2884149:0 'sortCases:1362280:0 'findBorder:743826:0

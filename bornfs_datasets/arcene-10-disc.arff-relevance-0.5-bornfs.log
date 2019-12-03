@@ -1,0 +1,37 @@
+# Parameters
+## Input file = arcene-10-disc.arff
+## Output file = out/arcene-10-disc.arff-relevance-0.5-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 567,176,684 nsec
+## Sorting features = 808,134,456 nsec
+## Sorting instances = 5,701,017 nsec
+## Selecting features = 13,155,064 nsec
+
+# 2features selected.
+# Selected features
+'attr30 'attr2
+
+# Statistics
+## Number of instances = 100
+## Number of features = 10001
+## H(C) = 0.9896
+## H(Entire) = 6.6439
+## H(Entire, C) = 6.6439
+## I(Entire; C) = 0.9896
+## H(Selected) = 4.8284
+## H(Selected, C) = 5.1325
+## I(Selected; C) = 0.6855
+## H(Selected | C) = 4.1429
+## mu_H = 0.2356
+## mu_G = 0.3136
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:788287858:9999 'sortCases:3869507:9999 'findBorder:11355844:9999 'sortAttrs:16965744:29 'sortCases:1046495:29 'findBorder:1556064:29 'sortAttrs:2880854:1 'sortCases:785015:1 'findBorder:243156:1

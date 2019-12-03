@@ -22,7 +22,6 @@ config.importDatasetFormat = "arff"
 # config.crossValidationType = "hold-out"
 config.crossValidationType = "k-fold-cv"
 
-config.ifGetMultipleResults = False
 config.test_results = []
 # config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES, Constant.C4_5]
 config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
@@ -35,31 +34,40 @@ config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
 ############################################################
 ############### get dataset paths start ###############
 ############################################################
+# config.ifGetMultipleResults = False
 # relativePath = "datasets\\mushroom\\mRMR\\mushroom_mrmr.arff"
-relativePath = "datasets\\arcene\\mRMR\\arcene-10-disc_mrmr.arff"
+relativePath = "mrmr_datasets\\arcene\\mRMR\\arcene-10-disc_mrmr.arff"
 # relativePath = "datasets\\dorothea\\dorothea.sparse.arff.0.5.bornfs.arff"
 
+config.ifGetMultipleResults = True
+
+
+
 filePath = Util.getFilePath(relativePath)
-print("filePath: ",filePath)
+
+if config.ifGetMultipleResults:
+    config.file_paths = glob.glob(filePath)
+else:
+    # adjust the file format with the case ifGetMultipleResults = True
+    config.file_paths = [filePath]
+
+print("config.file_paths: ", config.file_paths)
+
 # https://note.nkmk.me/python-pathlib-name-suffix-parent/
+# get dataset directory path
 dataset_directory = pathlib.Path(filePath)
-print("dataset_directory: ",dataset_directory)
+print("dataset_directory: ", dataset_directory)
 dataset_name = pathlib.Path(filePath).parents[1].name
-print("dataset_name: ",dataset_name)
+print("dataset_name: ", dataset_name)
 config.dataset_name = dataset_name
 config.dataset_directory = dataset_directory
 
-if config.ifGetMultipleResults:
-    file_paths = glob.glob(filePath)
-    # print("file_paths: ",file_paths)
-else:
-    # adjust the file format with the case ifGetMultipleResults = True
-    file_paths = [filePath]
+
 ############################################################
 ############### get dataset paths end ###############
 ############################################################
 
-for filePath in file_paths:
+for filePath in config.file_paths:
 
     print("filePath: ",filePath)
 
@@ -183,7 +191,7 @@ for filePath in file_paths:
 ############### export the test result ###############
 header = ["file_name","classifier","accuracy","f-measure","confusionMatrixes"]
 # https://note.nkmk.me/python-pathlib-name-suffix-parent/
-Util.exportCSVFile(config.test_results, header, fileName=dataset_directory.parents[1].name + "_test_result")
+Util.exportCSVFile(config.test_results, header, fileName=config.dataset_directory.parents[1].name + "_test_result")
 
 ################################################################
 # Reference (not used)

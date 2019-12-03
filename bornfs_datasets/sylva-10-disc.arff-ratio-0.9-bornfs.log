@@ -1,0 +1,37 @@
+# Parameters
+## Input file = sylva-10-disc.arff
+## Output file = out/sylva-10-disc.arff-ratio-0.9-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.9
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 668,496,089 nsec
+## Sorting features = 628,355,218 nsec
+## Sorting instances = 56,058,756 nsec
+## Selecting features = 100,004,754 nsec
+
+# 10features selected.
+# Selected features
+'feature-92 'feature-45 'feature-175 'feature-182 'feature-64 'feature-51 'feature-192 'feature-84 'feature-110 'feature-172
+
+# Statistics
+## Number of instances = 13086
+## Number of features = 217
+## H(C) = 0.3334
+## H(Entire) = 13.6757
+## H(Entire, C) = 13.6757
+## I(Entire; C) = 0.3334
+## H(Selected) = 5.1079
+## H(Selected, C) = 5.1412
+## I(Selected; C) = 0.3002
+## H(Selected | C) = 4.8077
+## mu_H = 0.1103
+## mu_G = 0.2300
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:450116434:215 'sortCases:41477289:215 'findBorder:59108705:215 'sortAttrs:39169684:25 'sortCases:2843959:25 'findBorder:15188441:25 'sortAttrs:27413241:24 'sortCases:1798736:24 'findBorder:8715528:24 'sortAttrs:22151343:22 'sortCases:1575585:22 'findBorder:2652584:22 'sortAttrs:22734136:19 'sortCases:1478948:19 'findBorder:2819919:19 'sortAttrs:29157309:11 'sortCases:1570720:11 'findBorder:3913626:11 'sortAttrs:16651350:9 'sortCases:1417661:9 'findBorder:2968324:9 'sortAttrs:12146894:7 'sortCases:1356577:7 'findBorder:2310961:7 'sortAttrs:6966568:3 'sortCases:1161335:3 'findBorder:1696084:3 'sortAttrs:1848259:0 'sortCases:1377946:0 'findBorder:630582:0

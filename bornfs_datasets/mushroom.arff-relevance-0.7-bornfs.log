@@ -1,0 +1,37 @@
+# Parameters
+## Input file = mushroom.arff
+## Output file = out/mushroom.arff-relevance-0.7-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.7
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 383,291,605 nsec
+## Sorting features = 138,428,665 nsec
+## Sorting instances = 31,427,652 nsec
+## Selecting features = 31,658,590 nsec
+
+# 3features selected.
+# Selected features
+'stalk-surface-above-ring 'odor 'bruises?
+
+# Statistics
+## Number of instances = 8124
+## Number of features = 23
+## H(C) = 0.9991
+## H(Entire) = 12.9880
+## H(Entire, C) = 12.9880
+## I(Entire; C) = 0.9991
+## H(Selected) = 5.0884
+## H(Selected, C) = 5.3166
+## I(Selected; C) = 0.7709
+## H(Selected | C) = 4.3175
+## mu_H = 0.2533
+## mu_G = 0.3419
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:77833539:21 'sortCases:27032750:21 'findBorder:25419543:21 'sortAttrs:34834415:10 'sortCases:1463898:10 'findBorder:3513235:10 'sortAttrs:12042651:3 'sortCases:1329946:3 'findBorder:1876252:3 'sortAttrs:13718060:2 'sortCases:1601058:2 'findBorder:849560:2

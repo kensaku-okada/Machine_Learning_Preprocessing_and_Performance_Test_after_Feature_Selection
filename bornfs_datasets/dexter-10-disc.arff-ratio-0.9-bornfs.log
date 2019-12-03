@@ -1,0 +1,37 @@
+# Parameters
+## Input file = dexter-10-disc.arff
+## Output file = out/dexter-10-disc.arff-ratio-0.9-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.9
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 508,394,517 nsec
+## Sorting features = 52,061,967,723 nsec
+## Sorting instances = 19,573,652 nsec
+## Selecting features = 72,838,382 nsec
+
+# 39features selected.
+# Selected features
+'attr12350 'attr12330 'attr12329 'attr12321 'attr12307 'attr12304 'attr12299 'attr12296 'attr12294 'attr12292 'attr12291 'attr12290 'attr12289 'attr12287 'attr12286 'attr36 'attr35 'attr33 'attr32 'attr31 'attr30 'attr25 'attr24 'attr23 'attr22 'attr21 'attr20 'attr18 'attr17 'attr16 'attr15 'attr11 'attr10 'attr8 'attr7 'attr4 'attr3 'attr2 'attr1
+
+# Statistics
+## Number of instances = 300
+## Number of features = 20001
+## H(C) = 1.0000
+## H(Entire) = 8.2288
+## H(Entire, C) = 8.2288
+## I(Entire; C) = 1.0000
+## H(Selected) = 7.5454
+## H(Selected, C) = 7.6444
+## I(Selected; C) = 0.9010
+## H(Selected | C) = 6.6444
+## mu_H = 0.2109
+## mu_G = 0.3280
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:1284686771:19999 'sortCases:3374337:19999 'findBorder:10501306:19999 'sortAttrs:1116029096:12349 'sortCases:1226483:12349 'findBorder:5041879:12349 'sortAttrs:1643101701:12329 'sortCases:824320:12329 'findBorder:4767748:12329 'sortAttrs:2021818568:12328 'sortCases:728971:12328 'findBorder:4617714:12328 'sortAttrs:2100614983:12320 'sortCases:616736:12320 'findBorder:4191600:12320 'sortAttrs:2762021699:12306 'sortCases:425400:12306 'findBorder:2284094:12306 'sortAttrs:3389392127:12303 'sortCases:494468:12303 'findBorder:2182194:12303 'sortAttrs:3355844306:12298 'sortCases:445966:12298 'findBorder:2159693:12298 'sortAttrs:3554586915:12295 'sortCases:456101:12295 'findBorder:2461055:12295 'sortAttrs:4196583430:12293 'sortCases:695169:12293 'findBorder:4232781:12293 'sortAttrs:4068149603:12291 'sortCases:362404:12291 'findBorder:2374740:12291 'sortAttrs:4288003475:12290 'sortCases:392737:12290 'findBorder:2432042:12290 'sortAttrs:4331780767:12289 'sortCases:268578:12289 'findBorder:2573561:12289 'sortAttrs:4331371375:12288 'sortCases:320282:12288 'findBorder:2349222:12288 'sortAttrs:4692852858:12286 'sortCases:374830:12286 'findBorder:3040023:12286 'sortAttrs:4716316992:12285 'sortCases:307210:12285 'findBorder:2169316:12285 'sortAttrs:15324371:35 'sortCases:309369:35 'findBorder:755500:35 'sortAttrs:14865905:34 'sortCases:362728:34 'findBorder:814535:34 'sortAttrs:14354636:32 'sortCases:317338:32 'findBorder:822592:32 'sortAttrs:14124101:31 'sortCases:332459:31 'findBorder:672721:31 'sortAttrs:13936315:30 'sortCases:359324:30 'findBorder:747195:30 'sortAttrs:13379127:29 'sortCases:330829:29 'findBorder:723174:29 'sortAttrs:13924768:24 'sortCases:365811:24 'findBorder:765169:24 'sortAttrs:11465149:23 'sortCases:374811:23 'findBorder:744677:23 'sortAttrs:10569010:22 'sortCases:354020:22 'findBorder:667364:22 'sortAttrs:9514155:21 'sortCases:300523:21 'findBorder:673498:21 'sortAttrs:9547325:20 'sortCases:352821:20 'findBorder:719205:20 'sortAttrs:9465398:19 'sortCases:321458:19 'findBorder:740900:19 'sortAttrs:8797086:17 'sortCases:350295:17 'findBorder:795591:17 'sortAttrs:7878633:16 'sortCases:332015:16 'findBorder:765909:16 'sortAttrs:7821341:15 'sortCases:347843:15 'findBorder:632759:15 'sortAttrs:7986532:14 'sortCases:356507:14 'findBorder:650072:14 'sortAttrs:5418844:10 'sortCases:335760:10 'findBorder:649984:10 'sortAttrs:5645429:9 'sortCases:394659:9 'findBorder:679342:9 'sortAttrs:4094223:7 'sortCases:347009:7 'findBorder:492658:7 'sortAttrs:4086945:6 'sortCases:374974:6 'findBorder:662565:6 'sortAttrs:2563645:3 'sortCases:346474:3 'findBorder:414869:3 'sortAttrs:1893970:2 'sortCases:319262:2 'findBorder:398261:2 'sortAttrs:1298050:1 'sortCases:327504:1 'findBorder:317046:1 'sortAttrs:858099:0 'sortCases:345867:0 'findBorder:153828:0

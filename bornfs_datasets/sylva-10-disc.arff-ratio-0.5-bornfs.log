@@ -1,0 +1,37 @@
+# Parameters
+## Input file = sylva-10-disc.arff
+## Output file = out/sylva-10-disc.arff-ratio-0.5-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.5
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 694,640,408 nsec
+## Sorting features = 373,307,942 nsec
+## Sorting instances = 49,769,643 nsec
+## Selecting features = 60,183,228 nsec
+
+# 2features selected.
+# Selected features
+'feature-90 'feature-56
+
+# Statistics
+## Number of instances = 13086
+## Number of features = 217
+## H(C) = 0.3334
+## H(Entire) = 13.6757
+## H(Entire, C) = 13.6757
+## I(Entire; C) = 0.3334
+## H(Selected) = 0.6281
+## H(Selected, C) = 0.7934
+## I(Selected; C) = 0.1682
+## H(Selected | C) = 0.4600
+## mu_H = 0.3498
+## mu_G = 0.3675
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:348639426:215 'sortCases:45838112:215 'findBorder:53577532:215 'sortAttrs:12595149:5 'sortCases:1967066:5 'findBorder:4736388:5 'sortAttrs:12073367:4 'sortCases:1964465:4 'findBorder:1869308:4

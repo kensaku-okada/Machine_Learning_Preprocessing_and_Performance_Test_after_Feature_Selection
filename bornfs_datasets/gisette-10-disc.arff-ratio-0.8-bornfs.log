@@ -1,0 +1,37 @@
+# Parameters
+## Input file = gisette-10-disc.arff
+## Output file = out/gisette-10-disc.arff-ratio-0.8-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = ratio of relevance to noise
+## Threshold = 0.8
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 4,334,485,855 nsec
+## Sorting features = 7,122,556,893 nsec
+## Sorting instances = 53,308,263 nsec
+## Selecting features = 156,730,396 nsec
+
+# 9features selected.
+# Selected features
+'attr4424 'attr4164 'attr511 'attr3062 'attr1328 'attr3656 'attr3065 'attr904 'attr1532
+
+# Statistics
+## Number of instances = 6000
+## Number of features = 5001
+## H(C) = 1.0000
+## H(Entire) = 12.5507
+## H(Entire, C) = 12.5507
+## I(Entire; C) = 1.0000
+## H(Selected) = 7.3427
+## H(Selected, C) = 7.5129
+## I(Selected; C) = 0.8299
+## H(Selected | C) = 6.5129
+## mu_H = 0.1989
+## mu_G = 0.3062
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:6818413624:4999 'sortCases:18665282:4999 'findBorder:71370930:4999 'sortAttrs:78724285:74 'sortCases:17739935:74 'findBorder:24824514:74 'sortAttrs:96171931:70 'sortCases:4496510:70 'findBorder:10837026:70 'sortAttrs:33624650:21 'sortCases:3557814:21 'findBorder:7847310:21 'sortAttrs:26504868:12 'sortCases:2284597:12 'findBorder:9284888:12 'sortAttrs:21960759:8 'sortCases:1836620:8 'findBorder:11326849:8 'sortAttrs:32272493:7 'sortCases:1731349:7 'findBorder:9941480:7 'sortAttrs:11109835:3 'sortCases:1435490:3 'findBorder:8292521:3 'sortAttrs:3774448:0 'sortCases:1560666:0 'findBorder:3004878:0

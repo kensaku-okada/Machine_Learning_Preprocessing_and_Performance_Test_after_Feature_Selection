@@ -1,0 +1,37 @@
+# Parameters
+## Input file = kr-vs-kp.arff
+## Output file = out/kr-vs-kp.arff-relevance-0.9-bornfs.arff
+## Algorithm = bornfs
+## Sorting measure = relevance
+## Threshold = 0.9
+## Level of detail of log = low
+
+# Run-time
+## Creating a dataset object = 269,368,656 nsec
+## Sorting features = 189,811,257 nsec
+## Sorting instances = 28,038,210 nsec
+## Selecting features = 40,999,954 nsec
+
+# 13features selected.
+# Selected features
+'attribute22 'attribute27 'attribute31 'attribute7 'attribute18 'attribute16 'attribute35 'attribute32 'attribute6 'attribute15 'attribute21 'attribute33 'attribute10
+
+# Statistics
+## Number of instances = 3196
+## Number of features = 37
+## H(C) = 0.9986
+## H(Entire) = 11.6421
+## H(Entire, C) = 11.6421
+## I(Entire; C) = 0.9986
+## H(Selected) = 7.8550
+## H(Selected, C) = 7.9389
+## I(Selected; C) = 0.9147
+## H(Selected | C) = 6.9403
+## mu_H = 0.2066
+## mu_G = 0.3266
+
+# Events: function name:time (nsec):arguments
+## sortAttrs:time:#_features
+## sortCases:time:#_features
+## findBorder:time:#_features
+'sortAttrs:38439118:35 'sortCases:15345040:35 'findBorder:15086031:35 'sortAttrs:15026732:13 'sortCases:1250950:13 'findBorder:3967374:13 'sortAttrs:22619769:12 'sortCases:1023954:12 'findBorder:3229994:12 'sortAttrs:14984898:11 'sortCases:1645722:11 'findBorder:3568201:11 'sortAttrs:13768156:9 'sortCases:1230449:9 'findBorder:2518257:9 'sortAttrs:14375455:8 'sortCases:986480:8 'findBorder:3013552:8 'sortAttrs:17450863:7 'sortCases:1127592:7 'findBorder:1905822:7 'sortAttrs:16668601:6 'sortCases:1294080:6 'findBorder:1779382:6 'sortAttrs:10273826:5 'sortCases:980755:5 'findBorder:1514299:5 'sortAttrs:8824328:4 'sortCases:729584:4 'findBorder:1543946:4 'sortAttrs:11005862:2 'sortCases:941635:2 'findBorder:1407094:2 'sortAttrs:3773302:1 'sortCases:696919:1 'findBorder:888947:1 'sortAttrs:2600347:0 'sortCases:785050:0 'findBorder:577055:0
