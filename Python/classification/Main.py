@@ -27,6 +27,10 @@ config.test_results = []
 config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.SVC]
+
+config.feature_selection_algorithm_name = "mrmr"
+# config.feature_selection_algorithm_name = "slcc"
+# config.feature_selection_algorithm_name = "bornfs"
 ############################################################
 ############### set the configuration end ###############
 ############################################################
@@ -34,14 +38,14 @@ config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
 ############################################################
 ############### get dataset paths start ###############
 ############################################################
-# config.ifGetMultipleResults = False
+config.ifGetMultipleResults = False
 # relativePath = "datasets\\mushroom\\mRMR\\mushroom_mrmr.arff"
 relativePath = "mrmr_datasets\\arcene\\mRMR\\arcene-10-disc_mrmr.arff"
 # relativePath = "datasets\\dorothea\\dorothea.sparse.arff.0.5.bornfs.arff"
 
-config.ifGetMultipleResults = True
-
-
+# config.ifGetMultipleResults = True
+# relativePath = "bornfs_datasets\\out\\*.arff"
+# relativePath = "slcc_datasets\\out\\*.arff"
 
 filePath = Util.getFilePath(relativePath)
 
@@ -52,24 +56,23 @@ else:
     config.file_paths = [filePath]
 
 print("config.file_paths: ", config.file_paths)
-
 # https://note.nkmk.me/python-pathlib-name-suffix-parent/
 # get dataset directory path
 dataset_directory = pathlib.Path(filePath)
 print("dataset_directory: ", dataset_directory)
-dataset_name = pathlib.Path(filePath).parents[1].name
-print("dataset_name: ", dataset_name)
-config.dataset_name = dataset_name
 config.dataset_directory = dataset_directory
-
+# # get dataset name
+# dataset_name = pathlib.Path(filePath).parents[1].name
+# print("dataset_name: ", dataset_name)
+# config.dataset_name = dataset_name
 
 ############################################################
 ############### get dataset paths end ###############
 ############################################################
-
 for filePath in config.file_paths:
 
-    print("filePath: ",filePath)
+    file_name = pathlib.Path(filePath).name
+    print("file_name: ",file_name + " process start.")
 
     # import data
     dataset = Util.importArffData(filePath, config)
@@ -188,10 +191,11 @@ for filePath in config.file_paths:
             ############### test the model end ######################
             ###########################################################################
 
-############### export the test result ###############
-header = ["file_name","classifier","accuracy","f-measure","confusionMatrixes"]
-# https://note.nkmk.me/python-pathlib-name-suffix-parent/
-Util.exportCSVFile(config.test_results, header, fileName=config.dataset_directory.parents[1].name + "_test_result")
+    ############### export the test result ###############
+    header = ["file_name","classifier","accuracy","f-measure","confusionMatrixes"]
+    # https://note.nkmk.me/python-pathlib-name-suffix-parent/
+    # Util.exportCSVFile(config, header, fileName=config.dataset_directory.parents[1].name + "_test_result")
+    Util.exportCSVFile(config, header, fileName=pathlib.Path(filePath).stem + "_test_result")
 
 ################################################################
 # Reference (not used)

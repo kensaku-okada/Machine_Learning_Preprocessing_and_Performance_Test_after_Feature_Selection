@@ -65,14 +65,17 @@ def importArffData(filePath, config):
 
 
 # export dataset
-def exportCSVFile(dataSet, header, fileName="exportFile"):
+def exportCSVFile(config, header, fileName="exportFile"):
+
+    dataSet = config.test_results
+    feature_selection_algorithm_name = config.feature_selection_algorithm_name
 
     currentDir = os.getcwd()
     print("currentDir: ", currentDir)
 
     #############################################
     # change the directory to export
-    os.chdir(currentDir + "\\" + Constant.FILE_EXPORT_PATH)
+    os.chdir(currentDir + "\\" + Constant.FILE_EXPORT_PATH + "\\" + feature_selection_algorithm_name)
     # print "os.getcwd():{}".format(os.getcwd())
     #############################################
 

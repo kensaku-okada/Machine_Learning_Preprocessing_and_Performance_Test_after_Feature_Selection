@@ -21,9 +21,10 @@ class ConfigurationClass:
 		self._test_results = None
 		# compared classifiers
 		self._classifier_names = None
-		self._dataset_name = None
+		# self._dataset_name = None
 		self._dataset_directory = None
 		self._file_paths = None
+		self._feature_selection_algorithm_name = None
 
 	@property
 	def outputDatasetType(self):
@@ -67,12 +68,12 @@ class ConfigurationClass:
 	def classifier_names(self, classifier_names):
 		self._classifier_names = classifier_names
 
-	@property
-	def dataset_name(self):
-		return self._dataset_name
-	@dataset_name.setter
-	def dataset_name(self, dataset_name):
-		self._dataset_name = dataset_name
+	# @property
+	# def dataset_name(self):
+	# 	return self._dataset_name
+	# @dataset_name.setter
+	# def dataset_name(self, dataset_name):
+	# 	self._dataset_name = dataset_name
 
 	@property
 	def dataset_directory(self):
@@ -87,3 +88,12 @@ class ConfigurationClass:
 	@file_paths.setter
 	def file_paths(self, file_paths):
 		self._file_paths = file_paths
+
+	@property
+	def feature_selection_algorithm_name(self):
+		return self._feature_selection_algorithm_name
+	@feature_selection_algorithm_name.setter
+	def feature_selection_algorithm_name(self, feature_selection_algorithm_name):
+		self._feature_selection_algorithm_name = feature_selection_algorithm_name
+
+
