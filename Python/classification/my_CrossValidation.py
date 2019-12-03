@@ -82,6 +82,7 @@ def cross_validate_k_fold(classifier_name, clssifier_type, X_train, y_train, fit
     print("inner_y_pred: ", inner_y_pred)
 
     # get roc auc sroce
+    # todo: the following parameter substitution is wrong. see https://note.nkmk.me/python-sklearn-roc-curve-auc-score/
     inner_roc_auc_score = roc_auc_score(inner_y_test, inner_y_pred)
     print("inner_roc_auc_score: ", inner_roc_auc_score)
 

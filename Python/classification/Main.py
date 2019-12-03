@@ -116,6 +116,7 @@ for filePath in file_paths:
                 # https://www.pynote.info/entry/sklearn-grid-search-cv
                 cv_clfs[i] = cv_clf.best_estimator_
                 inner_roc_auc_scores[i] = cv_clf.best_score_
+                # print("cv_clf.best_score_: ",cv_clf.best_score_)
 
             # choose the clf giving the largest auc roc
             best_clf = cv_clfs[inner_roc_auc_scores.argmax()]
@@ -132,7 +133,6 @@ for filePath in file_paths:
             roc_auc_scores = np.zeros(Constant.NUM_FOLD_CV)
 
             for i in range(0, Constant.NUM_FOLD_CV):
-
                 print("i = ", i)
 
                 accuracy, f_measure, my_roc_auc_score = Test.test_model_k_fold(classifier_name, best_clf, X_tests[i], y_tests[i])
