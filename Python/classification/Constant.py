@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python3
 
-FILE_EXPORT_PATH = 'output\\'
+FILE_EXPORT_PATH = 'output'
 
 # classifiers
 SVC = "SVC"

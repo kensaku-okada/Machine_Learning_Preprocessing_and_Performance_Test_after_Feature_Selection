@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 #coding:utf-8
-
-import os, sys, csv
+import os, sys, csv, pathlib, glob
 import arff # for sparse arff dataset
 import pandas as pd
 import Constant
@@ -63,20 +62,46 @@ def importArffData(filePath, config):
     df = pd.DataFrame(data['data'])
     return df
 
+def ifExportFileExists(config, filePath):
+
+    file_name = pathlib.Path(filePath).stem
+
+    currentDir = os.getcwd()
+    # print("currentDir at ifExportFileExists: ", currentDir)
+
+    exportFilePath = getExportFileDir(config, currentDir) + "\\" + getExportFileName(file_name)
+    # print("exportFilePath at ifExportFileExists: ", exportFilePath)
+    # print("type(exportFilePath) at ifExportFileExists: ", type(exportFilePath))
+
+    # existingExportFilePaths = list(pathlib.Path(getExportFileDir(config, currentDir)).glob('*.csv'))
+    existingExportFilePaths = glob.glob(getExportFileDir(config, currentDir) + "\\*.csv")
+    # print("existingExportFilePaths at ifExportFileExists: ", existingExportFilePaths)
+
+    if exportFilePath in existingExportFilePaths:
+        print("the export file " + getExportFileName(file_name) + " already exists. skip the iteration.")
+        return True
+    else:
+        return False
+
+def getExportFileName(file_name):
+    return file_name + "_test_result.csv"
+
+def getExportFileDir(config, currentDir):
+    feature_selection_algorithm_name = config.feature_selection_algorithm_name
+    return currentDir + "\\" + Constant.FILE_EXPORT_PATH + "\\" + feature_selection_algorithm_name
 
 # export dataset
-def exportCSVFile(config, header, fileName="exportFile"):
+def exportCSVFile(config, header, filePath):
+
+    file_name = pathlib.Path(filePath).stem
 
     dataSet = config.test_results
-    feature_selection_algorithm_name = config.feature_selection_algorithm_name
 
     currentDir = os.getcwd()
     print("currentDir: ", currentDir)
-
     #############################################
     # change the directory to export
-    os.chdir(currentDir + "\\" + Constant.FILE_EXPORT_PATH + "\\" + feature_selection_algorithm_name)
-    # print "os.getcwd():{}".format(os.getcwd())
+    os.chdir(getExportFileDir(config, currentDir))
     #############################################
 
     # #############################################
@@ -84,7 +109,7 @@ def exportCSVFile(config, header, fileName="exportFile"):
     # os.chdir("\\\\192.168.1.60\\eGIS\\Development\\SecurityDoctor\\report\\output")
     # #############################################
 
-    f = open(fileName + ".csv", 'w', encoding='utf-8')  # open the file with writing mode
+    f = open(getExportFileName(file_name) + ".csv", 'w', encoding='utf-8')  # open the file with writing mode
     csvWriter = csv.writer(f, lineterminator="\n")
     # print('header',header)
     # print('dataSet[0]',dataSet[0])

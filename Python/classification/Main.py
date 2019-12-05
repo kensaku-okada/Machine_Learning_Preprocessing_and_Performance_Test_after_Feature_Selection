@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #coding:utf-8
 
-import os, sys, datetime, glob, pathlib
+import os, sys, glob, pathlib
 import numpy as np
 # import matplotlib.pyplot as plt
 # from scipy.io import arff as scipy_arff # for dense arff dataset
@@ -48,6 +48,7 @@ relativePath = "mrmr_datasets\\arcene\\mRMR\\arcene-10-disc_mrmr.arff"
 # relativePath = "slcc_datasets\\out\\*.arff"
 
 filePath = Util.getFilePath(relativePath)
+print("type(filePath): ", type(filePath))
 
 if config.ifGetMultipleResults:
     config.file_paths = glob.glob(filePath)
@@ -71,7 +72,11 @@ config.dataset_directory = dataset_directory
 ############################################################
 for filePath in config.file_paths:
 
+    # out put file existence check
+    if (Util.ifExportFileExists(config, filePath)): continue
+
     file_name = pathlib.Path(filePath).name
+    # file_name = pathlib.Path(filePath).stem
     print("file_name: ",file_name + " process start.")
 
     # import data
@@ -160,7 +165,6 @@ for filePath in config.file_paths:
             print("overall_f_measure: ",overall_f_measure)
 
             # append the test result for export
-            file_name = os.path.basename(filePath)
             config.test_results.append([file_name ,classifier_name ,overall_accuracy,overall_f_measure, confusionMatrixes])
 
         elif config.crossValidationType == "hold-out":
@@ -184,7 +188,7 @@ for filePath in config.file_paths:
             accuracy, f_measure, my_roc_auc_score = Test.test_model_hold_out(classifier_name, clf, X_test, y_test)
 
             # append the test result for export
-            file_name = os.path.basename(filePath)
+            # file_name = os.path.basename(filePath)
             config.test_results.append([file_name ,classifier_name ,accuracy ,f_measure ,my_roc_auc_score])
             print("------------ end testing the model ------------")
             ###########################################################################
@@ -195,7 +199,7 @@ for filePath in config.file_paths:
     header = ["file_name","classifier","accuracy","f-measure","confusionMatrixes"]
     # https://note.nkmk.me/python-pathlib-name-suffix-parent/
     # Util.exportCSVFile(config, header, fileName=config.dataset_directory.parents[1].name + "_test_result")
-    Util.exportCSVFile(config, header, fileName=pathlib.Path(filePath).stem + "_test_result")
+    Util.exportCSVFile(config, header, filePath)
 
 ################################################################
 # Reference (not used)
