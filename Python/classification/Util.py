@@ -111,7 +111,7 @@ def exportCSVFile(config, header, filePath):
     # os.chdir("\\\\192.168.1.60\\eGIS\\Development\\SecurityDoctor\\report\\output")
     # #############################################
 
-    f = open(getExportFileName(file_name) + ".csv", 'w', encoding='utf-8')  # open the file with writing mode
+    f = open(getExportFileName(file_name), 'w', encoding='utf-8')  # open the file with writing mode
     csvWriter = csv.writer(f, lineterminator="\n")
     # print('header',header)
     # print('dataSet[0]',dataSet[0])

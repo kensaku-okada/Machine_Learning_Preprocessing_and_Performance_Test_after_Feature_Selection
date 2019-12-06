@@ -1,0 +1,25 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+ada-10-disc.arff-noise-0.5-bornfs.arff,SVC,0.8406076681938751,0.6159209761766414,"[array([[592,  32],
+       [ 95, 111]], dtype=int64), array([[589,  35],
+       [109,  97]], dtype=int64), array([[600,  24],
+       [ 98, 107]], dtype=int64), array([[589,  34],
+       [103, 103]], dtype=int64), array([[586,  37],
+       [ 94, 112]], dtype=int64)]"
+ada-10-disc.arff-noise-0.5-bornfs.arff,naive_bayes,0.7692307692307693,0.638731596828992,"[array([[469, 155],
+       [ 27, 179]], dtype=int64), array([[518, 106],
+       [ 58, 148]], dtype=int64), array([[367, 257],
+       [ 19, 186]], dtype=int64), array([[474, 149],
+       [ 35, 171]], dtype=int64), array([[516, 107],
+       [ 44, 162]], dtype=int64)]"
+ada-10-disc.arff-noise-0.6-bornfs.arff,SVC,0.8406076681938751,0.6145772594752187,"[array([[595,  29],
+       [ 98, 108]], dtype=int64), array([[587,  37],
+       [109,  97]], dtype=int64), array([[600,  24],
+       [ 99, 106]], dtype=int64), array([[588,  35],
+       [102, 104]], dtype=int64), array([[589,  34],
+       [ 94, 112]], dtype=int64)]"
+ada-10-disc.arff-noise-0.6-bornfs.arff,naive_bayes,0.7738123945020496,0.6397849462365591,"[array([[480, 144],
+       [ 29, 177]], dtype=int64), array([[513, 111],
+       [ 58, 148]], dtype=int64), array([[372, 252],
+       [ 20, 185]], dtype=int64), array([[488, 135],
+       [ 41, 165]], dtype=int64), array([[523, 100],
+       [ 48, 158]], dtype=int64)]"
