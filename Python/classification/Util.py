@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #coding:utf-8
 import os, sys, csv, pathlib, glob
-import arff # for sparse arff dataset
+import arff
 import pandas as pd
 import Constant
 
@@ -47,6 +47,7 @@ def importArffData(filePath, config):
         # http://scikit.ml/datasets.html
         # (name, sparse, alist, m) = arff.arffread(open(filePath))
 
+        # https://stackoverflow.com/questions/27338678/generator-object-has-no-attribute-data-problems-loading-some-file-with-scipy
         # https://pythonhosted.org/liac-arff/
         data = arff.load(open(filePath), return_type=arff.LOD)
 
@@ -59,6 +60,7 @@ def importArffData(filePath, config):
         sys.exit(0)
 
 
+    # df = pd.DataFrame(data['data'])
     df = pd.DataFrame(data['data'])
     return df
 

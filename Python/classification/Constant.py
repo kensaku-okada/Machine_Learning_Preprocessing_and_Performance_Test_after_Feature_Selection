@@ -10,8 +10,6 @@ C4_5 = "C4.5"
 
 NON_BINARY_OUTPUT_DATASET = ["mushroom"]
 
-NUM_FOLD_CV = 10
-
-
+NUM_FOLD_CV = 5
 
 
