@@ -29,8 +29,8 @@ def get_clssifier_type_and_param_grid(classifier_name):
         # C and γ is a practical method to identify good parameters (for example, C = 2^−5 , 2^−3 , . . . , 2^15 , γ = 2^−15 , 2^−13 , . . . , 2^3 ).
         C_params = [2 ** i for i in range(-5, 16, 2)]
         gamma_params = [2 ** i for i in range(-15, 4, 2)]
-        print("C_params: ", C_params)
-        print("gamma_params: ", gamma_params)
+        # print("C_params: ", C_params)
+        # print("gamma_params: ", gamma_params)
         parameters = {'kernel': ['rbf'], 'C': C_params, 'gamma': gamma_params}
         # https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
         # if gamma='scale' is passed then it uses 1 / (n_features * X.var()) as value of gamma.

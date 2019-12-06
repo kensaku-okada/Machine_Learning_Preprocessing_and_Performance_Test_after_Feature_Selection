@@ -50,8 +50,8 @@ def get_splitted_dataset_k_fold(config, dataset):
 	# 	http://segafreder.hatenablog.com/entry/2016/10/18/163925
 	# folded_X_binary, folded_y = skf.split(X_binary, y)
 	for train_index, test_index in skf.split(X_binary, y):
-		print("train_index:", train_index, "test_index:", test_index)
-		print("train_index.shape:", train_index.shape, "test_index.shape:", test_index.shape)
+		# print("train_index:", train_index, "test_index:", test_index)
+		# print("train_index.shape:", train_index.shape, "test_index.shape:", test_index.shape)
 		# train_indices.append(train_index)
 		# test_indices.append(test_index)
 		X_binary_train_folds.append(X_binary[train_index])

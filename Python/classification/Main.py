@@ -28,9 +28,9 @@ config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.SVC]
 
-config.feature_selection_algorithm_name = "mrmr"
+# config.feature_selection_algorithm_name = "mrmr"
 # config.feature_selection_algorithm_name = "slcc"
-# config.feature_selection_algorithm_name = "bornfs"
+config.feature_selection_algorithm_name = "bornfs"
 ############################################################
 ############### set the configuration end ###############
 ############################################################
@@ -38,14 +38,11 @@ config.feature_selection_algorithm_name = "mrmr"
 ############################################################
 ############### get dataset paths start ###############
 ############################################################
-config.ifGetMultipleResults = False
-# relativePath = "datasets\\mushroom\\mRMR\\mushroom_mrmr.arff"
-relativePath = "mrmr_datasets\\arcene\\mRMR\\arcene-10-disc_mrmr.arff"
-# relativePath = "datasets\\dorothea\\dorothea.sparse.arff.0.5.bornfs.arff"
+# config.ifGetMultipleResults = False
+# relativePath = "mrmr_datasets\\out\\arcene-10-disc_mrmr.arff"
 
-# config.ifGetMultipleResults = True
-# relativePath = "bornfs_datasets\\out\\*.arff"
-# relativePath = "slcc_datasets\\out\\*.arff"
+config.ifGetMultipleResults = True
+relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\*.arff"
 
 filePath = Util.getFilePath(relativePath)
 print("type(filePath): ", type(filePath))
@@ -91,10 +88,10 @@ for filePath in config.file_paths:
     if config.crossValidationType == "k-fold-cv":
         # skf, train_indices, test_indices = Preprocessing.get_splitted_dataset_k_fold(config, dataset)
         X_trains, y_trains, X_tests, y_tests = Preprocessing.get_splitted_dataset_k_fold(config, dataset)
-        print("X_trains: ",X_trains)
-        print("y_trains: ",y_trains)
-        print("X_tests: ",X_tests)
-        print("y_tests: ",y_tests)
+        # print("X_trains: ",X_trains)
+        # print("y_trains: ",y_trains)
+        # print("X_tests: ",X_tests)
+        # print("y_tests: ",y_tests)
 
     elif config.crossValidationType == "hold-out":
         X_train, X_test, y_train, y_test = Preprocessing.get_splitted_dataset_hold_out(config, dataset)
