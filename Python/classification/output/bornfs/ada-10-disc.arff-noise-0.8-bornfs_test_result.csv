@@ -1,0 +1,49 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+ada-10-disc.arff-noise-0.5-bornfs.arff,SVC,0.8406076681938751,0.6159209761766414,"[array([[592,  32],
+       [ 95, 111]], dtype=int64), array([[589,  35],
+       [109,  97]], dtype=int64), array([[600,  24],
+       [ 98, 107]], dtype=int64), array([[589,  34],
+       [103, 103]], dtype=int64), array([[586,  37],
+       [ 94, 112]], dtype=int64)]"
+ada-10-disc.arff-noise-0.5-bornfs.arff,naive_bayes,0.7692307692307693,0.638731596828992,"[array([[469, 155],
+       [ 27, 179]], dtype=int64), array([[518, 106],
+       [ 58, 148]], dtype=int64), array([[367, 257],
+       [ 19, 186]], dtype=int64), array([[474, 149],
+       [ 35, 171]], dtype=int64), array([[516, 107],
+       [ 44, 162]], dtype=int64)]"
+ada-10-disc.arff-noise-0.6-bornfs.arff,SVC,0.8406076681938751,0.6145772594752187,"[array([[595,  29],
+       [ 98, 108]], dtype=int64), array([[587,  37],
+       [109,  97]], dtype=int64), array([[600,  24],
+       [ 99, 106]], dtype=int64), array([[588,  35],
+       [102, 104]], dtype=int64), array([[589,  34],
+       [ 94, 112]], dtype=int64)]"
+ada-10-disc.arff-noise-0.6-bornfs.arff,naive_bayes,0.7738123945020496,0.6397849462365591,"[array([[480, 144],
+       [ 29, 177]], dtype=int64), array([[513, 111],
+       [ 58, 148]], dtype=int64), array([[372, 252],
+       [ 20, 185]], dtype=int64), array([[488, 135],
+       [ 41, 165]], dtype=int64), array([[523, 100],
+       [ 48, 158]], dtype=int64)]"
+ada-10-disc.arff-noise-0.7-bornfs.arff,SVC,0.8381962864721485,0.6128101557991922,"[array([[592,  32],
+       [ 97, 109]], dtype=int64), array([[584,  40],
+       [108,  98]], dtype=int64), array([[598,  26],
+       [ 98, 107]], dtype=int64), array([[586,  37],
+       [100, 106]], dtype=int64), array([[585,  38],
+       [ 95, 111]], dtype=int64)]"
+ada-10-disc.arff-noise-0.7-bornfs.arff,naive_bayes,0.7776706052568122,0.6462010744435918,"[array([[489, 135],
+       [ 29, 177]], dtype=int64), array([[519, 105],
+       [ 57, 149]], dtype=int64), array([[369, 255],
+       [ 18, 187]], dtype=int64), array([[483, 140],
+       [ 36, 170]], dtype=int64), array([[523, 100],
+       [ 47, 159]], dtype=int64)]"
+ada-10-disc.arff-noise-0.8-bornfs.arff,SVC,0.8283096214130697,0.6371049949031601,"[array([[556,  68],
+       [ 68, 138]], dtype=int64), array([[561,  63],
+       [ 70, 136]], dtype=int64), array([[583,  41],
+       [115,  90]], dtype=int64), array([[547,  76],
+       [ 79, 127]], dtype=int64), array([[563,  60],
+       [ 72, 134]], dtype=int64)]"
+ada-10-disc.arff-noise-0.8-bornfs.arff,naive_bayes,0.7197974439353749,0.6063685636856369,"[array([[463, 161],
+       [ 29, 177]], dtype=int64), array([[456, 168],
+       [ 31, 175]], dtype=int64), array([[324, 300],
+       [ 15, 190]], dtype=int64), array([[377, 246],
+       [ 24, 182]], dtype=int64), array([[470, 153],
+       [ 35, 171]], dtype=int64)]"

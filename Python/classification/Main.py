@@ -29,8 +29,8 @@ config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.SVC]
 
 # config.feature_selection_algorithm_name = "mrmr"
-# config.feature_selection_algorithm_name = "slcc"
-config.feature_selection_algorithm_name = "bornfs"
+config.feature_selection_algorithm_name = "slcc"
+# config.feature_selection_algorithm_name = "bornfs"
 ############################################################
 ############### set the configuration end ###############
 ############################################################

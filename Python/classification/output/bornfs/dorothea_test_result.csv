@@ -1,7 +1,0 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-dorothea.sparse.arff.0.5.bornfs.arff,SVC,0.96875,0.8148148148148148,0.8860078277886495
-dorothea.sparse.arff.0.6.bornfs.arff,SVC,0.9625,0.7857142857142857,0.8825831702544031
-dorothea.sparse.arff.0.7.bornfs.arff,SVC,0.94375,0.7272727272727273,0.9045988258317026
-dorothea.sparse.arff.0.8.bornfs.arff,SVC,0.94375,0.7272727272727273,0.9045988258317026
-dorothea.sparse.arff.0.9.bornfs.arff,SVC,0.9125,0.0,0.5
-dorothea.sparse.arff.1.0.bornfs.arff,SVC,0.9375,0.7368421052631579,0.9657534246575342

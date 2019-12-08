@@ -1,0 +1,13 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+ada-10-disc.arff-su-0.5-lcc.arff,SVC,0.8386785628164939,0.6170578133943904,"[array([[592,  32],
+       [ 99, 107]], dtype=int64), array([[583,  41],
+       [106, 100]], dtype=int64), array([[593,  31],
+       [ 97, 108]], dtype=int64), array([[586,  37],
+       [ 94, 112]], dtype=int64), array([[585,  38],
+       [ 94, 112]], dtype=int64)]"
+ada-10-disc.arff-su-0.5-lcc.arff,naive_bayes,0.7619966240655895,0.6321282146850541,"[array([[379, 245],
+       [ 21, 185]], dtype=int64), array([[489, 135],
+       [ 43, 163]], dtype=int64), array([[452, 172],
+       [ 37, 168]], dtype=int64), array([[496, 127],
+       [ 39, 167]], dtype=int64), array([[496, 127],
+       [ 41, 165]], dtype=int64)]"
