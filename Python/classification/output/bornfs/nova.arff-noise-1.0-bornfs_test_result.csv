@@ -1,0 +1,73 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+nova.arff-noise-0.5-bornfs.arff,SVC,0.7594070695553021,0.4403183023872679,"[array([[230,  21],
+       [ 61,  39]], dtype=int64), array([[235,  16],
+       [ 75,  25]], dtype=int64), array([[235,  16],
+       [ 65,  35]], dtype=int64), array([[231,  20],
+       [ 72,  28]], dtype=int64), array([[235,  16],
+       [ 60,  39]], dtype=int64)]"
+nova.arff-noise-0.5-bornfs.arff,naive_bayes,0.7537058152793614,0.3983286908077994,"[array([[235,  16],
+       [ 65,  35]], dtype=int64), array([[239,  12],
+       [ 79,  21]], dtype=int64), array([[241,  10],
+       [ 69,  31]], dtype=int64), array([[228,  23],
+       [ 74,  26]], dtype=int64), array([[236,  15],
+       [ 69,  30]], dtype=int64)]"
+nova.arff-noise-0.6-bornfs.arff,SVC,0.7679589509692132,0.46657929226736566,"[array([[235,  16],
+       [ 55,  45]], dtype=int64), array([[230,  21],
+       [ 72,  28]], dtype=int64), array([[231,  20],
+       [ 62,  38]], dtype=int64), array([[237,  14],
+       [ 72,  28]], dtype=int64), array([[236,  15],
+       [ 60,  39]], dtype=int64)]"
+nova.arff-noise-0.6-bornfs.arff,naive_bayes,0.7628278221208666,0.45691906005221933,"[array([[228,  23],
+       [ 59,  41]], dtype=int64), array([[234,  17],
+       [ 75,  25]], dtype=int64), array([[238,  13],
+       [ 62,  38]], dtype=int64), array([[226,  25],
+       [ 63,  37]], dtype=int64), array([[237,  14],
+       [ 65,  34]], dtype=int64)]"
+nova.arff-noise-0.7-bornfs.arff,SVC,0.8238312428734321,0.6208588957055214,"[array([[241,  10],
+       [ 49,  51]], dtype=int64), array([[238,  13],
+       [ 55,  45]], dtype=int64), array([[238,  13],
+       [ 44,  56]], dtype=int64), array([[237,  14],
+       [ 50,  50]], dtype=int64), array([[238,  13],
+       [ 48,  51]], dtype=int64)]"
+nova.arff-noise-0.7-bornfs.arff,naive_bayes,0.8072976054732041,0.5816831683168316,"[array([[234,  17],
+       [ 48,  52]], dtype=int64), array([[242,   9],
+       [ 65,  35]], dtype=int64), array([[235,  16],
+       [ 47,  53]], dtype=int64), array([[234,  17],
+       [ 54,  46]], dtype=int64), array([[236,  15],
+       [ 50,  49]], dtype=int64)]"
+nova.arff-noise-0.8-bornfs.arff,SVC,0.8084378563283923,0.5882352941176471,"[array([[237,  14],
+       [ 55,  45]], dtype=int64), array([[239,  12],
+       [ 60,  40]], dtype=int64), array([[226,  25],
+       [ 38,  62]], dtype=int64), array([[235,  16],
+       [ 54,  46]], dtype=int64), array([[241,  10],
+       [ 52,  47]], dtype=int64)]"
+nova.arff-noise-0.8-bornfs.arff,naive_bayes,0.7998859749144812,0.5846153846153846,"[array([[232,  19],
+       [ 58,  42]], dtype=int64), array([[236,  15],
+       [ 53,  47]], dtype=int64), array([[233,  18],
+       [ 48,  52]], dtype=int64), array([[229,  22],
+       [ 53,  47]], dtype=int64), array([[226,  25],
+       [ 40,  59]], dtype=int64)]"
+nova.arff-noise-0.9-bornfs.arff,SVC,0.8283922462941847,0.6420927467300832,"[array([[228,  23],
+       [ 47,  53]], dtype=int64), array([[238,  13],
+       [ 52,  48]], dtype=int64), array([[237,  14],
+       [ 34,  66]], dtype=int64), array([[236,  15],
+       [ 42,  58]], dtype=int64), array([[244,   7],
+       [ 54,  45]], dtype=int64)]"
+nova.arff-noise-0.9-bornfs.arff,naive_bayes,0.8164196123147093,0.603448275862069,"[array([[240,  11],
+       [ 55,  45]], dtype=int64), array([[240,  11],
+       [ 60,  40]], dtype=int64), array([[243,   8],
+       [ 51,  49]], dtype=int64), array([[231,  20],
+       [ 40,  60]], dtype=int64), array([[233,  18],
+       [ 48,  51]], dtype=int64)]"
+nova.arff-noise-1.0-bornfs.arff,SVC,0.7770809578107184,0.5081761006289308,"[array([[221,  30],
+       [ 50,  50]], dtype=int64), array([[237,  14],
+       [ 65,  35]], dtype=int64), array([[231,  20],
+       [ 52,  48]], dtype=int64), array([[235,  16],
+       [ 65,  35]], dtype=int64), array([[237,  14],
+       [ 65,  34]], dtype=int64)]"
+nova.arff-noise-1.0-bornfs.arff,naive_bayes,0.7725199543899658,0.46870838881491345,"[array([[237,  14],
+       [ 63,  37]], dtype=int64), array([[241,  10],
+       [ 67,  33]], dtype=int64), array([[237,  14],
+       [ 57,  43]], dtype=int64), array([[235,  16],
+       [ 72,  28]], dtype=int64), array([[229,  22],
+       [ 64,  35]], dtype=int64)]"

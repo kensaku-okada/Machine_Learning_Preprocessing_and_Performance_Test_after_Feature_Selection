@@ -1,0 +1,37 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+hiva.arff-su-0.5-lcc.arff,SVC,0.9669700910273082,0.20125786163522014,"[array([[742,   0],
+       [ 21,   6]], dtype=int64), array([[740,   2],
+       [ 25,   2]], dtype=int64), array([[739,   3],
+       [ 23,   4]], dtype=int64), array([[739,   3],
+       [ 24,   3]], dtype=int64), array([[742,   0],
+       [ 26,   1]], dtype=int64)]"
+hiva.arff-su-0.5-lcc.arff,naive_bayes,0.8382314694408323,0.20051413881748073,"[array([[648,  94],
+       [  9,  18]], dtype=int64), array([[617, 125],
+       [ 12,  15]], dtype=int64), array([[650,  92],
+       [ 13,  14]], dtype=int64), array([[589, 153],
+       [ 13,  14]], dtype=int64), array([[641, 101],
+       [ 10,  17]], dtype=int64)]"
+hiva.arff-su-0.6-lcc.arff,SVC,0.9674902470741222,0.2138364779874214,"[array([[740,   2],
+       [ 21,   6]], dtype=int64), array([[742,   0],
+       [ 26,   1]], dtype=int64), array([[739,   3],
+       [ 23,   4]], dtype=int64), array([[741,   1],
+       [ 23,   4]], dtype=int64), array([[741,   1],
+       [ 25,   2]], dtype=int64)]"
+hiva.arff-su-0.6-lcc.arff,naive_bayes,0.7945383615084526,0.17708333333333334,"[array([[592, 150],
+       [ 11,  16]], dtype=int64), array([[594, 148],
+       [  8,  19]], dtype=int64), array([[622, 120],
+       [ 13,  14]], dtype=int64), array([[541, 201],
+       [ 10,  17]], dtype=int64), array([[621, 121],
+       [  8,  19]], dtype=int64)]"
+hiva.arff-su-0.7-lcc.arff,SVC,0.9685305591677503,0.28402366863905326,"[array([[740,   2],
+       [ 19,   8]], dtype=int64), array([[741,   1],
+       [ 24,   3]], dtype=int64), array([[737,   5],
+       [ 24,   3]], dtype=int64), array([[741,   1],
+       [ 24,   3]], dtype=int64), array([[741,   1],
+       [ 20,   7]], dtype=int64)]"
+hiva.arff-su-0.7-lcc.arff,naive_bayes,0.7053315994798439,0.14231642694928084,"[array([[476, 266],
+       [ 10,  17]], dtype=int64), array([[549, 193],
+       [  5,  22]], dtype=int64), array([[465, 277],
+       [ 10,  17]], dtype=int64), array([[512, 230],
+       [  8,  19]], dtype=int64), array([[616, 126],
+       [  8,  19]], dtype=int64)]"

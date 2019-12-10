@@ -1,0 +1,13 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+hiva.arff-su-0.5-lcc.arff,SVC,0.9669700910273082,0.20125786163522014,"[array([[742,   0],
+       [ 21,   6]], dtype=int64), array([[740,   2],
+       [ 25,   2]], dtype=int64), array([[739,   3],
+       [ 23,   4]], dtype=int64), array([[739,   3],
+       [ 24,   3]], dtype=int64), array([[742,   0],
+       [ 26,   1]], dtype=int64)]"
+hiva.arff-su-0.5-lcc.arff,naive_bayes,0.8382314694408323,0.20051413881748073,"[array([[648,  94],
+       [  9,  18]], dtype=int64), array([[617, 125],
+       [ 12,  15]], dtype=int64), array([[650,  92],
+       [ 13,  14]], dtype=int64), array([[589, 153],
+       [ 13,  14]], dtype=int64), array([[641, 101],
+       [ 10,  17]], dtype=int64)]"
