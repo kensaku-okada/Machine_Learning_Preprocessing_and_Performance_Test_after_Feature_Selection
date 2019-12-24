@@ -41,8 +41,10 @@ config.feature_selection_algorithm_name = "slcc"
 # config.ifGetMultipleResults = False
 # relativePath = "mrmr_datasets\\out\\arcene-10-disc_mrmr.arff"
 
+# set the import path
 config.ifGetMultipleResults = True
-relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\*.arff"
+# relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\*.arff"
+relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\tricky\\*.arff"
 
 filePath = Util.getFilePath(relativePath)
 print("type(filePath): ", type(filePath))
@@ -74,6 +76,7 @@ for filePath in config.file_paths:
 
     file_name = pathlib.Path(filePath).name
     # file_name = pathlib.Path(filePath).stem
+    config.file_name = file_name
     print("file_name: ",file_name + " process start.")
 
     # import data
@@ -116,6 +119,7 @@ for filePath in config.file_paths:
             confusionMatrixes = [0] * Constant.NUM_FOLD_CV
 
             for i in range(0, Constant.NUM_FOLD_CV):
+                print("number of fold (i) = ", i)
                 ####################################################################
                 ############### classification with cross validation start ######################
                 ####################################################################
@@ -145,7 +149,6 @@ for filePath in config.file_paths:
                 ############### test the model start ####################
                 ###########################################################################
                 print("------------ start testing the model ------------")
-                print("i = ", i)
                 confusionMatrixResult, accuracy, f_measure = Test.test_model_k_fold(classifier_name, cv_clf.best_estimator_, X_tests[i], y_tests[i])
 
                 accuracies[i] = accuracy

@@ -29,6 +29,8 @@ def test_model_k_fold(classifier_name, clf, X_test, y_test):
     print("Accuracy (<> F measure = f1score) is : ", accuracy)
 
     my_classification_report = classification_report(y_test, y_pred, output_dict=True)
+    print("my_classification_report: ",my_classification_report)
+
     f_measure = my_classification_report['1']['f1-score']
     print ("classification_report(y_test, y_pred, output_dict=False): ",classification_report(y_test, y_pred, output_dict=False))
     print ("F measure at 0 is : ",my_classification_report['0']['f1-score'])

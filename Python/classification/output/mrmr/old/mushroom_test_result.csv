@@ -1,2 +1,0 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-mushroom_mrmr.arff,SVC,1.0,1.0,1.0

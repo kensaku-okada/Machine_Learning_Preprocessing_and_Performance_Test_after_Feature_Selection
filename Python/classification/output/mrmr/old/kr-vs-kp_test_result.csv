@@ -1,2 +1,0 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-kr-vs-kp_mrmr.arff,SVC,0.7640625,0.7269439421338155,0.7663736263736264

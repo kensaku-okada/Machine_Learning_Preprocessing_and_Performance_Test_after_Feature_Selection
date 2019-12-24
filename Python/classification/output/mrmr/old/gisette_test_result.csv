@@ -1,2 +1,0 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-gisette-10-disc_mrmr.arff,SVC,0.7891666666666667,0.7805724197745013,0.7886830635118307

@@ -1,2 +1,0 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-nova_mrmr.arff,SVC,0.717948717948718,0.0,0.5

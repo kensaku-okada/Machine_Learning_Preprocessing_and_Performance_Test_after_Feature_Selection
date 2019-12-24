@@ -24,7 +24,10 @@ class ConfigurationClass:
 		# self._dataset_name = None
 		self._dataset_directory = None
 		self._file_paths = None
+		self._file_name = None
 		self._feature_selection_algorithm_name = None
+
+
 
 	@property
 	def outputDatasetType(self):
@@ -88,6 +91,13 @@ class ConfigurationClass:
 	@file_paths.setter
 	def file_paths(self, file_paths):
 		self._file_paths = file_paths
+
+	@property
+	def file_name(self):
+		return self._file_name
+	@file_name.setter
+	def file_name(self, file_name):
+		self._file_name = file_name
 
 	@property
 	def feature_selection_algorithm_name(self):

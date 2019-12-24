@@ -1,2 +1,0 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-spambase-disc_mrmr.arff,SVC,0.9239956568946797,0.9056603773584906,0.9172668329661157

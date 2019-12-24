@@ -2,6 +2,7 @@
 #coding:utf-8
 
 import numpy as np
+import pandas as pd
 import Util, Constant, sys
 ############### package for preprocessing ######################
 from sklearn.preprocessing import MultiLabelBinarizer, LabelEncoder, OneHotEncoder
@@ -15,19 +16,44 @@ def get_splitted_dataset_k_fold(config, dataset):
 		https://qiita.com/kenmatsu4/items/0a862a42ceb178ba7155
 		https://blog.amedama.jp/entry/sklearn-cv-custom-metric
 	'''
-	X, y = getSplittedDataset(dataset)
 
-	# just change the data type of y from string to int
-	y = y.astype(np.int32)
+	# if 'mushroom' in config.file_name.split(".") or 'mushroom' in config.file_name.split("_"):
+	# 	# https://towardsdatascience.com/building-a-perfect-mushroom-classifier-ceb9d99ae87e
+	# 	# in "mushroom" dataset:
+	# 	# edible = e was assumed to be 0
+	# 	# poisonous = p was assumed to be 1
+	# 	# y = np.array([label.replace('e', '0') for label in y])
+	# 	# y = np.array([label.replace('p', '1') for label in y])
+	# 	y = np.array([1 if "p" == label else 0 for label in y])
+	#
+	# else:
+	# 	# just change the data type of y from string to int
+	# 	y = y.astype(np.int32)
+	# print("y after replace",y)
 
-	# one-hot the data to resolve the following error
-	X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
+	# binarize all the data
+	dataset_binary = binarize_dataset(dataset)
+
+	# one-hot the data
+	X_binary, y_binary = getSplittedDataset(dataset_binary)
+	print("X_binary by get_dummies",X_binary)
 	print("X_binary.shape: ", X_binary.shape)
+	print("y_binary",y_binary)
+
+	# X, y = getSplittedDataset(dataset)
+	# X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
+	# print("X_binary by OneHotEncoder",X_binary)
+	# print("X_binary.shape: ", X_binary.shape)
+	# print("y_binary",y_binary)
+
+	# in mushroom dateset the following error occured with OneHotEncoder
+	# TypeError: unorderable types: NoneType() < str()
+	# TypeError: argument must be a string or number
 
 	# convert from Byte code to String, and from String to int, which is necessary only when the date is byte type.
 	# https://qiita.com/masakielastic/items/2a04aee632c62536f82c
-	if type(y) is bytes:
-		y = np.array([int(y_e.decode('utf-8')) for y_e in y])
+	# if type(y) is bytes:
+	# 	y = np.array([int(y_e.decode('utf-8')) for y_e in y])
 
 	skf = StratifiedKFold(n_splits = Constant.NUM_FOLD_CV,
 			   shuffle = True,
@@ -48,16 +74,16 @@ def get_splitted_dataset_k_fold(config, dataset):
 	# https://qiita.com/chorome/items/54e99093050a9473a189
 	# the followings are old:
 	# 	http://segafreder.hatenablog.com/entry/2016/10/18/163925
-	# folded_X_binary, folded_y = skf.split(X_binary, y)
-	for train_index, test_index in skf.split(X_binary, y):
+	# for train_index, test_index in skf.split(X_binary, y):
+	for train_index, test_index in skf.split(X_binary, y_binary):
 		# print("train_index:", train_index, "test_index:", test_index)
 		# print("train_index.shape:", train_index.shape, "test_index.shape:", test_index.shape)
 		# train_indices.append(train_index)
 		# test_indices.append(test_index)
 		X_binary_train_folds.append(X_binary[train_index])
-		y_train_folds.append(y[train_index])
+		y_train_folds.append(y_binary[train_index])
 		X_binary_test_folds.append(X_binary[test_index])
-		y_test_folds.append(y[test_index])
+		y_test_folds.append(y_binary[test_index])
 
 	# print("len(test_indices): ",len(test_indices))
 	return X_binary_train_folds, y_train_folds, X_binary_test_folds, y_test_folds
@@ -70,17 +96,12 @@ def get_splitted_dataset_k_fold(config, dataset):
 def get_splitted_dataset_hold_out(config, dataset):
 
 	# when processing mushroom_mrmr.arff, you want to use below
-	if config.dataset_name == "mushroom":
-		# https://towardsdatascience.com/building-a-perfect-mushroom-classifier-ceb9d99ae87e
+	# https://towardsdatascience.com/building-a-perfect-mushroom-classifier-ceb9d99ae87e
+	if "mushroom" in config.file_name.split(".") or "mushroom" in config.file_name.split("_"):
 
-		# binarize the dataset
-		# https://note.nkmk.me/python-pandas-get-dummies/
-		dataset_binary = pd.get_dummies(dataset)
-		print("type(dataset_binary): ", type(dataset_binary))
-		print("dataset_binary.shape: ", dataset_binary.shape)
-		print("dataset_binary.head(5):{}".format(dataset_binary.head(5)))
+		dataset_binary = binarize_dataset(dataset)
 
-		X_binary, y_binary = getSplittedDataset(dataset)
+		X_binary, y_binary = getSplittedDataset(dataset_binary)
 		print("type(X_binary): ", type(X_binary))
 		print("X_binary.shape: ", X_binary.shape)
 		print("type(y_binary): ", type(y_binary))
@@ -88,6 +109,10 @@ def get_splitted_dataset_hold_out(config, dataset):
 		# print("y: ", y)
 		# print("y[0][0]: ", y[0])
 		# print("type(y[0][0]): ", type(y[0]))
+
+		# # one-hot the data to resolve the following error
+		# X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
+		# print("X_binary.shape: ", X_binary.shape)
 
 		###################### old code for character binarization ######################
 		# import itertools
@@ -108,10 +133,8 @@ def get_splitted_dataset_hold_out(config, dataset):
 		###################### old code for character binarization ######################
 
 		# divide data into training data and test data by 1:4 = test : train
-		# if you want change the random pattern each time, remove random_state=0
 		# random_state=: データを分割する際の乱数のシード値 (https://docs.pyq.jp/python/machine_learning/tips/train_test_split.html)
 		# https://qiita.com/tomov3/items/039d4271ed30490edf7b
-		# X_train, X_test, y_train, y_test = train_test_split(X_binary, y, test_size=0.2, random_state=0)
 		X_train, X_test, y_train, y_test = train_test_split(X_binary, y_binary, test_size=0.2, random_state=0)
 
 	else:
@@ -120,17 +143,11 @@ def get_splitted_dataset_hold_out(config, dataset):
 		# just change the data type of y from string to int
 		y = y.astype(np.int32)
 
-		# binarize the data to resolve the following error
-		# ValueError: You appear to be using a legacy multi-label data representation. Sequence of sequences are no longer supported; use a binary array or sparse matrix instead.
-		# source: https://stackoverflow.com/questions/34213199/scikit-learn-multilabel-classification-valueerror-you-appear-to-be-using-a-leg
-		# https://github.com/phanein/deepwalk/issues/32
-		X_binary = MultiLabelBinarizer().fit_transform(X)
+		# one-hot the data to resolve the following error
+		X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
+		print("X_binary.shape: ", X_binary.shape)
 
 		# divide data into training data and test data by 1:4 = test : train
-		# if you want change the random pattern each time, remove random_state=0
-		# random_state=: データを分割する際の乱数のシード値 (https://docs.pyq.jp/python/machine_learning/tips/train_test_split.html)
-		# https://qiita.com/tomov3/items/039d4271ed30490edf7b
-		# X_train, X_test, y_train, y_test = train_test_split(X_binary, y, test_size=0.2, random_state=0)
 		X_train, X_test, y_train, y_test = train_test_split(X_binary, y, test_size=0.2, random_state=0)
 
 	print("X_binary: ", X_binary)
@@ -162,3 +179,13 @@ def getSplittedDataset(dataset):
 	X = dataset.iloc[:, 0:len(dataset.columns) - 1].values
 	y = dataset.iloc[:, len(dataset.columns) - 1].values
 	return X, y
+
+def binarize_dataset(dataset):
+	# binarize the dataset
+	# https://note.nkmk.me/python-pandas-get-dummies/
+	dataset_binary = pd.get_dummies(dataset)
+	# print("type(dataset_binary): ", type(dataset_binary))
+	# print("dataset_binary.shape: ", dataset_binary.shape)
+	# print("dataset_binary.head(5):{}".format(dataset_binary.head(5)))
+
+	return dataset_binary

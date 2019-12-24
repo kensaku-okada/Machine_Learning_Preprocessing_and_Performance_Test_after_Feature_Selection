@@ -1,3 +1,0 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-arcene-10-disc_mrmr.arff,SVC,0.9536363636363637,0.9466666666666667,0.9533333333333334
-arcene-10-disc_mrmr.arff,naive_bayes,0.9293939393939394,0.9305050505050506,0.9366666666666668

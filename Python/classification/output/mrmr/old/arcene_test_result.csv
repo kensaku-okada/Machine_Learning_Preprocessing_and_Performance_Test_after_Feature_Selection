@@ -1,2 +1,0 @@
-file_name,classifier,accuracy,f-measure,ROC-AUC
-arcene-10-disc_mrmr.arff,SVC,0.7,0.5714285714285715,0.6666666666666666
