@@ -10,7 +10,8 @@ def getFilePath(relativePath):
     # the directory where the main script is
     main_script_dir = os.getcwd()
 
-    os.chdir("..\\..")
+    # os.chdir("..\\..")
+    os.chdir("..")
     print("os.path.abspath(os.curdir): ",os.path.abspath(os.curdir))
 
     filePath = os.path.abspath(os.curdir) + '\\' + relativePath

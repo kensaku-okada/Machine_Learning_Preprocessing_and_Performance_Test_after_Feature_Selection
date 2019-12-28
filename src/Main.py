@@ -28,8 +28,8 @@ config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.SVC]
 
-# config.feature_selection_algorithm_name = "mrmr"
-config.feature_selection_algorithm_name = "slcc"
+config.feature_selection_algorithm_name = "mrmr"
+# config.feature_selection_algorithm_name = "slcc"
 # config.feature_selection_algorithm_name = "bornfs"
 ############################################################
 ############### set the configuration end ###############
@@ -43,8 +43,9 @@ config.feature_selection_algorithm_name = "slcc"
 
 # set the import path
 config.ifGetMultipleResults = True
-# relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\*.arff"
-relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\tricky\\*.arff"
+relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\*.arff"
+# relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\tricky\\*.arff"
+# relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\dexter-10*.arff"
 
 filePath = Util.getFilePath(relativePath)
 print("type(filePath): ", type(filePath))

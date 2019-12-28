@@ -31,20 +31,26 @@ def get_splitted_dataset_k_fold(config, dataset):
 	# 	y = y.astype(np.int32)
 	# print("y after replace",y)
 
-	# binarize all the data
-	dataset_binary = binarize_dataset(dataset)
-
-	# one-hot the data
-	X_binary, y_binary = getSplittedDataset(dataset_binary)
-	print("X_binary by get_dummies",X_binary)
-	print("X_binary.shape: ", X_binary.shape)
-	print("y_binary",y_binary)
-
+	# # one-hot the data (this code gives error "Exception: Data must be 1-dimensional" for now. need to modify the rror)
 	# X, y = getSplittedDataset(dataset)
-	# X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
-	# print("X_binary by OneHotEncoder",X_binary)
-	# print("X_binary.shape: ", X_binary.shape)
-	# print("y_binary",y_binary)
+	# X_binary = binarize_dataset(X)
+	# y_binary = binarize_dataset(y)
+	# np.set_printoptions(threshold=np.inf)
+	# print("X_binary.shape by get_dummies: ", X_binary.shape)
+	# print("X_binary by get_dummies: ",X_binary)
+	# print("y_binary by get_dummies: ",y_binary)
+	# np.set_printoptions(threshold=1000)
+
+	# one-hot the data (another way)
+	X, y = getSplittedDataset(dataset)
+	X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
+	np.set_printoptions(threshold=np.inf)
+	print("X_binary.shape by OneHotEncoder: ", X_binary.shape)
+	print("X_binary by OneHotEncoder: ",X_binary)
+	y_binary = y
+	print("y_binary.shape by OneHotEncoder: ",y_binary.shape)
+	print("y_binary by OneHotEncoder: ",y_binary)
+	np.set_printoptions(threshold=1000)
 
 	# in mushroom dateset the following error occured with OneHotEncoder
 	# TypeError: unorderable types: NoneType() < str()
@@ -185,7 +191,7 @@ def binarize_dataset(dataset):
 	# https://note.nkmk.me/python-pandas-get-dummies/
 	dataset_binary = pd.get_dummies(dataset)
 	# print("type(dataset_binary): ", type(dataset_binary))
-	# print("dataset_binary.shape: ", dataset_binary.shape)
+	print("dataset_binary.shape: ", dataset_binary.shape)
 	# print("dataset_binary.head(5):{}".format(dataset_binary.head(5)))
 
 	return dataset_binary
