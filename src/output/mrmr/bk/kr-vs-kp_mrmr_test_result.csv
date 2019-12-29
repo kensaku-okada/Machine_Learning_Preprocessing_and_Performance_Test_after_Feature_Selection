@@ -11,18 +11,6 @@ ada-10-disc_mrmr.arff,naive_bayes,0.7658548348203521,0.5855740503627828,"[array(
        [ 20, 186]], dtype=int64), array([[371, 252],
        [ 16, 190]], dtype=int64), array([[609,  14],
        [152,  53]], dtype=int64)]"
-arcene-10-disc_mrmr.arff,SVC,0.85,0.8351648351648352,"[array([[10,  2],
-       [ 1,  8]], dtype=int64), array([[9, 2],
-       [1, 8]], dtype=int64), array([[8, 3],
-       [2, 7]], dtype=int64), array([[10,  1],
-       [ 1,  8]], dtype=int64), array([[10,  1],
-       [ 1,  7]], dtype=int64)]"
-arcene-10-disc_mrmr.arff,naive_bayes,0.88,0.8695652173913043,"[array([[10,  2],
-       [ 1,  8]], dtype=int64), array([[9, 2],
-       [0, 9]], dtype=int64), array([[10,  1],
-       [ 2,  7]], dtype=int64), array([[10,  1],
-       [ 0,  9]], dtype=int64), array([[9, 2],
-       [1, 7]], dtype=int64)]"
 dexter-10-disc_mrmr.arff,SVC,0.9,0.9006622516556292,"[array([[25,  5],
        [ 0, 30]], dtype=int64), array([[30,  0],
        [ 2, 28]], dtype=int64), array([[29,  1],

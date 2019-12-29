@@ -17,20 +17,6 @@ def get_splitted_dataset_k_fold(config, dataset):
 		https://blog.amedama.jp/entry/sklearn-cv-custom-metric
 	'''
 
-	# if 'mushroom' in config.file_name.split(".") or 'mushroom' in config.file_name.split("_"):
-	# 	# https://towardsdatascience.com/building-a-perfect-mushroom-classifier-ceb9d99ae87e
-	# 	# in "mushroom" dataset:
-	# 	# edible = e was assumed to be 0
-	# 	# poisonous = p was assumed to be 1
-	# 	# y = np.array([label.replace('e', '0') for label in y])
-	# 	# y = np.array([label.replace('p', '1') for label in y])
-	# 	y = np.array([1 if "p" == label else 0 for label in y])
-	#
-	# else:
-	# 	# just change the data type of y from string to int
-	# 	y = y.astype(np.int32)
-	# print("y after replace",y)
-
 	# # one-hot the data (this code gives error "Exception: Data must be 1-dimensional" for now. need to modify the rror)
 	# X, y = getSplittedDataset(dataset)
 	# X_binary = binarize_dataset(X)
@@ -43,14 +29,42 @@ def get_splitted_dataset_k_fold(config, dataset):
 
 	# one-hot the data (another way)
 	X, y = getSplittedDataset(dataset)
-	X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
-	np.set_printoptions(threshold=np.inf)
-	print("X_binary.shape by OneHotEncoder: ", X_binary.shape)
-	print("X_binary by OneHotEncoder: ",X_binary)
-	y_binary = y
-	print("y_binary.shape by OneHotEncoder: ",y_binary.shape)
-	print("y_binary by OneHotEncoder: ",y_binary)
-	np.set_printoptions(threshold=1000)
+	print("type(X): ",type(X))
+	print("type.shape: ",X.shape)
+	print("X.head: ",X.head(5))
+
+	if 'mushroom' in config.file_name.split(".") or 'mushroom' in config.file_name.split("_"):
+
+		X_binary = binarize_dataset(X)
+		# print("X: ", X)
+
+		# convert the data type into numpy.array from pandas df
+		X_binary = X_binary.values
+
+		# https://towardsdatascience.com/building-a-perfect-mushroom-classifier-ceb9d99ae87e
+		# in "mushroom" dataset:
+		# edible = e was assumed to be 0
+		# poisonous = p was assumed to be 1
+		# y = np.array([label.replace('e', '0') for label in y])
+		# y = np.array([label.replace('p', '1') for label in y])
+		y_binary = np.array([1 if "p" == label else 0 for label in y])
+
+	else:
+		X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
+		# just change the data type of y from string to int
+		y = y.astype(np.int32)
+
+		# convert the data type into numpy.array from pandas df
+		y_binary = y.values
+
+	print("y_binary after replace", y_binary)
+	print("X.shape: ",X.shape)
+	# np.set_printoptions(threshold=np.inf)
+	# print("X_binary.shape by OneHotEncoder: ", X_binary.shape)
+	# print("X_binary by OneHotEncoder: ",X_binary)
+	# print("y_binary.shape by OneHotEncoder: ",y_binary.shape)
+	# print("y_binary by OneHotEncoder: ",y_binary)
+	# np.set_printoptions(threshold=1000)
 
 	# in mushroom dateset the following error occured with OneHotEncoder
 	# TypeError: unorderable types: NoneType() < str()
@@ -181,9 +195,14 @@ def get_splitted_dataset_hold_out(config, dataset):
 
 	return X_train, X_test, y_train, y_test
 
+# def getSplittedDataset(dataset):
+# 	X = dataset.iloc[:, 0:len(dataset.columns) - 1].values
+# 	y = dataset.iloc[:, len(dataset.columns) - 1].values
+# 	return X, y
+
 def getSplittedDataset(dataset):
-	X = dataset.iloc[:, 0:len(dataset.columns) - 1].values
-	y = dataset.iloc[:, len(dataset.columns) - 1].values
+	X = dataset.iloc[:, 0:len(dataset.columns) - 1]
+	y = dataset.iloc[:, len(dataset.columns) - 1]
 	return X, y
 
 def binarize_dataset(dataset):
@@ -191,7 +210,7 @@ def binarize_dataset(dataset):
 	# https://note.nkmk.me/python-pandas-get-dummies/
 	dataset_binary = pd.get_dummies(dataset)
 	# print("type(dataset_binary): ", type(dataset_binary))
-	print("dataset_binary.shape: ", dataset_binary.shape)
+	# print("dataset_binary.shape: ", dataset_binary.shape)
 	# print("dataset_binary.head(5):{}".format(dataset_binary.head(5)))
 
 	return dataset_binary

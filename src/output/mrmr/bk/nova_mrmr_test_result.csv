@@ -1,0 +1,25 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+mushroom_mrmr.arff,SVC,1.0,1.0,"[array([[842,   0],
+       [  0, 784]], dtype=int64), array([[842,   0],
+       [  0, 783]], dtype=int64), array([[842,   0],
+       [  0, 783]], dtype=int64), array([[841,   0],
+       [  0, 783]], dtype=int64), array([[841,   0],
+       [  0, 783]], dtype=int64)]"
+mushroom_mrmr.arff,naive_bayes,1.0,1.0,"[array([[842,   0],
+       [  0, 784]], dtype=int64), array([[842,   0],
+       [  0, 783]], dtype=int64), array([[842,   0],
+       [  0, 783]], dtype=int64), array([[841,   0],
+       [  0, 783]], dtype=int64), array([[841,   0],
+       [  0, 783]], dtype=int64)]"
+nova_mrmr.arff,SVC,1.0,1.0,"[array([[251,   0],
+       [  0, 100]], dtype=int64), array([[251,   0],
+       [  0, 100]], dtype=int64), array([[251,   0],
+       [  0, 100]], dtype=int64), array([[251,   0],
+       [  0, 100]], dtype=int64), array([[251,   0],
+       [  0,  99]], dtype=int64)]"
+nova_mrmr.arff,naive_bayes,0.999429874572406,0.998998998998999,"[array([[250,   1],
+       [  0, 100]], dtype=int64), array([[251,   0],
+       [  0, 100]], dtype=int64), array([[251,   0],
+       [  0, 100]], dtype=int64), array([[251,   0],
+       [  0, 100]], dtype=int64), array([[251,   0],
+       [  0,  99]], dtype=int64)]"

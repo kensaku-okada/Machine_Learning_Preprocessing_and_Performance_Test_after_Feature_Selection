@@ -5,9 +5,9 @@ mushroom_mrmr.arff,SVC,1.0,1.0,"[array([[842,   0],
        [  0, 783]], dtype=int64), array([[841,   0],
        [  0, 783]], dtype=int64), array([[841,   0],
        [  0, 783]], dtype=int64)]"
-mushroom_mrmr.arff,naive_bayes,0.955809945839488,0.9561392791692119,"[array([[786,  56],
-       [  0, 784]], dtype=int64), array([[782,  60],
-       [  0, 783]], dtype=int64), array([[775,  67],
-       [  0, 783]], dtype=int64), array([[760,  81],
-       [  0, 783]], dtype=int64), array([[749,  92],
-       [  3, 780]], dtype=int64)]"
+mushroom_mrmr.arff,naive_bayes,1.0,1.0,"[array([[842,   0],
+       [  0, 784]], dtype=int64), array([[842,   0],
+       [  0, 783]], dtype=int64), array([[842,   0],
+       [  0, 783]], dtype=int64), array([[841,   0],
+       [  0, 783]], dtype=int64), array([[841,   0],
+       [  0, 783]], dtype=int64)]"

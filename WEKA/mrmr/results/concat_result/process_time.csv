@@ -1,0 +1,16 @@
+dataset_name, Total Search Time in milliseconds (8096MB memory size), Reranking Time in milliseconds in milliseconds
+ada-10-disc, 111.0, 11.0
+arcene-10-disc, 5997.0, 1629.0
+cylinder-bands, 25, 1.0
+dexter-10-disc, 39018.0, 21052.0
+dorothea-10-disc, NA, NA
+gina-10-disc, 52388.0, 51670.0
+gisette-10-disc, 1367486.0, 1360553.0
+hiva-10-disc, 40015.0, 35849.0
+kr-vs-kp-disc, 143.0, 4.0
+madelon-disc, 1186.0, 1027.0
+mushroom, 93, 1.0
+nova, 723737.0, 699883.0
+smambase-disc, 99.0, 35.0
+splice_filtered, 59.0, 22.0
+sylva-10-disc, 2896.0, 2585.0

@@ -11,18 +11,6 @@ ada-10-disc_mrmr.arff,naive_bayes,0.7658548348203521,0.5855740503627828,"[array(
        [ 20, 186]], dtype=int64), array([[371, 252],
        [ 16, 190]], dtype=int64), array([[609,  14],
        [152,  53]], dtype=int64)]"
-arcene-10-disc_mrmr.arff,SVC,0.85,0.8351648351648352,"[array([[10,  2],
-       [ 1,  8]], dtype=int64), array([[9, 2],
-       [1, 8]], dtype=int64), array([[8, 3],
-       [2, 7]], dtype=int64), array([[10,  1],
-       [ 1,  8]], dtype=int64), array([[10,  1],
-       [ 1,  7]], dtype=int64)]"
-arcene-10-disc_mrmr.arff,naive_bayes,0.88,0.8695652173913043,"[array([[10,  2],
-       [ 1,  8]], dtype=int64), array([[9, 2],
-       [0, 9]], dtype=int64), array([[10,  1],
-       [ 2,  7]], dtype=int64), array([[10,  1],
-       [ 0,  9]], dtype=int64), array([[9, 2],
-       [1, 7]], dtype=int64)]"
 dexter-10-disc_mrmr.arff,SVC,0.9,0.9006622516556292,"[array([[25,  5],
        [ 0, 30]], dtype=int64), array([[30,  0],
        [ 2, 28]], dtype=int64), array([[29,  1],
@@ -47,15 +35,3 @@ gina-10-disc_mrmr.arff,naive_bayes,0.7805264827148747,0.7474452554744525,"[array
        [103, 207]], dtype=int64), array([[270,  50],
        [101, 209]], dtype=int64), array([[290,  30],
        [ 93, 217]], dtype=int64)]"
-gisette-10-disc_mrmr.arff,SVC,0.9585,0.958534554537885,"[array([[575,  25],
-       [ 21, 579]], dtype=int64), array([[568,  32],
-       [ 25, 575]], dtype=int64), array([[571,  29],
-       [ 24, 576]], dtype=int64), array([[582,  18],
-       [ 30, 570]], dtype=int64), array([[577,  23],
-       [ 22, 578]], dtype=int64)]"
-gisette-10-disc_mrmr.arff,naive_bayes,0.9161666666666667,0.9141784678382529,"[array([[572,  28],
-       [ 58, 542]], dtype=int64), array([[551,  49],
-       [ 62, 538]], dtype=int64), array([[567,  33],
-       [ 71, 529]], dtype=int64), array([[567,  33],
-       [ 62, 538]], dtype=int64), array([[561,  39],
-       [ 68, 532]], dtype=int64)]"
