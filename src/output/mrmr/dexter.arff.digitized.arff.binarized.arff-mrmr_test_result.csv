@@ -1,0 +1,11 @@
+file_name,classifier,accuracy,f-measure,TP,TP,TP,TP,CV_fit_time
+ad.arff.digitized.arff.binarized.arff-mrmr.arff,SVC,0.9695028972247637,0.8820754716981132,2805,85,15,374,0:08:38.504792
+ad.arff.digitized.arff.binarized.arff-mrmr.arff,naive_bayes,0.9646233607807259,0.8654292343387471,2790,86,30,373,0:00:01.381640
+ada.arff.digitized.arff.binarized.arff-mrmr.arff,SVC,0.8473595370147095,0.6500829187396352,2926,441,192,588,0:51:21.340593
+ada.arff.digitized.arff.binarized.arff-mrmr.arff,naive_bayes,0.7265493127562093,0.6153324287652646,2106,122,1012,907,0:00:01.461096
+arcene.arff.digitized.arff.binarized.arff-mrmr.arff,SVC,1.0,1.0,56,0,0,44,0:00:07.890939
+arcene.arff.digitized.arff.binarized.arff-mrmr.arff,naive_bayes,0.96,0.9565217391304348,52,0,4,44,0:00:00.072805
+cylinder.arff.digitized.arff.binarized.arff-mrmr.arff,SVC,0.5888888888888889,0.7139175257731959,41,35,187,277,0:01:06.396511
+cylinder.arff.digitized.arff.binarized.arff-mrmr.arff,naive_bayes,0.5777777777777777,0.7323943661971831,0,0,228,312,0:00:00.236389
+dexter.arff.digitized.arff.binarized.arff-mrmr.arff,SVC,0.9433333333333334,0.9435215946843853,141,8,9,142,0:00:25.119940
+dexter.arff.digitized.arff.binarized.arff-mrmr.arff,naive_bayes,0.93,0.9329073482428115,133,4,17,146,0:00:00.132644

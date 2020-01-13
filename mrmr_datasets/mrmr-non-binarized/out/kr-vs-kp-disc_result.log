@@ -1,0 +1,73 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.RerankingSearch -method 2 -blockSize 20 -rankingMeasure 0 -search "weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1"
+Relation:     ./kr-vs-kp
+Instances:    3196
+Attributes:   37
+              attribute36
+              attribute1
+              attribute2
+              attribute20
+              attribute4
+              attribute17
+              attribute12
+              attribute28
+              attribute26
+              attribute5
+              attribute34
+              attribute19
+              attribute24
+              attribute30
+              attribute25
+              attribute11
+              attribute9
+              attribute13
+              attribute23
+              attribute22
+              attribute14
+              attribute3
+              attribute31
+              attribute6
+              attribute35
+              attribute27
+              attribute7
+              attribute18
+              attribute29
+              attribute16
+              attribute15
+              attribute8
+              attribute32
+              attribute33
+              attribute10
+              attribute21
+              CLASS
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+Selected attributes: 35 34 33 
+Total Search Time in milliseconds: 143.0
+Reranking Time in milliseconds: 4.0
+Blocks searched: 2
+Attribute Evaluator during search:        CFS Subset Evaluator
+       Including locally predictive attributes
+
+Options of RerankingSearch:
+-method 2 -blockSize 20 -rankingMeasure 0 -search weka.attributeSelection.GreedyStepwise -P 1,2,3 -T -1.7976931348623157E308 -N -1 -num-slots 1 
+Attribute Subset Evaluator (supervised, Class (nominal): 37 CLASS):
+       CFS Subset Evaluator
+       Including locally predictive attributes
+
+Selected attributes: 22,30,31,33,34,35,36 : 7
+                     attribute3
+                     attribute16
+                     attribute15
+                     attribute32
+                     attribute33
+                     attribute10
+                     attribute21
+

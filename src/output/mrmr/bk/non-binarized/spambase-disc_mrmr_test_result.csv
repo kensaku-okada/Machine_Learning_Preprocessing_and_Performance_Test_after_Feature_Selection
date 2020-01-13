@@ -1,0 +1,25 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+nova_mrmr.arff,SVC,0.9218928164196123,0.855026455026455,"[array([[237,  14],
+       [ 17,  83]], dtype=int64), array([[243,   8],
+       [ 18,  82]], dtype=int64), array([[242,   9],
+       [ 12,  88]], dtype=int64), array([[245,   6],
+       [ 29,  71]], dtype=int64), array([[246,   5],
+       [ 19,  80]], dtype=int64)]"
+nova_mrmr.arff,naive_bayes,0.9236031927023945,0.8607068607068608,"[array([[235,  16],
+       [ 12,  88]], dtype=int64), array([[244,   7],
+       [ 19,  81]], dtype=int64), array([[240,  11],
+       [ 13,  87]], dtype=int64), array([[241,  10],
+       [ 26,  74]], dtype=int64), array([[246,   5],
+       [ 15,  84]], dtype=int64)]"
+spambase-disc_mrmr.arff,SVC,0.9365355357530971,0.9175607001693958,"[array([[541,  17],
+       [ 37, 326]], dtype=int64), array([[531,  27],
+       [ 47, 316]], dtype=int64), array([[533,  25],
+       [ 37, 326]], dtype=int64), array([[544,  13],
+       [ 36, 326]], dtype=int64), array([[535,  22],
+       [ 31, 331]], dtype=int64)]"
+spambase-disc_mrmr.arff,naive_bayes,0.8261247554879374,0.8144712430426716,"[array([[418, 140],
+       [ 10, 353]], dtype=int64), array([[410, 148],
+       [  9, 354]], dtype=int64), array([[398, 160],
+       [ 15, 348]], dtype=int64), array([[409, 148],
+       [ 13, 349]], dtype=int64), array([[410, 147],
+       [ 10, 352]], dtype=int64)]"

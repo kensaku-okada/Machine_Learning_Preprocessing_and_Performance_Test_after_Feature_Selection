@@ -1,0 +1,3 @@
+file_name,classifier,accuracy,f-measure,TP,TP,TP,TP,CV_fit_time
+ad.arff.digitized.arff.binarized.arff-mrmr.arff,SVC,0.9695028972247637,0.8820754716981132,2805,85,15,374,0:08:38.504792
+ad.arff.digitized.arff.binarized.arff-mrmr.arff,naive_bayes,0.9646233607807259,0.8654292343387471,2790,86,30,373,0:00:01.381640

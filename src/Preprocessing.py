@@ -30,35 +30,56 @@ def get_splitted_dataset_k_fold(config, dataset):
 	# one-hot the data (another way)
 	X, y = getSplittedDataset(dataset)
 	print("type(X): ",type(X))
-	print("type.shape: ",X.shape)
-	print("X.head: ",X.head(5))
+	print("X.shape: ",X.shape)
+	print("X.head(5): ",X.head(5))
+	print("type(y): ",type(y))
+	print("y.shape: ",y.shape)
+	print("y.head(5)", y.head(5))
+
+	if config.if_one_hot_encoding:
+		X_binary = binarize_dataset(X).values
+		# print("X: ", X)
+	# you can do the same with the following code
+	# if config.if_one_hot_encoding:
+	# 	X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
+	else:
+		X_binary = X.values
 
 	if 'mushroom' in config.file_name.split(".") or 'mushroom' in config.file_name.split("_"):
-
-		X_binary = binarize_dataset(X)
-		# print("X: ", X)
-
-		# convert the data type into numpy.array from pandas df
-		X_binary = X_binary.values
-
 		# https://towardsdatascience.com/building-a-perfect-mushroom-classifier-ceb9d99ae87e
-		# in "mushroom" dataset:
 		# edible = e was assumed to be 0
 		# poisonous = p was assumed to be 1
 		# y = np.array([label.replace('e', '0') for label in y])
 		# y = np.array([label.replace('p', '1') for label in y])
 		y_binary = np.array([1 if "p" == label else 0 for label in y])
 
+	elif 'cylinder' in config.file_name.split(".") or 'cylinder' in config.file_name.split("_"):
+		# band was assumed to be 0
+		# noband was assumed to be 1
+		y_binary = np.array([1 if "noband" == label else 0 for label in y])
+
+	elif 'kdd-20' in config.file_name.split(".") or 'kdd-20' in config.file_name.split("_"):
+		# normal was assumed to be 0
+		# anomaly was assumed to be 1
+		y_binary = np.array([1 if "anomaly" == label else 0 for label in y])
+
+	elif 'splice' in config.file_name.split(".") or 'splice' in config.file_name.split("_"):
+		# e was assumed to be 0
+		# n was assumed to be 1
+		y_binary = np.array([1 if "n" == label else 0 for label in y])
+
 	else:
-		X_binary = OneHotEncoder(categories='auto').fit_transform(X).toarray()
 		# just change the data type of y from string to int
 		y = y.astype(np.int32)
-
 		# convert the data type into numpy.array from pandas df
 		y_binary = y.values
 
-	print("y_binary after replace", y_binary)
-	print("X.shape: ",X.shape)
+	print("type(X_binary): ",type(X_binary))
+	print("X_binary.shape: ",X_binary.shape)
+	print("X_binary", X_binary)
+	print("type(y_binary): ",type(y_binary))
+	print("y_binary.shape: ",y_binary.shape)
+	print("y_binary", y_binary)
 	# np.set_printoptions(threshold=np.inf)
 	# print("X_binary.shape by OneHotEncoder: ", X_binary.shape)
 	# print("X_binary by OneHotEncoder: ",X_binary)

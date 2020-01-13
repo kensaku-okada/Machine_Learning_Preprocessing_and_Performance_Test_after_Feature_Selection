@@ -1,0 +1,61 @@
+file_name,classifier,accuracy,f-measure,confusionMatrixes
+dexter-10-disc.arff-su-0.5-lcc.arff,SVC,0.75,0.8,"[array([[16, 14],
+       [ 0, 30]], dtype=int64), array([[18, 12],
+       [ 0, 30]], dtype=int64), array([[14, 16],
+       [ 0, 30]], dtype=int64), array([[10, 20],
+       [ 0, 30]], dtype=int64), array([[17, 13],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.5-lcc.arff,naive_bayes,0.5,0.6666666666666666,"[array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.6-lcc.arff,SVC,0.8,0.8333333333333334,"[array([[19, 11],
+       [ 0, 30]], dtype=int64), array([[20, 10],
+       [ 0, 30]], dtype=int64), array([[16, 14],
+       [ 0, 30]], dtype=int64), array([[14, 16],
+       [ 0, 30]], dtype=int64), array([[21,  9],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.6-lcc.arff,naive_bayes,0.5,0.6666666666666666,"[array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.7-lcc.arff,SVC,0.85,0.8695652173913043,"[array([[22,  8],
+       [ 0, 30]], dtype=int64), array([[22,  8],
+       [ 0, 30]], dtype=int64), array([[18, 12],
+       [ 0, 30]], dtype=int64), array([[19, 11],
+       [ 0, 30]], dtype=int64), array([[24,  6],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.7-lcc.arff,naive_bayes,0.5,0.6666666666666666,"[array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.8-lcc.arff,SVC,0.9,0.9090909090909091,"[array([[26,  4],
+       [ 0, 30]], dtype=int64), array([[25,  5],
+       [ 0, 30]], dtype=int64), array([[21,  9],
+       [ 0, 30]], dtype=int64), array([[22,  8],
+       [ 0, 30]], dtype=int64), array([[26,  4],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.8-lcc.arff,naive_bayes,0.5,0.6666666666666666,"[array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.9-lcc.arff,SVC,0.95,0.9523809523809523,"[array([[28,  2],
+       [ 0, 30]], dtype=int64), array([[28,  2],
+       [ 0, 30]], dtype=int64), array([[26,  4],
+       [ 0, 30]], dtype=int64), array([[25,  5],
+       [ 0, 30]], dtype=int64), array([[28,  2],
+       [ 0, 30]], dtype=int64)]"
+dexter-10-disc.arff-su-0.9-lcc.arff,naive_bayes,0.5,0.6666666666666666,"[array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64), array([[ 0, 30],
+       [ 0, 30]], dtype=int64)]"

@@ -26,8 +26,12 @@ class ConfigurationClass:
 		self._file_paths = None
 		self._file_name = None
 		self._feature_selection_algorithm_name = None
-
-
+		self._if_one_hot_encoding = None
+		self._true_positive = None
+		self._false_positive = None
+		self._true_negative = None
+		self._false_negative = None
+		self._total_GridSearchCV_fit_time = None
 
 	@property
 	def outputDatasetType(self):
@@ -105,5 +109,47 @@ class ConfigurationClass:
 	@feature_selection_algorithm_name.setter
 	def feature_selection_algorithm_name(self, feature_selection_algorithm_name):
 		self._feature_selection_algorithm_name = feature_selection_algorithm_name
+
+	@property
+	def if_one_hot_encoding(self):
+		return self._if_one_hot_encoding
+	@if_one_hot_encoding.setter
+	def if_one_hot_encoding(self, if_one_hot_encoding):
+		self._if_one_hot_encoding = if_one_hot_encoding
+
+	@property
+	def true_positive(self):
+		return self._true_positive
+	@true_positive.setter
+	def true_positive(self, true_positive):
+		self._true_positive = true_positive
+
+	@property
+	def false_positive(self):
+		return self._false_positive
+	@false_positive.setter
+	def false_positive(self, false_positive):
+		self._false_positive = false_positive
+
+	@property
+	def true_negative(self):
+		return self._true_negative
+	@true_negative.setter
+	def true_negative(self, true_negative):
+		self._true_negative = true_negative
+
+	@property
+	def false_negative(self):
+		return self._false_negative
+	@false_negative.setter
+	def false_negative(self, false_negative):
+		self._false_negative = false_negative
+
+	@property
+	def total_GridSearchCV_fit_time(self):
+		return self._total_GridSearchCV_fit_time
+	@total_GridSearchCV_fit_time.setter
+	def total_GridSearchCV_fit_time(self, total_GridSearchCV_fit_time):
+		self._total_GridSearchCV_fit_time = total_GridSearchCV_fit_time
 
 

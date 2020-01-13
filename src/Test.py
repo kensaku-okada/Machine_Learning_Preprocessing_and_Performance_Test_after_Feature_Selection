@@ -125,27 +125,33 @@ def get_predicted_y(classifier_name, clf, X_test):
 
     return y_pred
 
-def get_overall_accuracy(confusionMatrixes):
+def get_total_confusion_matrix(confusionMatrixes, config):
     # https://note.nkmk.me/python-sklearn-confusion-matrix-score/
     TN = sum([confusionMatrix[0][0] for confusionMatrix in confusionMatrixes])
     FN = sum([confusionMatrix[1][0] for confusionMatrix in confusionMatrixes])
     FP = sum([confusionMatrix[0][1] for confusionMatrix in confusionMatrixes])
     TP = sum([confusionMatrix[1][1] for confusionMatrix in confusionMatrixes])
 
+    config.true_positive = TP
+    config.false_positive = FP
+    config.true_negative = TN
+    config.false_negative = FN
+
+def get_overall_accuracy(config):
+    print("config.true_negative: ",config.true_negative)
+    print("config.true_positive: ",config.true_positive)
+    print("config.false_positive: ",config.false_positive)
+    print("config.true_positive: ",config.true_positive)
+
     # source: https://www.python-course.eu/confusion_matrix.php
-    overall_accuracy = (TN+TP) / (TN+FN+FP+TP)
+    overall_accuracy = (config.true_negative + config.true_positive) / \
+                       (config.true_negative + config.false_negative + config.false_positive + config.true_positive)
 
     return overall_accuracy
 
+def get_overall_f_measure(config):
 
-def get_overall_f_measure(confusionMatrixes):
-    # https://note.nkmk.me/python-sklearn-confusion-matrix-score/
-    TN = sum([confusionMatrix[0][0] for confusionMatrix in confusionMatrixes])
-    FN = sum([confusionMatrix[1][0] for confusionMatrix in confusionMatrixes])
-    FP = sum([confusionMatrix[0][1] for confusionMatrix in confusionMatrixes])
-    TP = sum([confusionMatrix[1][1] for confusionMatrix in confusionMatrixes])
-
-    overall_f_measure = 2.0 * TP / (2.0 * TP + FN + FP)
+    overall_f_measure = 2.0 * config.true_positive / (2.0 * config.true_positive + config.false_negative + config.false_positive)
 
     # # source: https://www.python-course.eu/confusion_matrix.php
     # precision = TP / (TP+FP)

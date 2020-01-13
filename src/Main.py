@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 #coding:utf-8
 
-import os, sys, glob, pathlib
+import os, sys, glob, pathlib, datetime
 import numpy as np
 # import matplotlib.pyplot as plt
 # from scipy.io import arff as scipy_arff # for dense arff dataset
@@ -31,6 +31,8 @@ config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
 config.feature_selection_algorithm_name = "mrmr"
 # config.feature_selection_algorithm_name = "slcc"
 # config.feature_selection_algorithm_name = "bornfs"
+
+config.if_one_hot_encoding = False
 ############################################################
 ############### set the configuration end ###############
 ############################################################
@@ -43,7 +45,9 @@ config.feature_selection_algorithm_name = "mrmr"
 
 # set the import path
 config.ifGetMultipleResults = True
-relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\*.arff"
+relativePath = config.feature_selection_algorithm_name + "_datasets\\mrmr-binarized\\*.arff"
+# relativePath = config.feature_selection_algorithm_name + "_datasets\\mrmr-binarized\\arcene.arff.digitized.arff.binarized.arff-mrmr.arff"
+
 # relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\tricky\\*.arff"
 # relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\dexter-10*.arff"
 
@@ -70,6 +74,8 @@ config.dataset_directory = dataset_directory
 ############################################################
 ############### get dataset paths end ###############
 ############################################################
+
+
 for filePath in config.file_paths:
 
     # out put file existence check
@@ -110,6 +116,7 @@ for filePath in config.file_paths:
     for classifier_name in config.classifier_names:
 
         clssifier_type, parameters = my_CV.get_clssifier_type_and_param_grid(classifier_name)
+        config.total_GridSearchCV_fit_time = datetime.timedelta()
 
         if config.crossValidationType == "k-fold-cv":
             cv_clfs = [0] * Constant.NUM_FOLD_CV
@@ -127,7 +134,10 @@ for filePath in config.file_paths:
                 X_train = X_trains[i]
                 y_train = y_trains[i]
                 # cv_clf, inner_roc_auc_score = my_CV.cross_validate_k_fold(classifier_name, clssifier_type, X_train, y_train, parameters)
+                GridSearchCV_fit_start_time = datetime.datetime.now()
                 cv_clf = my_CV.cross_validate_hold_out_by_accuracy(clssifier_type, X_train, y_train, parameters)
+                GridSearchCV_fit_end_time = datetime.datetime.now()
+                config.total_GridSearchCV_fit_time += GridSearchCV_fit_end_time - GridSearchCV_fit_start_time
                 # print("clf.cv_results_: ",clf.cv_results_)
                 print("clf.best_params: ", cv_clf.best_params_)
                 print("clf.best_score_ (ROC-AUC score): ", cv_clf.best_score_)
@@ -160,13 +170,16 @@ for filePath in config.file_paths:
                 ############### test the model end ######################
                 ###########################################################################
 
-            overall_accuracy = Test.get_overall_accuracy(confusionMatrixes)
-            overall_f_measure = Test.get_overall_f_measure(confusionMatrixes)
+            Test.get_total_confusion_matrix(confusionMatrixes, config)
+            overall_accuracy = Test.get_overall_accuracy(config)
+            overall_f_measure = Test.get_overall_f_measure(config)
             print("overall_accuracy: ",overall_accuracy)
             print("overall_f_measure: ",overall_f_measure)
 
             # append the test result for export
-            config.test_results.append([file_name ,classifier_name ,overall_accuracy,overall_f_measure, confusionMatrixes])
+            config.test_results.append([file_name ,classifier_name ,overall_accuracy,overall_f_measure,
+                                        config.true_negative, config.false_negative, config.false_positive,
+                                        config.true_positive, config.total_GridSearchCV_fit_time])
 
         elif config.crossValidationType == "hold-out":
             ####################################################################
@@ -197,7 +210,7 @@ for filePath in config.file_paths:
             ###########################################################################
 
     ############### export the test result ###############
-    header = ["file_name","classifier","accuracy","f-measure","confusionMatrixes"]
+    header = ["file_name","classifier","accuracy","f-measure","TP","TP","TP","TP", "CV_fit_time"]
     # https://note.nkmk.me/python-pathlib-name-suffix-parent/
     # Util.exportCSVFile(config, header, fileName=config.dataset_directory.parents[1].name + "_test_result")
     Util.exportCSVFile(config, header, filePath)
