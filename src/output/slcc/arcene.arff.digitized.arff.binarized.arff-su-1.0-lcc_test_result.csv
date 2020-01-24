@@ -1,0 +1,7 @@
+file_name,classifier,accuracy,f-measure,TN,FN,FP,TP,CV_fit_time(hh:mm:ss.)
+ad.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,SVC,0.9789569990850869,0.9204152249134948,2811,60,9,399,10:08:22.443502
+ad.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,naive_bayes,0.8795364440378164,0.6683459277917716,2486,61,334,398,0:00:51.120232
+ada.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,SVC,0.8509766095972993,0.678125,2878,378,240,651,0:58:58.329432
+ada.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,naive_bayes,0.726790450928382,0.6160623517451711,2105,120,1013,909,0:00:02.134287
+arcene.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,SVC,1.0,1.0,56,0,0,44,0:00:04.548839
+arcene.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,naive_bayes,0.88,0.8421052631578947,56,12,0,32,0:00:00.066827

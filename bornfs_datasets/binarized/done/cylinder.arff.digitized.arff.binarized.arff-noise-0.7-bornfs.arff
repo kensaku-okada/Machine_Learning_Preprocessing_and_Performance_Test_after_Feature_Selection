@@ -1,0 +1,740 @@
+@relation 'datasets/cylinder.arff.digitized.arff.-weka.filters.unsupervised.attribute.Remove-V-R1016,1013,986,982,980,976,974,972,964,958,947,946,931,916,914,903,902,876,867,864,854,848,844,839,834,830,829,828,781,779,770,749,744,743,742,740,734,718,704,702,700,695,690,684,657,650,639,635,625,616,611,604,601,595,592,590,586,585,581,577,572,565,563,556,555,554,552,541,536,530,527,521,520,516,515,514,511,508,502,499,496,477,471,470,469,468,466,465,460,454,453,451,448,443,442,438,429,424,413,390,386,384,378,354,353,348,346,345,343,342,340,337,336,331,321,318,314,312,305,298,279,267,257,253,251,246,243,242,238,234,233,231,223,222,220,216,212,211,209,197,195,194,192,184,182,173,172,169,167,162,161,154,151,149,143,139,134,132,130,127,125,123,121,120,119,117,114,112,111,88,83,71,69,68,61,59,56,55,51,45,39,37,34,32,29,28,26,23,22,21,18,17,11,3,2,1055'
+
+@attribute timestamp:19910531 {0,1}
+@attribute timestamp:19930205 {0,1}
+@attribute cylinder_number:g67 {0,1}
+@attribute timestamp:19900514 {0,1}
+@attribute cylinder_number:aa70 {0,1}
+@attribute timestamp:19920317 {0,1}
+@attribute cylinder_number:i365 {0,1}
+@attribute cylinder_number:y255 {0,1}
+@attribute cylinder_number:f329 {0,1}
+@attribute timestamp:19911103 {0,1}
+@attribute timestamp:19910627 {0,1}
+@attribute timestamp:19910317 {0,1}
+@attribute cylinder_number:x216 {0,1}
+@attribute cylinder_number:t8 {0,1}
+@attribute timestamp:19920911 {0,1}
+@attribute cylinder_number:x802 {0,1}
+@attribute timestamp:19930421 {0,1}
+@attribute timestamp:19900708 {0,1}
+@attribute cylinder_number:x295 {0,1}
+@attribute cylinder_number:g604 {0,1}
+@attribute timestamp:19910815 {0,1}
+@attribute timestamp:19920705 {0,1}
+@attribute cylinder_number:j44 {0,1}
+@attribute cylinder_number:g519 {0,1}
+@attribute timestamp:19910607 {0,1}
+@attribute timestamp:19900804 {0,1}
+@attribute cylinder_number:m374 {0,1}
+@attribute customer:penney {0,1}
+@attribute timestamp:19900417 {0,1}
+@attribute cylinder_number:i317 {0,1}
+@attribute cylinder_number:x53 {0,1}
+@attribute timestamp:19910103 {0,1}
+@attribute cylinder_number:x821 {0,1}
+@attribute timestamp:19910423 {0,1}
+@attribute cylinder_number:x791 {0,1}
+@attribute timestamp:19910108 {0,1}
+@attribute cylinder_number:i324 {0,1}
+@attribute timestamp:19920603 {0,1}
+@attribute cylinder_number:i010 {0,1}
+@attribute cylinder_number:f26 {0,1}
+@attribute timestamp:19910422 {0,1}
+@attribute cylinder_number:g145 {0,1}
+@attribute timestamp:19901117 {0,1}
+@attribute press_speed:59 {0,1}
+@attribute timestamp:19901120 {0,1}
+@attribute cylinder_number:x95 {0,1}
+@attribute cylinder_number:aa1 {0,1}
+@attribute timestamp:19910806 {0,1}
+@attribute cylinder_number:m45 {0,1}
+@attribute timestamp:19930113 {0,1}
+@attribute timestamp:19930915 {0,1}
+@attribute cylinder_number:x768 {0,1}
+@attribute caliper:0.133 {0,1}
+@attribute cylinder_number:g496 {0,1}
+@attribute cylinder_number:x185 {0,1}
+@attribute cylinder_number:m272 {0,1}
+@attribute timestamp:19941005 {0,1}
+@attribute timestamp:19920822 {0,1}
+@attribute cylinder_number:f416 {0,1}
+@attribute timestamp:19900511 {0,1}
+@attribute cylinder_number:e67 {0,1}
+@attribute cylinder_number:f590 {0,1}
+@attribute timestamp:19920405 {0,1}
+@attribute timestamp:19930916 {0,1}
+@attribute cylinder_number:f98 {0,1}
+@attribute timestamp:19920531 {0,1}
+@attribute cylinder_number:t31 {0,1}
+@attribute timestamp:19930227 {0,1}
+@attribute timestamp:19901003 {0,1}
+@attribute timestamp:19900518 {0,1}
+@attribute timestamp:19901106 {0,1}
+@attribute timestamp:19910501 {0,1}
+@attribute timestamp:19900509 {0,1}
+@attribute cylinder_number:t351 {0,1}
+@attribute timestamp:19910303 {0,1}
+@attribute cylinder_number:m372 {0,1}
+@attribute cylinder_number:x304 {0,1}
+@attribute timestamp:19920920 {0,1}
+@attribute cylinder_number:i383 {0,1}
+@attribute cylinder_number:x720 {0,1}
+@attribute timestamp:19941001 {0,1}
+@attribute timestamp:19920114 {0,1}
+@attribute cylinder_number:t117 {0,1}
+@attribute timestamp:19900330 {0,1}
+@attribute cylinder_number:x203 {0,1}
+@attribute customer:global {0,1}
+@attribute cylinder_number:f620 {0,1}
+@attribute cylinder_number:t30 {0,1}
+@attribute timestamp:19910511 {0,1}
+@attribute cylinder_number:y216 {0,1}
+@attribute timestamp:19920115 {0,1}
+@attribute timestamp:19920709 {0,1}
+@attribute wax:152 {0,1}
+@attribute timestamp:19910131 {0,1}
+@attribute cylinder_number:g625 {0,1}
+@attribute cylinder_number:x67 {0,1}
+@attribute cylinder_number:aa17 {0,1}
+@attribute ink_temperature:103 {0,1}
+@attribute timestamp:19920523 {0,1}
+@attribute timestamp:19900805 {0,1}
+@attribute cylinder_number:f219 {0,1}
+@attribute cylinder_number:t312 {0,1}
+@attribute cylinder_number:t244 {0,1}
+@attribute cylinder_number:g38 {0,1}
+@attribute timestamp:19910118 {0,1}
+@attribute timestamp:19900920 {0,1}
+@attribute timestamp:19901005 {0,1}
+@attribute timestamp:19911104 {0,1}
+@attribute anode_space_ratio:167 {0,1}
+@attribute timestamp:19911102 {0,1}
+@attribute cylinder_number:ee304 {0,1}
+@attribute cylinder_number:w90 {0,1}
+@attribute cylinder_number:x253 {0,1}
+@attribute timestamp:19910508 {0,1}
+@attribute cylinder_number:m362 {0,1}
+@attribute cylinder_number:t195 {0,1}
+@attribute timestamp:19911209 {0,1}
+@attribute cylinder_number:w368 {0,1}
+@attribute cylinder_number:i309 {0,1}
+@attribute timestamp:19920610 {0,1}
+@attribute cylinder_number:g648 {0,1}
+@attribute cylinder_number:i343 {0,1}
+@attribute cylinder_number:t233 {0,1}
+@attribute cylinder_number:w785 {0,1}
+@attribute timestamp:19930624 {0,1}
+@attribute cylinder_number:r38 {0,1}
+@attribute cylinder_number:x838 {0,1}
+@attribute cylinder_number:x89 {0,1}
+@attribute timestamp:19910208 {0,1}
+@attribute cylinder_number:aa067 {0,1}
+@attribute timestamp:19910127 {0,1}
+@attribute solvent_pct:170 {0,1}
+@attribute timestamp:19910917 {0,1}
+@attribute solvent_pct:28 {0,1}
+@attribute timestamp:19900510 {0,1}
+@attribute cylinder_number:e81 {0,1}
+@attribute timestamp:19910125 {0,1}
+@attribute timestamp:19901210 {0,1}
+@attribute customer:galls {0,1}
+@attribute timestamp:19900913 {0,1}
+@attribute cylinder_number:x281 {0,1}
+@attribute timestamp:19910619 {0,1}
+@attribute timestamp:19910920 {0,1}
+@attribute timestamp:19920205 {0,1}
+@attribute timestamp:19910528 {0,1}
+@attribute cylinder_number:g3 {0,1}
+@attribute timestamp:19901124 {0,1}
+@attribute timestamp:19930908 {0,1}
+@attribute cylinder_number:g71 {0,1}
+@attribute cylinder_number:f77 {0,1}
+@attribute cylinder_number:g433 {0,1}
+@attribute timestamp:19910622 {0,1}
+@attribute cylinder_number:aa45 {0,1}
+@attribute timestamp:19940904 {0,1}
+@attribute cylinder_number:i820 {0,1}
+@attribute timestamp:19930514 {0,1}
+@attribute cylinder_number:g98 {0,1}
+@attribute timestamp:19920826 {0,1}
+@attribute cylinder_number:x36 {0,1}
+@attribute cylinder_number:g628 {0,1}
+@attribute timestamp:19920515 {0,1}
+@attribute cylinder_number:t245 {0,1}
+@attribute cylinder_number:i366 {0,1}
+@attribute caliper:.200 {0,1}
+@attribute ink_pct:17 {0,1}
+@attribute cylinder_number:x352 {0,1}
+@attribute timestamp:19920110 {0,1}
+@attribute timestamp:19920808 {0,1}
+@attribute timestamp:19930906 {0,1}
+@attribute cylinder_number:i349 {0,1}
+@attribute timestamp:19921125 {0,1}
+@attribute customer:globalequp {0,1}
+@attribute cylinder_number:x243 {0,1}
+@attribute cylinder_number:i400 {0,1}
+@attribute timestamp:19900603 {0,1}
+@attribute ink_pct:65 {0,1}
+@attribute esa_voltage:55 {0,1}
+@attribute timestamp:19900617 {0,1}
+@attribute cylinder_number:g48 {0,1}
+@attribute timestamp:19920220 {0,1}
+@attribute timestamp:19900806 {0,1}
+@attribute cylinder_number:g84 {0,1}
+@attribute cylinder_number:r5 {0,1}
+@attribute timestamp:19901121 {0,1}
+@attribute cylinder_number:x356 {0,1}
+@attribute caliper:0.217 {0,1}
+@attribute timestamp:19941007 {0,1}
+@attribute cylinder_number:j6 {0,1}
+@attribute timestamp:19901023 {0,1}
+@attribute cylinder_number:x798 {0,1}
+@attribute cylinder_number:t176 {0,1}
+@attribute timestamp:19920918 {0,1}
+@attribute cylinder_number:j70 {0,1}
+@attribute customer:adco {0,1}
+@attribute timestamp:19900524 {0,1}
+@attribute band_type {band,noband}
+
+@data
+{35 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{75 1}
+{195 noband}
+{195 noband}
+{165 1}
+{95 1}
+{136 1}
+{195 noband}
+{31 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{130 1}
+{93 1}
+{135 1}
+{195 noband}
+{195 noband}
+{}
+{104 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{128 1}
+{195 noband}
+{182 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{30 1}
+{32 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{}
+{176 1}
+{74 1}
+{195 noband}
+{195 noband}
+{}
+{60 1}
+{}
+{34 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{11 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{79 1}
+{195 noband}
+{189 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{126 1}
+{127 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{88 1}
+{71 1}
+{58 1}
+{}
+{}
+{}
+{}
+{113 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{}
+{41 1}
+{184 1}
+{175 1}
+{15 1}
+{40 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{164 1}
+{33 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{0 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{144 1}
+{89 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{10 1}
+{121 1}
+{151 1}
+{141 1}
+{78 1}
+{190 1}
+{7 1}
+{112 1}
+{24 1}
+{114 1}
+{39 1}
+{154 1}
+{195 noband}
+{195 noband}
+{3 1}
+{72 1}
+{59 1}
+{69 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{194 1}
+{53 1}
+{8 1}
+{84 1}
+{28 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{102 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{134 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{174 1}
+{177 1}
+{61 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{85 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{149 1}
+{45 1}
+{}
+{171 1}
+{195 noband}
+{48 1}
+{195 noband}
+{187 1}
+{195 noband}
+{195 noband}
+{83 1}
+{161 1}
+{17 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{140 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{13 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{180 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{25 1}
+{99 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{138 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{}
+{}
+{105 1}
+{139 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{}
+{52 1}
+{}
+{68 1}
+{}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{148 1}
+{195 noband}
+{2 1}
+{181 1}
+{}
+{106 1}
+{195 noband}
+{}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{}
+{54 1}
+{}
+{195 noband}
+{195 noband}
+{23 1}
+{188 1}
+{}
+{145 1}
+{156 1}
+{94 1}
+{}
+{172 1}
+{195 noband}
+{195 noband}
+{43 1}
+{}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{70 1}
+{}
+{42 1}
+{19 1}
+{}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{159 1}
+{146 1}
+{44 1}
+{183 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{133 1}
+{}
+{195 noband}
+{73 1}
+{76 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{18 1}
+{38 1}
+{123 1}
+{169 1}
+{29 1}
+{100 1}
+{}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{}
+{137 1}
+{97 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{131 1}
+{118 1}
+{20 1}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{195 noband}
+{111 1}
+{193 1}
+{47 1}
+{82 1}
+{101 1}
+{178 1}
+{115 1}
+{}
+{64 1}
+{}
+{116 1}
+{6 1}
+{90 1}
+{81 1}
+{166 1}
+{107 1}
+{9 1}
+{109 1}
+{51 1}
+{142 1}
+{185 1}
+{179 1}
+{86 1}
+{132 1}
+{143 1}
+{36 1}
+{}
+{26 1}
+{46 1}
+{96 1}
+{}
+{122 1}
+{12 1}
+{5 1}
+{27 1}
+{62 1}
+{120 1}
+{108 1}
+{103 1}
+{160 1}
+{98 1}
+{125 1}
+{158 1}
+{65 1}
+{37 1}
+{119 1}
+{21 1}
+{91 1}
+{167 1}
+{57 1}
+{157 1}
+{14 1}
+{152 1}
+{191 1}
+{77 1}
+{162 1}
+{66 1}
+{129 1}
+{170 1}
+{173 1}
+{49 1}
+{1 1}
+{117 1}
+{87 1}
+{67 1}
+{163 1}
+{150 1}
+{16 1}
+{155 1}
+{124 1}
+{168 1}
+{147 1}
+{50 1}
+{63 1}
+{55 1}
+{110 1}
+{153 1}
+{}
+{80 1}
+{92 1}
+{186 1}
+{56 1}
+{22 1}
+{}
+{4 1}
+{192 1}

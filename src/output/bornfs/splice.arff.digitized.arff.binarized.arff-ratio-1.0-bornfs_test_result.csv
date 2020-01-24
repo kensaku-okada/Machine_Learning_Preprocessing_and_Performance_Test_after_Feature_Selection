@@ -1,0 +1,17 @@
+file_name,classifier,accuracy,f-measure,TN,FN,FP,TP,CV_fit_time(hh:mm:ss.)
+gina.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.5677132889311767,0.438401318500206,1258,1018,345,532,0:31:11.066488
+gina.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.560418648905804,0.4375,1228,1011,375,539,0:00:00.539561
+gisette.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.6438333333333334,0.6782111127842192,1611,748,1389,2252,3:29:48.987666
+gisette.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.5483333333333333,0.2099125364431487,2930,2640,70,360,0:00:01.841073
+hiva.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.965409622886866,0.24,3691,114,19,21,0:11:48.960051
+hiva.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.8551365409622886,0.17725258493353027,3228,75,482,60,0:00:00.877659
+kdd-20_.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.9864242616703716,0.9853821166011284,13323,216,126,11527,8:20:29.767325
+kdd-20_.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.9533979040965386,0.9498590586828394,12898,623,551,11120,0:00:13.314785
+kr_vs_kp.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.9931163954943679,0.9934249850567842,1512,7,15,1662,0:13:37.869675
+kr_vs_kp.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.8257196495619524,0.8284570372651678,1294,324,233,1345,0:00:00.698149
+mushroom.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.9928606597735106,0.9926208651399491,4165,15,43,3901,0:15:29.570021
+mushroom.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.8847858197932054,0.8661327231121282,4160,888,48,3028,0:00:00.523440
+nova.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.9817351598173516,0.9689320388349515,1221,0,32,499,0:07:32.529466
+nova.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.9315068493150684,0.8678414096916299,1238,105,15,394,0:00:01.132203
+splice.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.6699059561128526,0.6796470946151506,1020,538,515,1117,0:54:50.516408
+splice.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.5106583072100314,0.6289517470881864,306,332,1229,1323,0:00:00.537575

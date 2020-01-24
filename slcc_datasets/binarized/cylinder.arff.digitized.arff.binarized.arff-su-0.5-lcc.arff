@@ -1,0 +1,659 @@
+@relation 'datasets/cylinder.arff.digitized.arff.-weka.filters.unsupervised.attribute.Remove-V-R515,998,332,130,699,829,704,304,767,282,555,785,429,424,611,520,986,954,167,749,514,274,453,438,468,711,477,469,384,250,212,974,870,471,465,470,305,223,478,184,409,718,527,929,148,3,151,982,809,926,443,233,946,639,267,154,592,783,1022,596,121,314,595,742,298,552,616,914,770,867,680,277,572,777,1013,134,635,839,182,585,499,452,123,556,779,125,581,653,345,194,285,848,56,1053,650,566,88,958,579,656,460,96,740,342,540,400,802,849,734,454,327,336,508,45,1055'
+
+@attribute timestamp:19910303 {0,1}
+@attribute timestamp:19900602 {0,1}
+@attribute timestamp:19930217 {0,1}
+@attribute cylinder_number:x36 {0,1}
+@attribute timestamp:19910822 {0,1}
+@attribute cylinder_number:m374 {0,1}
+@attribute cylinder_number:i010 {0,1}
+@attribute timestamp:19920529 {0,1}
+@attribute timestamp:19920408 {0,1}
+@attribute cylinder_number:i311 {0,1}
+@attribute cylinder_number:f98 {0,1}
+@attribute timestamp:19930309 {0,1}
+@attribute cylinder_number:aa17 {0,1}
+@attribute ink_temperature:103 {0,1}
+@attribute timestamp:19930915 {0,1}
+@attribute timestamp:19900509 {0,1}
+@attribute cylinder_number:g67 {0,1}
+@attribute timestamp:19940927 {0,1}
+@attribute cylinder_number:g71 {0,1}
+@attribute timestamp:19910103 {0,1}
+@attribute cylinder_number:m372 {0,1}
+@attribute timestamp:19910404 {0,1}
+@attribute timestamp:19920115 {0,1}
+@attribute cylinder_number:x67 {0,1}
+@attribute customer:global {0,1}
+@attribute timestamp:19910802 {0,1}
+@attribute timestamp:19920114 {0,1}
+@attribute cylinder_number:x203 {0,1}
+@attribute cylinder_number:t312 {0,1}
+@attribute cylinder_number:x388 {0,1}
+@attribute timestamp:19910125 {0,1}
+@attribute cylinder_number:i365 {0,1}
+@attribute cylinder_number:x66 {0,1}
+@attribute cylinder_number:t117 {0,1}
+@attribute cylinder_number:t30 {0,1}
+@attribute timestamp:19900330 {0,1}
+@attribute cylinder_number:i309 {0,1}
+@attribute timestamp:19910917 {0,1}
+@attribute timestamp:19911211 {0,1}
+@attribute timestamp:19920205 {0,1}
+@attribute timestamp:19900505 {0,1}
+@attribute timestamp:19920603 {0,1}
+@attribute timestamp:19901106 {0,1}
+@attribute timestamp:19930407 {0,1}
+@attribute timestamp:19910915 {0,1}
+@attribute customer:adco {0,1}
+@attribute cylinder_number:aa45 {0,1}
+@attribute timestamp:19900514 {0,1}
+@attribute cylinder_number:x779 {0,1}
+@attribute cylinder_number:y209 {0,1}
+@attribute timestamp:19910131 {0,1}
+@attribute timestamp:19910127 {0,1}
+@attribute timestamp:19910317 {0,1}
+@attribute cylinder_number:aa1 {0,1}
+@attribute cylinder_number:i343 {0,1}
+@attribute timestamp:19910622 {0,1}
+@attribute cylinder_number:x185 {0,1}
+@attribute cylinder_number:r7 {0,1}
+@attribute cylinder_number:t313 {0,1}
+@attribute timestamp:19920416 {0,1}
+@attribute cylinder_number:i366 {0,1}
+@attribute timestamp:19911209 {0,1}
+@attribute cylinder_number:g496 {0,1}
+@attribute cylinder_number:x791 {0,1}
+@attribute timestamp:19920610 {0,1}
+@attribute cylinder_number:t31 {0,1}
+@attribute timestamp:19930113 {0,1}
+@attribute timestamp:19920911 {0,1}
+@attribute cylinder_number:x53 {0,1}
+@attribute cylinder_number:x295 {0,1}
+@attribute timestamp:19900702 {0,1}
+@attribute cylinder_number:f672 {0,1}
+@attribute cylinder_number:e67 {0,1}
+@attribute cylinder_number:x828 {0,1}
+@attribute timestamp:19930205 {0,1}
+@attribute cylinder_number:g98 {0,1}
+@attribute timestamp:19910806 {0,1}
+@attribute cylinder_number:g519 {0,1}
+@attribute timestamp:19910528 {0,1}
+@attribute timestamp:19920822 {0,1}
+@attribute cylinder_number:x720 {0,1}
+@attribute cylinder_number:w395 {0,1}
+@attribute cylinder_number:t245 {0,1}
+@attribute timestamp:19930916 {0,1}
+@attribute cylinder_number:i317 {0,1}
+@attribute timestamp:19920515 {0,1}
+@attribute cylinder_number:f416 {0,1}
+@attribute timestamp:19931008 {0,1}
+@attribute timestamp:19911104 {0,1}
+@attribute timestamp:19910619 {0,1}
+@attribute customer:venture {0,1}
+@attribute timestamp:19920705 {0,1}
+@attribute esa_voltage:55 {0,1}
+@attribute timestamp:19921129 {0,1}
+@attribute cylinder_number:x95 {0,1}
+@attribute cylinder_number:aa7 {0,1}
+@attribute cylinder_number:i349 {0,1}
+@attribute timestamp:19911103 {0,1}
+@attribute timestamp:19910618 {0,1}
+@attribute cylinder_number:x255 {0,1}
+@attribute timestamp:19910511 {0,1}
+@attribute cylinder_number:x787 {0,1}
+@attribute timestamp:19910108 {0,1}
+@attribute timestamp:19911102 {0,1}
+@attribute timestamp:19910617 {0,1}
+@attribute cylinder_number:x12 {0,1}
+@attribute timestamp:19901109 {0,1}
+@attribute cylinder_number:o5 {0,1}
+@attribute cylinder_number:i324 {0,1}
+@attribute cylinder_number:y216 {0,1}
+@attribute timestamp:19910325 {0,1}
+@attribute cylinder_number:x253 {0,1}
+@attribute timestamp:19920920 {0,1}
+@attribute timestamp:19920220 {0,1}
+@attribute band_type {band,noband}
+
+@data
+{102 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{20 1}
+{114 noband}
+{114 noband}
+{}
+{23 1}
+{30 1}
+{114 noband}
+{19 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{51 1}
+{50 1}
+{}
+{114 noband}
+{114 noband}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{114 noband}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{68 1}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{92 1}
+{0 1}
+{114 noband}
+{114 noband}
+{}
+{72 1}
+{}
+{63 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{52 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{80 1}
+{114 noband}
+{110 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{21 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{100 1}
+{}
+{86 1}
+{}
+{}
+{}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{}
+{}
+{}
+{}
+{48 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{105 1}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{78 1}
+{109 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{54 1}
+{55 1}
+{89 1}
+{98 1}
+{104 1}
+{}
+{111 1}
+{}
+{}
+{}
+{}
+{114 noband}
+{114 noband}
+{47 1}
+{15 1}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{62 1}
+{}
+{27 1}
+{58 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{40 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{71 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{101 1}
+{1 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{24 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{94 1}
+{}
+{}
+{114 noband}
+{}
+{114 noband}
+{70 1}
+{114 noband}
+{114 noband}
+{35 1}
+{82 1}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{}
+{}
+{57 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{}
+{}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{18 1}
+{114 noband}
+{16 1}
+{}
+{}
+{73 1}
+{114 noband}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{56 1}
+{}
+{114 noband}
+{114 noband}
+{77 1}
+{}
+{}
+{}
+{75 1}
+{}
+{}
+{}
+{114 noband}
+{114 noband}
+{106 1}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{42 1}
+{}
+{}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{81 1}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{}
+{114 noband}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{69 1}
+{6 1}
+{}
+{96 1}
+{84 1}
+{}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{}
+{}
+{13 1}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{29 1}
+{36 1}
+{}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{114 noband}
+{38 1}
+{45 1}
+{76 1}
+{33 1}
+{28 1}
+{44 1}
+{25 1}
+{}
+{10 1}
+{}
+{61 1}
+{31 1}
+{22 1}
+{26 1}
+{}
+{88 1}
+{97 1}
+{103 1}
+{}
+{}
+{4 1}
+{113 1}
+{}
+{37 1}
+{39 1}
+{108 1}
+{}
+{5 1}
+{53 1}
+{12 1}
+{}
+{8 1}
+{}
+{}
+{}
+{}
+{59 1}
+{32 1}
+{}
+{85 1}
+{107 1}
+{7 1}
+{3 1}
+{}
+{41 1}
+{64 1}
+{91 1}
+{}
+{}
+{79 1}
+{}
+{67 1}
+{46 1}
+{}
+{112 1}
+{60 1}
+{65 1}
+{90 1}
+{}
+{93 1}
+{66 1}
+{74 1}
+{2 1}
+{34 1}
+{}
+{11 1}
+{43 1}
+{}
+{}
+{49 1}
+{}
+{9 1}
+{14 1}
+{83 1}
+{}
+{87 1}
+{99 1}
+{}
+{}
+{17 1}
+{95 1}
+{}
+{}
+{}
+{}
+{}

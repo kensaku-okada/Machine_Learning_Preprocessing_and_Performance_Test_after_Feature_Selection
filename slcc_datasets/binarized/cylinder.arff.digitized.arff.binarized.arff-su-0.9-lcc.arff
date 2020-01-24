@@ -1,0 +1,690 @@
+@relation 'datasets/cylinder.arff.digitized.arff.-weka.filters.unsupervised.attribute.Remove-V-R515,998,699,829,704,555,429,424,520,986,167,749,514,274,453,438,468,711,477,469,384,212,974,471,470,305,223,478,184,409,527,148,3,982,809,443,233,946,639,267,154,592,783,1022,314,595,770,867,680,277,572,777,134,635,839,182,499,452,123,779,581,345,194,56,650,88,958,579,460,96,740,342,540,400,802,734,454,327,336,45,321,601,37,360,511,1018,1016,222,326,657,964,34,71,1043,209,117,536,530,446,947,143,390,211,864,195,1041,114,889,625,32,727,1036,442,375,2,69,702,916,972,39,353,598,876,348,903,743,610,243,695,830,521,386,577,253,162,466,744,192,924,693,963,275,498,1054,66,1055'
+
+@attribute timestamp:19910303 {0,1}
+@attribute timestamp:19900602 {0,1}
+@attribute timestamp:19910822 {0,1}
+@attribute cylinder_number:m374 {0,1}
+@attribute cylinder_number:i010 {0,1}
+@attribute cylinder_number:f98 {0,1}
+@attribute cylinder_number:aa17 {0,1}
+@attribute ink_temperature:103 {0,1}
+@attribute timestamp:19900509 {0,1}
+@attribute cylinder_number:g67 {0,1}
+@attribute cylinder_number:g71 {0,1}
+@attribute timestamp:19910103 {0,1}
+@attribute cylinder_number:m372 {0,1}
+@attribute timestamp:19910404 {0,1}
+@attribute timestamp:19920115 {0,1}
+@attribute cylinder_number:x67 {0,1}
+@attribute customer:global {0,1}
+@attribute timestamp:19910802 {0,1}
+@attribute timestamp:19920114 {0,1}
+@attribute cylinder_number:x203 {0,1}
+@attribute cylinder_number:t312 {0,1}
+@attribute timestamp:19910125 {0,1}
+@attribute cylinder_number:i365 {0,1}
+@attribute cylinder_number:t117 {0,1}
+@attribute timestamp:19900330 {0,1}
+@attribute cylinder_number:i309 {0,1}
+@attribute timestamp:19910917 {0,1}
+@attribute timestamp:19911211 {0,1}
+@attribute timestamp:19920205 {0,1}
+@attribute timestamp:19900505 {0,1}
+@attribute timestamp:19901106 {0,1}
+@attribute timestamp:19910915 {0,1}
+@attribute customer:adco {0,1}
+@attribute timestamp:19900514 {0,1}
+@attribute cylinder_number:x779 {0,1}
+@attribute timestamp:19910131 {0,1}
+@attribute timestamp:19910127 {0,1}
+@attribute timestamp:19910317 {0,1}
+@attribute cylinder_number:aa1 {0,1}
+@attribute cylinder_number:i343 {0,1}
+@attribute timestamp:19910622 {0,1}
+@attribute cylinder_number:x185 {0,1}
+@attribute cylinder_number:r7 {0,1}
+@attribute cylinder_number:t313 {0,1}
+@attribute timestamp:19911209 {0,1}
+@attribute cylinder_number:g496 {0,1}
+@attribute cylinder_number:x53 {0,1}
+@attribute cylinder_number:x295 {0,1}
+@attribute timestamp:19900702 {0,1}
+@attribute cylinder_number:f672 {0,1}
+@attribute cylinder_number:e67 {0,1}
+@attribute cylinder_number:x828 {0,1}
+@attribute cylinder_number:g98 {0,1}
+@attribute timestamp:19910806 {0,1}
+@attribute cylinder_number:g519 {0,1}
+@attribute timestamp:19910528 {0,1}
+@attribute cylinder_number:x720 {0,1}
+@attribute cylinder_number:w395 {0,1}
+@attribute cylinder_number:t245 {0,1}
+@attribute cylinder_number:i317 {0,1}
+@attribute cylinder_number:f416 {0,1}
+@attribute timestamp:19911104 {0,1}
+@attribute timestamp:19910619 {0,1}
+@attribute esa_voltage:55 {0,1}
+@attribute cylinder_number:x95 {0,1}
+@attribute cylinder_number:i349 {0,1}
+@attribute timestamp:19911103 {0,1}
+@attribute timestamp:19910618 {0,1}
+@attribute timestamp:19910511 {0,1}
+@attribute cylinder_number:x787 {0,1}
+@attribute timestamp:19910108 {0,1}
+@attribute timestamp:19911102 {0,1}
+@attribute timestamp:19910617 {0,1}
+@attribute cylinder_number:x12 {0,1}
+@attribute timestamp:19901109 {0,1}
+@attribute cylinder_number:i324 {0,1}
+@attribute cylinder_number:y216 {0,1}
+@attribute timestamp:19910325 {0,1}
+@attribute cylinder_number:x253 {0,1}
+@attribute timestamp:19920220 {0,1}
+@attribute cylinder_number:m362 {0,1}
+@attribute caliper:0.133 {0,1}
+@attribute cylinder_number:g84 {0,1}
+@attribute cylinder_number:g459 {0,1}
+@attribute cylinder_number:x304 {0,1}
+@attribute roughness:12 {0,1}
+@attribute timestamp:19910531 {0,1}
+@attribute solvent_pct:28 {0,1}
+@attribute timestamp:19901116 {0,1}
+@attribute timestamp:19901120 {0,1}
+@attribute cylinder_number:f329 {0,1}
+@attribute cylinder_number:r5 {0,1}
+@attribute customer:globalequp {0,1}
+@attribute customer:ntlwildlife {0,1}
+@attribute customer:galls {0,1}
+@attribute cylinder_number:x352 {0,1}
+@attribute timestamp:19901003 {0,1}
+@attribute timestamp:19900518 {0,1}
+@attribute cylinder_number:x746 {0,1}
+@attribute timestamp:19910627 {0,1}
+@attribute cylinder_number:i820 {0,1}
+@attribute timestamp:19900805 {0,1}
+@attribute timestamp:19901210 {0,1}
+@attribute cylinder_number:g604 {0,1}
+@attribute cylinder_number:x281 {0,1}
+@attribute cylinder_number:aa11 {0,1}
+@attribute timestamp:19920110 {0,1}
+@attribute cylinder_number:x795 {0,1}
+@attribute cylinder_number:m45 {0,1}
+@attribute timestamp:19901121 {0,1}
+@attribute timestamp:19911203 {0,1}
+@attribute cylinder_number:g462 {0,1}
+@attribute cylinder_number:g625 {0,1}
+@attribute timestamp:19910416 {0,1}
+@attribute timestamp:19900524 {0,1}
+@attribute cylinder_number:x243 {0,1}
+@attribute cylinder_number:f26 {0,1}
+@attribute cylinder_number:t8 {0,1}
+@attribute cylinder_number:y255 {0,1}
+@attribute timestamp:19900806 {0,1}
+@attribute timestamp:19910118 {0,1}
+@attribute timestamp:19901030 {0,1}
+@attribute timestamp:19900708 {0,1}
+@attribute timestamp:19900920 {0,1}
+@attribute cylinder_number:x802 {0,1}
+@attribute timestamp:19910423 {0,1}
+@attribute cylinder_number:g95 {0,1}
+@attribute cylinder_number:x838 {0,1}
+@attribute cylinder_number:g145 {0,1}
+@attribute timestamp:19900804 {0,1}
+@attribute timestamp:19910501 {0,1}
+@attribute cylinder_number:f219 {0,1}
+@attribute timestamp:19900511 {0,1}
+@attribute cylinder_number:w785 {0,1}
+@attribute cylinder_number:f77 {0,1}
+@attribute cylinder_number:f620 {0,1}
+@attribute cylinder_number:x821 {0,1}
+@attribute timestamp:19910920 {0,1}
+@attribute varnish_pct:? {0,1}
+@attribute timestamp:19910311 {0,1}
+@attribute cylinder_number:r14 {0,1}
+@attribute customer:woolwrth {0,1}
+@attribute timestamp:19910503 {0,1}
+@attribute timestamp:19910201 {0,1}
+@attribute timestamp:19901230 {0,1}
+@attribute band_type {band,noband}
+
+@data
+{70 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{12 1}
+{145 noband}
+{145 noband}
+{95 1}
+{15 1}
+{21 1}
+{145 noband}
+{11 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{36 1}
+{35 1}
+{143 1}
+{145 noband}
+{145 noband}
+{143 1}
+{120 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{141 1}
+{145 noband}
+{91 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{46 1}
+{136 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{}
+{63 1}
+{0 1}
+{145 noband}
+{145 noband}
+{}
+{50 1}
+{139 1}
+{139 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{37 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{56 1}
+{145 noband}
+{77 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{127 1}
+{13 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{68 1}
+{130 1}
+{60 1}
+{140 1}
+{140 1,142 1}
+{142 1}
+{}
+{98 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{}
+{128 1}
+{113 1}
+{126 1}
+{124 1}
+{34 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{73 1}
+{125 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{86 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{55 1}
+{76 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{99 1}
+{39 1}
+{40 1}
+{62 1}
+{67 1}
+{72 1}
+{118 1}
+{78 1}
+{105 1}
+{80 1}
+{116 1}
+{100 1}
+{145 noband}
+{145 noband}
+{33 1}
+{8 1}
+{132 1}
+{97 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{114 1}
+{45 1}
+{90 1}
+{19 1}
+{43 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{29 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{49 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{93 1}
+{69 1}
+{1 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{16 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{134 1}
+{64 1}
+{}
+{92 1}
+{145 noband}
+{108 1}
+{145 noband}
+{48 1}
+{145 noband}
+{145 noband}
+{24 1}
+{58 1}
+{122 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{104 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{117 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{119 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{129 1}
+{101 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{94 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{}
+{}
+{123 1}
+{42 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{}
+{81 1}
+{}
+{96 1}
+{}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{10 1}
+{145 noband}
+{9 1}
+{82 1}
+{}
+{51 1}
+{145 noband}
+{}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{141 1}
+{41 1}
+{}
+{145 noband}
+{145 noband}
+{54 1}
+{83 1}
+{}
+{121 1}
+{52 1}
+{112 1}
+{}
+{115 1}
+{145 noband}
+{145 noband}
+{74 1}
+{111 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{30 1}
+{}
+{107 1}
+{103 1}
+{}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{88 1}
+{57 1}
+{89 1}
+{109 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{87 1}
+{}
+{145 noband}
+{138 1}
+{84 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{47 1}
+{4 1}
+{133 1}
+{65 1}
+{59 1}
+{131 1}
+{}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{144 1}
+{102 1}
+{7 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{144 1}
+{25 1}
+{85 1}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{145 noband}
+{27 1}
+{32 1}
+{53 1}
+{23 1}
+{20 1}
+{31 1}
+{17 1}
+{}
+{5 1}
+{}
+{44 1}
+{22 1}
+{14 1}
+{18 1}
+{106 1}
+{61 1}
+{66 1}
+{71 1}
+{110 1}
+{137 1}
+{2 1}
+{79 1}
+{135 1}
+{26 1}
+{28 1}
+{75 1}
+{}
+{3 1}
+{38 1}
+{6 1}
+{}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}
+{138 1}

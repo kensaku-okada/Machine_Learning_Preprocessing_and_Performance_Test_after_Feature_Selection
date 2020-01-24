@@ -1,0 +1,5 @@
+file_name,classifier,accuracy,f-measure,TN,FN,FP,TP,CV_fit_time(hh:mm:ss.)
+gina.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.5677132889311767,0.438401318500206,1258,1018,345,532,0:31:11.066488
+gina.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.560418648905804,0.4375,1228,1011,375,539,0:00:00.539561
+gisette.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.6438333333333334,0.6782111127842192,1611,748,1389,2252,3:29:48.987666
+gisette.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.5483333333333333,0.2099125364431487,2930,2640,70,360,0:00:01.841073

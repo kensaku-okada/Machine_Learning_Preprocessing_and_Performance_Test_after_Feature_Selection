@@ -1,0 +1,947 @@
+@relation 'datasets/cylinder.arff.digitized.arff.-weka.filters.unsupervised.attribute.Remove-V-R1019,1014,1009,1007,1000,997,992,991,975,968,960,945,943,940,939,935,934,913,912,901,897,882,872,863,862,853,850,846,843,837,836,824,821,819,816,815,813,806,800,798,795,791,772,766,763,761,755,753,748,745,739,738,735,732,730,724,722,717,710,706,697,689,688,681,674,668,659,651,647,640,634,630,628,622,620,619,614,603,602,599,594,583,582,570,561,1036,1035,560,559,1016,1013,558,535,986,982,534,533,980,976,525,522,974,972,517,513,964,958,512,510,947,946,509,507,931,916,501,491,914,903,488,479,902,876,476,464,867,864,459,447,854,848,437,431,844,839,430,427,834,830,425,418,829,828,415,414,781,779,398,396,770,749,395,394,744,743,389,387,742,740,368,367,734,718,364,361,704,702,350,344,700,695,341,334,690,684,329,328,657,650,303,302,639,635,299,290,625,616,287,284,611,604,283,278,601,595,276,273,592,590,272,268,586,585,266,265,581,577,264,263,572,565,262,255,563,556,248,247,555,554,241,240,552,541,236,232,536,530,229,227,527,521,226,225,520,516,213,201,515,514,199,193,511,508,191,187,502,499,186,183,496,477,178,177,471,470,175,171,469,468,166,165,466,465,159,156,460,454,152,142,453,451,138,137,448,443,129,118,442,438,116,103,429,424,102,93,413,390,82,79,386,384,76,67,378,354,65,63,353,348,60,52,346,345,48,46,343,342,41,40,340,337,33,30,336,331,27,19,321,318,10,7,314,312,6,4,305,298,279,267,257,253,251,246,243,242,238,234,233,231,223,222,220,216,212,211,209,197,195,194,192,184,182,173,172,169,167,162,161,154,151,149,143,139,134,132,130,127,125,123,121,120,119,117,114,112,111,88,83,71,69,68,61,59,56,55,51,45,39,37,34,32,29,28,26,23,22,21,18,17,11,3,2,1055'
+
+@attribute cylinder_number:g78 {0,1}
+@attribute cylinder_number:x153 {0,1}
+@attribute cylinder_number:r3 {0,1}
+@attribute cylinder_number:g467 {0,1}
+@attribute cylinder_number:x282 {0,1}
+@attribute cylinder_number:f685 {0,1}
+@attribute cylinder_number:x837 {0,1}
+@attribute cylinder_number:r4 {0,1}
+@attribute cylinder_number:f146 {0,1}
+@attribute cylinder_number:t78 {0,1}
+@attribute cylinder_number:e85 {0,1}
+@attribute cylinder_number:r18 {0,1}
+@attribute cylinder_number:f261 {0,1}
+@attribute timestamp:19910221 {0,1}
+@attribute cylinder_number:s21 {0,1}
+@attribute cylinder_number:x25 {0,1}
+@attribute cylinder_number:f38 {0,1}
+@attribute cylinder_number:x272 {0,1}
+@attribute cylinder_number:f571 {0,1}
+@attribute cylinder_number:g089 {0,1}
+@attribute cylinder_number:x91 {0,1}
+@attribute cylinder_number:t383 {0,1}
+@attribute cylinder_number:x831 {0,1}
+@attribute cylinder_number:m103 {0,1}
+@attribute cylinder_number:j62 {0,1}
+@attribute cylinder_number:s180 {0,1}
+@attribute cylinder_number:w516 {0,1}
+@attribute cylinder_number:o2 {0,1}
+@attribute cylinder_number:x809 {0,1}
+@attribute cylinder_number:x776 {0,1}
+@attribute cylinder_number:x102 {0,1}
+@attribute cylinder_number:x158 {0,1}
+@attribute cylinder_number:m309 {0,1}
+@attribute cylinder_number:x326 {0,1}
+@attribute cylinder_number:w357 {0,1}
+@attribute cylinder_number:f169 {0,1}
+@attribute cylinder_number:m402 {0,1}
+@attribute cylinder_number:t133 {0,1}
+@attribute cylinder_number:t333 {0,1}
+@attribute cylinder_number:x201 {0,1}
+@attribute cylinder_number:r34 {0,1}
+@attribute cylinder_number:t284 {0,1}
+@attribute cylinder_number:x770 {0,1}
+@attribute cylinder_number:x788 {0,1}
+@attribute timestamp:19910302 {0,1}
+@attribute esa_voltage:52 {0,1}
+@attribute cylinder_number:x206 {0,1}
+@attribute cylinder_number:g404 {0,1}
+@attribute cylinder_number:x84 {0,1}
+@attribute cylinder_number:g60 {0,1}
+@attribute cylinder_number:x155 {0,1}
+@attribute cylinder_number:x414 {0,1}
+@attribute cylinder_number:o1 {0,1}
+@attribute cylinder_number:i346 {0,1}
+@attribute cylinder_number:e77 {0,1}
+@attribute cylinder_number:x80 {0,1}
+@attribute cylinder_number:e303 {0,1}
+@attribute cylinder_number:f321 {0,1}
+@attribute cylinder_number:j38 {0,1}
+@attribute cylinder_number:e69 {0,1}
+@attribute timestamp:19910718 {0,1}
+@attribute timestamp:19900809 {0,1}
+@attribute cylinder_number:x400 {0,1}
+@attribute cylinder_number:r43 {0,1}
+@attribute cylinder_number:m65 {0,1}
+@attribute cylinder_number:b7 {0,1}
+@attribute cylinder_number:x232 {0,1}
+@attribute cylinder_number:y228 {0,1}
+@attribute cylinder_number:x108 {0,1}
+@attribute cylinder_number:g412 {0,1}
+@attribute cylinder_number:j43 {0,1}
+@attribute cylinder_number:f236 {0,1}
+@attribute cylinder_number:m257 {0,1}
+@attribute cylinder_number:e68 {0,1}
+@attribute cylinder_number:i358 {0,1}
+@attribute cylinder_number:x315 {0,1}
+@attribute cylinder_number:f067 {0,1}
+@attribute cylinder_number:f76 {0,1}
+@attribute cylinder_number:x377 {0,1}
+@attribute cylinder_number:x242 {0,1}
+@attribute cylinder_number:f308 {0,1}
+@attribute cylinder_number:f237 {0,1}
+@attribute cylinder_number:e90 {0,1}
+@attribute cylinder_number:i320 {0,1}
+@attribute cylinder_number:x777 {0,1}
+@attribute cylinder_number:g462 {0,1}
+@attribute cylinder_number:aa97 {0,1}
+@attribute cylinder_number:x221 {0,1}
+@attribute cylinder_number:f331 {0,1}
+@attribute timestamp:19910531 {0,1}
+@attribute timestamp:19930205 {0,1}
+@attribute cylinder_number:x754 {0,1}
+@attribute cylinder_number:3 {0,1}
+@attribute cylinder_number:g67 {0,1}
+@attribute timestamp:19900514 {0,1}
+@attribute cylinder_number:x713 {0,1}
+@attribute cylinder_number:g640 {0,1}
+@attribute cylinder_number:aa70 {0,1}
+@attribute timestamp:19920317 {0,1}
+@attribute cylinder_number:o6 {0,1}
+@attribute cylinder_number:f72 {0,1}
+@attribute cylinder_number:i365 {0,1}
+@attribute cylinder_number:y255 {0,1}
+@attribute cylinder_number:x135 {0,1}
+@attribute cylinder_number:t218 {0,1}
+@attribute cylinder_number:f329 {0,1}
+@attribute timestamp:19911103 {0,1}
+@attribute cylinder_number:f133 {0,1}
+@attribute cylinder_number:x266 {0,1}
+@attribute timestamp:19910627 {0,1}
+@attribute timestamp:19910317 {0,1}
+@attribute cylinder_number:f629 {0,1}
+@attribute cylinder_number:f85 {0,1}
+@attribute cylinder_number:x216 {0,1}
+@attribute cylinder_number:t8 {0,1}
+@attribute cylinder_number:w406 {0,1}
+@attribute cylinder_number:f135 {0,1}
+@attribute timestamp:19920911 {0,1}
+@attribute cylinder_number:x802 {0,1}
+@attribute cylinder_number:x163 {0,1}
+@attribute cylinder_number:i354 {0,1}
+@attribute timestamp:19930421 {0,1}
+@attribute timestamp:19900708 {0,1}
+@attribute timestamp:19910113 {0,1}
+@attribute cylinder_number:x132 {0,1}
+@attribute cylinder_number:x295 {0,1}
+@attribute cylinder_number:g604 {0,1}
+@attribute cylinder_number:b6 {0,1}
+@attribute cylinder_number:o7 {0,1}
+@attribute timestamp:19910815 {0,1}
+@attribute timestamp:19920705 {0,1}
+@attribute cylinder_number:j34 {0,1}
+@attribute cylinder_number:x396 {0,1}
+@attribute cylinder_number:j44 {0,1}
+@attribute cylinder_number:g519 {0,1}
+@attribute cylinder_number:x420 {0,1}
+@attribute cylinder_number:x141 {0,1}
+@attribute timestamp:19910607 {0,1}
+@attribute timestamp:19900804 {0,1}
+@attribute cylinder_number:r17 {0,1}
+@attribute cylinder_number:x342 {0,1}
+@attribute cylinder_number:m374 {0,1}
+@attribute customer:penney {0,1}
+@attribute cylinder_number:r29 {0,1}
+@attribute cylinder_number:x308 {0,1}
+@attribute timestamp:19900417 {0,1}
+@attribute cylinder_number:i317 {0,1}
+@attribute cylinder_number:x408 {0,1}
+@attribute cylinder_number:x127 {0,1}
+@attribute cylinder_number:x53 {0,1}
+@attribute timestamp:19910103 {0,1}
+@attribute cylinder_number:e91 {0,1}
+@attribute cylinder_number:f466 {0,1}
+@attribute cylinder_number:x821 {0,1}
+@attribute timestamp:19910423 {0,1}
+@attribute cylinder_number:t200 {0,1}
+@attribute cylinder_number:m332 {0,1}
+@attribute cylinder_number:x791 {0,1}
+@attribute timestamp:19910108 {0,1}
+@attribute cylinder_number:t234 {0,1}
+@attribute cylinder_number:f267 {0,1}
+@attribute cylinder_number:i324 {0,1}
+@attribute timestamp:19920603 {0,1}
+@attribute cylinder_number:f25 {0,1}
+@attribute cylinder_number:w717 {0,1}
+@attribute cylinder_number:i010 {0,1}
+@attribute cylinder_number:f26 {0,1}
+@attribute cylinder_number:x9 {0,1}
+@attribute cylinder_number:f294 {0,1}
+@attribute timestamp:19910422 {0,1}
+@attribute cylinder_number:g145 {0,1}
+@attribute cylinder_number:m208 {0,1}
+@attribute timestamp:19910310 {0,1}
+@attribute timestamp:19901117 {0,1}
+@attribute press_speed:59 {0,1}
+@attribute cylinder_number:t32 {0,1}
+@attribute cylinder_number:x65 {0,1}
+@attribute timestamp:19901120 {0,1}
+@attribute cylinder_number:x95 {0,1}
+@attribute cylinder_number:m410 {0,1}
+@attribute cylinder_number:x147 {0,1}
+@attribute cylinder_number:aa1 {0,1}
+@attribute timestamp:19910806 {0,1}
+@attribute cylinder_number:b181 {0,1}
+@attribute cylinder_number:x151 {0,1}
+@attribute cylinder_number:m45 {0,1}
+@attribute timestamp:19930113 {0,1}
+@attribute cylinder_number:j68 {0,1}
+@attribute cylinder_number:x742 {0,1}
+@attribute timestamp:19930915 {0,1}
+@attribute cylinder_number:x768 {0,1}
+@attribute cylinder_number:x146 {0,1}
+@attribute cylinder_number:x793 {0,1}
+@attribute caliper:0.133 {0,1}
+@attribute cylinder_number:g496 {0,1}
+@attribute cylinder_number:i303 {0,1}
+@attribute cylinder_number:f170 {0,1}
+@attribute cylinder_number:x185 {0,1}
+@attribute cylinder_number:m272 {0,1}
+@attribute cylinder_number:g572 {0,1}
+@attribute cylinder_number:x103 {0,1}
+@attribute timestamp:19941005 {0,1}
+@attribute timestamp:19920822 {0,1}
+@attribute cylinder_number:f192 {0,1}
+@attribute cylinder_number:f492 {0,1}
+@attribute cylinder_number:f416 {0,1}
+@attribute timestamp:19900511 {0,1}
+@attribute timestamp:19910216 {0,1}
+@attribute cylinder_number:f264 {0,1}
+@attribute cylinder_number:e67 {0,1}
+@attribute cylinder_number:f590 {0,1}
+@attribute cylinder_number:f19 {0,1}
+@attribute cylinder_number:x771 {0,1}
+@attribute timestamp:19920405 {0,1}
+@attribute timestamp:19930916 {0,1}
+@attribute cylinder_number:i325 {0,1}
+@attribute cylinder_number:x350 {0,1}
+@attribute cylinder_number:f98 {0,1}
+@attribute timestamp:19920531 {0,1}
+@attribute cylinder_number:o28 {0,1}
+@attribute cylinder_number:f633 {0,1}
+@attribute cylinder_number:t31 {0,1}
+@attribute timestamp:19930227 {0,1}
+@attribute cylinder_number:f310 {0,1}
+@attribute cylinder_number:t368 {0,1}
+@attribute timestamp:19901003 {0,1}
+@attribute timestamp:19900518 {0,1}
+@attribute cylinder_number:m4 {0,1}
+@attribute cylinder_number:r22 {0,1}
+@attribute timestamp:19901106 {0,1}
+@attribute timestamp:19910501 {0,1}
+@attribute cylinder_number:x374 {0,1}
+@attribute timestamp:19910320 {0,1}
+@attribute timestamp:19900509 {0,1}
+@attribute cylinder_number:t351 {0,1}
+@attribute blade_mfg:uddeholm {0,1}
+@attribute cylinder_number:w364 {0,1}
+@attribute timestamp:19910303 {0,1}
+@attribute cylinder_number:m372 {0,1}
+@attribute cylinder_number:m74 {0,1}
+@attribute cylinder_number:x727 {0,1}
+@attribute cylinder_number:x304 {0,1}
+@attribute timestamp:19920920 {0,1}
+@attribute cylinder_number:x297 {0,1}
+@attribute cylinder_number:x819 {0,1}
+@attribute cylinder_number:i383 {0,1}
+@attribute cylinder_number:x720 {0,1}
+@attribute cylinder_number:f569 {0,1}
+@attribute cylinder_number:f89 {0,1}
+@attribute timestamp:19941001 {0,1}
+@attribute timestamp:19920114 {0,1}
+@attribute cylinder_number:x804 {0,1}
+@attribute cylinder_number:x37 {0,1}
+@attribute cylinder_number:t117 {0,1}
+@attribute timestamp:19900330 {0,1}
+@attribute cylinder_number:x195 {0,1}
+@attribute cylinder_number:f383 {0,1}
+@attribute cylinder_number:x203 {0,1}
+@attribute customer:global {0,1}
+@attribute cylinder_number:j9 {0,1}
+@attribute cylinder_number:i337 {0,1}
+@attribute cylinder_number:f620 {0,1}
+@attribute cylinder_number:t30 {0,1}
+@attribute cylinder_number:x001 {0,1}
+@attribute cylinder_number:x96 {0,1}
+@attribute timestamp:19910511 {0,1}
+@attribute cylinder_number:y216 {0,1}
+@attribute cylinder_number:x019 {0,1}
+@attribute cylinder_number:g416 {0,1}
+@attribute timestamp:19920115 {0,1}
+@attribute timestamp:19920709 {0,1}
+@attribute cylinder_number:f103 {0,1}
+@attribute timestamp:19900801 {0,1}
+@attribute wax:152 {0,1}
+@attribute timestamp:19910131 {0,1}
+@attribute cylinder_number:m39 {0,1}
+@attribute cylinder_number:f482 {0,1}
+@attribute cylinder_number:g625 {0,1}
+@attribute cylinder_number:x67 {0,1}
+@attribute cylinder_number:x18 {0,1}
+@attribute timestamp:19910308 {0,1}
+@attribute cylinder_number:aa17 {0,1}
+@attribute ink_temperature:103 {0,1}
+@attribute cylinder_number:t280 {0,1}
+@attribute cylinder_number:t380 {0,1}
+@attribute timestamp:19920523 {0,1}
+@attribute timestamp:19900805 {0,1}
+@attribute cylinder_number:o15 {0,1}
+@attribute cylinder_number:e74 {0,1}
+@attribute cylinder_number:f219 {0,1}
+@attribute cylinder_number:t312 {0,1}
+@attribute timestamp:19900718 {0,1}
+@attribute cylinder_number:x184 {0,1}
+@attribute cylinder_number:t244 {0,1}
+@attribute cylinder_number:g38 {0,1}
+@attribute cylinder_number:e86 {0,1}
+@attribute cylinder_number:e510 {0,1}
+@attribute timestamp:19910118 {0,1}
+@attribute timestamp:19900920 {0,1}
+@attribute cylinder_number:m432 {0,1}
+@attribute cylinder_number:f121 {0,1}
+@attribute timestamp:19901005 {0,1}
+@attribute timestamp:19911104 {0,1}
+@attribute cylinder_number:e92 {0,1}
+@attribute cylinder_number:f450 {0,1}
+@attribute anode_space_ratio:167 {0,1}
+@attribute timestamp:19911102 {0,1}
+@attribute cylinder_number:x333 {0,1}
+@attribute varnish_pct:121 {0,1}
+@attribute cylinder_number:ee304 {0,1}
+@attribute cylinder_number:w90 {0,1}
+@attribute cylinder_number:x830 {0,1}
+@attribute timestamp:19910818 {0,1}
+@attribute cylinder_number:x253 {0,1}
+@attribute timestamp:19910508 {0,1}
+@attribute cylinder_number:x826 {0,1}
+@attribute cylinder_number:r1 {0,1}
+@attribute cylinder_number:m362 {0,1}
+@attribute cylinder_number:t195 {0,1}
+@attribute cylinder_number:j45 {0,1}
+@attribute cylinder_number:e72 {0,1}
+@attribute timestamp:19911209 {0,1}
+@attribute cylinder_number:w368 {0,1}
+@attribute cylinder_number:x389 {0,1}
+@attribute cylinder_number:m200 {0,1}
+@attribute cylinder_number:i309 {0,1}
+@attribute timestamp:19920610 {0,1}
+@attribute cylinder_number:g648 {0,1}
+@attribute cylinder_number:i343 {0,1}
+@attribute cylinder_number:t233 {0,1}
+@attribute cylinder_number:w785 {0,1}
+@attribute timestamp:19930624 {0,1}
+@attribute cylinder_number:r38 {0,1}
+@attribute cylinder_number:x838 {0,1}
+@attribute cylinder_number:x89 {0,1}
+@attribute timestamp:19910208 {0,1}
+@attribute cylinder_number:aa067 {0,1}
+@attribute timestamp:19910127 {0,1}
+@attribute solvent_pct:170 {0,1}
+@attribute timestamp:19910917 {0,1}
+@attribute solvent_pct:28 {0,1}
+@attribute timestamp:19900510 {0,1}
+@attribute cylinder_number:e81 {0,1}
+@attribute timestamp:19910125 {0,1}
+@attribute timestamp:19901210 {0,1}
+@attribute customer:galls {0,1}
+@attribute timestamp:19900913 {0,1}
+@attribute cylinder_number:x281 {0,1}
+@attribute timestamp:19910619 {0,1}
+@attribute timestamp:19910920 {0,1}
+@attribute timestamp:19920205 {0,1}
+@attribute timestamp:19910528 {0,1}
+@attribute cylinder_number:g3 {0,1}
+@attribute timestamp:19901124 {0,1}
+@attribute timestamp:19930908 {0,1}
+@attribute cylinder_number:g71 {0,1}
+@attribute cylinder_number:f77 {0,1}
+@attribute cylinder_number:g433 {0,1}
+@attribute timestamp:19910622 {0,1}
+@attribute cylinder_number:aa45 {0,1}
+@attribute timestamp:19940904 {0,1}
+@attribute cylinder_number:i820 {0,1}
+@attribute timestamp:19930514 {0,1}
+@attribute cylinder_number:g98 {0,1}
+@attribute timestamp:19920826 {0,1}
+@attribute cylinder_number:x36 {0,1}
+@attribute cylinder_number:g628 {0,1}
+@attribute timestamp:19920515 {0,1}
+@attribute cylinder_number:t245 {0,1}
+@attribute cylinder_number:i366 {0,1}
+@attribute caliper:.200 {0,1}
+@attribute ink_pct:17 {0,1}
+@attribute cylinder_number:x352 {0,1}
+@attribute timestamp:19920110 {0,1}
+@attribute timestamp:19920808 {0,1}
+@attribute timestamp:19930906 {0,1}
+@attribute cylinder_number:i349 {0,1}
+@attribute timestamp:19921125 {0,1}
+@attribute customer:globalequp {0,1}
+@attribute cylinder_number:x243 {0,1}
+@attribute cylinder_number:i400 {0,1}
+@attribute timestamp:19900603 {0,1}
+@attribute ink_pct:65 {0,1}
+@attribute esa_voltage:55 {0,1}
+@attribute timestamp:19900617 {0,1}
+@attribute cylinder_number:g48 {0,1}
+@attribute timestamp:19920220 {0,1}
+@attribute timestamp:19900806 {0,1}
+@attribute cylinder_number:g84 {0,1}
+@attribute cylinder_number:r5 {0,1}
+@attribute timestamp:19901121 {0,1}
+@attribute cylinder_number:x356 {0,1}
+@attribute caliper:0.217 {0,1}
+@attribute timestamp:19941007 {0,1}
+@attribute cylinder_number:j6 {0,1}
+@attribute timestamp:19901023 {0,1}
+@attribute cylinder_number:x798 {0,1}
+@attribute cylinder_number:t176 {0,1}
+@attribute timestamp:19920918 {0,1}
+@attribute cylinder_number:j70 {0,1}
+@attribute customer:adco {0,1}
+@attribute timestamp:19900524 {0,1}
+@attribute band_type {band,noband}
+
+@data
+{158 1}
+{108 1,402 noband}
+{65 1,402 noband}
+{37 1,402 noband}
+{131 1,402 noband}
+{104 1,402 noband}
+{402 noband}
+{43 1,402 noband}
+{238 1}
+{83 1,402 noband}
+{260 1,402 noband}
+{372 1}
+{278 1}
+{343 1}
+{402 noband}
+{150 1}
+{81 1,402 noband}
+{160 1,402 noband}
+{14 1,402 noband}
+{204 1,402 noband}
+{402 noband}
+{402 noband}
+{119 1,402 noband}
+{337 1}
+{274 1}
+{342 1}
+{320 1,402 noband}
+{402 noband}
+{}
+{297 1}
+{259 1,402 noband}
+{402 noband}
+{136 1,402 noband}
+{402 noband}
+{335 1}
+{402 noband}
+{389 1}
+{123 1,402 noband}
+{70 1,402 noband}
+{402 noband}
+{402 noband}
+{402 noband}
+{402 noband}
+{402 noband}
+{243 1,402 noband}
+{191 1,402 noband}
+{402 noband}
+{56 1,402 noband}
+{73 1,402 noband}
+{13 1,402 noband}
+{149 1}
+{153 1}
+{402 noband}
+{315 1,402 noband}
+{207 1,402 noband}
+{402 noband}
+{120 1,402 noband}
+{74 1,402 noband}
+{}
+{383 1}
+{237 1}
+{59 1,402 noband}
+{54 1,402 noband}
+{}
+{209 1}
+{}
+{157 1}
+{82 1,402 noband}
+{44 1,402 noband}
+{80 1,402 noband}
+{280 1,402 noband}
+{76 1,402 noband}
+{172 1,402 noband}
+{151 1,402 noband}
+{402 noband}
+{402 noband}
+{402 noband}
+{110 1}
+{402 noband}
+{36 1,402 noband}
+{279 1,402 noband}
+{402 noband}
+{223 1,402 noband}
+{100 1,402 noband}
+{144 1,402 noband}
+{246 1}
+{47 1,402 noband}
+{396 1}
+{232 1,402 noband}
+{268 1,402 noband}
+{216 1,402 noband}
+{402 noband}
+{333 1}
+{334 1}
+{30 1,402 noband}
+{311 1,402 noband}
+{402 noband}
+{402 noband}
+{402 noband}
+{91 1,402 noband}
+{27 1,402 noband}
+{92 1,402 noband}
+{271 1,402 noband}
+{25 1,402 noband}
+{265 1}
+{230 1}
+{205 1}
+{}
+{}
+{}
+{}
+{314 1}
+{255 1,402 noband}
+{402 noband}
+{402 noband}
+{175 1,402 noband}
+{179 1,402 noband}
+{296 1,402 noband}
+{}
+{170 1}
+{391 1}
+{382 1}
+{118 1}
+{169 1}
+{284 1,402 noband}
+{8 1,402 noband}
+{167 1,402 noband}
+{402 noband}
+{402 noband}
+{180 1,402 noband}
+{303 1,402 noband}
+{10 1,402 noband}
+{5 1,402 noband}
+{247 1,402 noband}
+{402 noband}
+{371 1}
+{154 1}
+{402 noband}
+{402 noband}
+{402 noband}
+{200 1,402 noband}
+{288 1,402 noband}
+{295 1,402 noband}
+{132 1,402 noband}
+{50 1,402 noband}
+{402 noband}
+{402 noband}
+{402 noband}
+{89 1}
+{402 noband}
+{402 noband}
+{24 1,402 noband}
+{351 1}
+{266 1}
+{19 1,402 noband}
+{199 1,402 noband}
+{402 noband}
+{22 1,402 noband}
+{0 1,402 noband}
+{31 1,402 noband}
+{251 1,402 noband}
+{402 noband}
+{109 1}
+{328 1}
+{358 1}
+{348 1}
+{245 1}
+{397 1}
+{102 1}
+{313 1}
+{137 1}
+{317 1}
+{166 1}
+{361 1}
+{402 noband}
+{192 1,402 noband}
+{94 1}
+{233 1}
+{206 1}
+{226 1}
+{402 noband}
+{187 1,402 noband}
+{402 noband}
+{88 1,402 noband}
+{18 1,402 noband}
+{402 noband}
+{3 1,402 noband}
+{401 1}
+{194 1}
+{105 1}
+{257 1}
+{145 1}
+{7 1,402 noband}
+{402 noband}
+{62 1,402 noband}
+{99 1,402 noband}
+{402 noband}
+{293 1}
+{402 noband}
+{21 1,402 noband}
+{9 1,402 noband}
+{227 1,402 noband}
+{341 1}
+{29 1,402 noband}
+{95 1,402 noband}
+{299 1,402 noband}
+{72 1,402 noband}
+{402 noband}
+{381 1}
+{384 1}
+{210 1}
+{211 1,402 noband}
+{248 1,402 noband}
+{139 1,402 noband}
+{143 1,402 noband}
+{402 noband}
+{51 1,402 noband}
+{48 1,402 noband}
+{264 1,402 noband}
+{402 noband}
+{402 noband}
+{84 1,402 noband}
+{127 1,402 noband}
+{112 1,402 noband}
+{258 1}
+{116 1,402 noband}
+{402 noband}
+{402 noband}
+{196 1,402 noband}
+{356 1}
+{178 1}
+{}
+{378 1}
+{402 noband}
+{185 1}
+{402 noband}
+{394 1}
+{103 1,402 noband}
+{184 1,402 noband}
+{254 1}
+{368 1}
+{122 1}
+{183 1,402 noband}
+{156 1,402 noband}
+{159 1,402 noband}
+{275 1,402 noband}
+{304 1,402 noband}
+{347 1}
+{402 noband}
+{402 noband}
+{402 noband}
+{283 1,402 noband}
+{114 1}
+{402 noband}
+{12 1,402 noband}
+{208 1,402 noband}
+{168 1,402 noband}
+{66 1,402 noband}
+{402 noband}
+{308 1,402 noband}
+{15 1,402 noband}
+{128 1,402 noband}
+{287 1,402 noband}
+{402 noband}
+{402 noband}
+{291 1,402 noband}
+{387 1}
+{1 1,402 noband}
+{17 1,402 noband}
+{402 noband}
+{77 1,402 noband}
+{256 1,402 noband}
+{402 noband}
+{272 1,402 noband}
+{58 1,402 noband}
+{138 1}
+{286 1}
+{402 noband}
+{319 1,402 noband}
+{75 1,402 noband}
+{402 noband}
+{164 1,402 noband}
+{26 1,402 noband}
+{61 1,402 noband}
+{220 1,402 noband}
+{324 1,402 noband}
+{402 noband}
+{176 1,402 noband}
+{307 1,402 noband}
+{4 1,402 noband}
+{292 1,402 noband}
+{228 1,402 noband}
+{402 noband}
+{71 1,402 noband}
+{16 1,402 noband}
+{20 1,402 noband}
+{124 1,402 noband}
+{78 1,402 noband}
+{402 noband}
+{345 1}
+{402 noband}
+{402 noband}
+{240 1,402 noband}
+{402 noband}
+{203 1,402 noband}
+{402 noband}
+{402 noband}
+{53 1,402 noband}
+{}
+{}
+{298 1}
+{346 1}
+{402 noband}
+{402 noband}
+{402 noband}
+{235 1,402 noband}
+{23 1,402 noband}
+{32 1,402 noband}
+{41 1,402 noband}
+{38 1,402 noband}
+{402 noband}
+{402 noband}
+{}
+{193 1}
+{}
+{225 1}
+{}
+{402 noband}
+{402 noband}
+{33 1,402 noband}
+{46 1,402 noband}
+{402 noband}
+{402 noband}
+{402 noband}
+{402 noband}
+{355 1}
+{239 1,402 noband}
+{93 1}
+{388 1}
+{}
+{301 1}
+{64 1,402 noband}
+{}
+{402 noband}
+{155 1,402 noband}
+{40 1,402 noband}
+{402 noband}
+{135 1,402 noband}
+{323 1,402 noband}
+{252 1,402 noband}
+{212 1,402 noband}
+{}
+{197 1}
+{}
+{402 noband}
+{402 noband}
+{134 1}
+{395 1}
+{}
+{352 1}
+{363 1}
+{277 1}
+{}
+{379 1}
+{402 noband}
+{402 noband}
+{174 1}
+{85 1}
+{402 noband}
+{96 1,402 noband}
+{219 1,402 noband}
+{402 noband}
+{148 1,402 noband}
+{231 1,402 noband}
+{229 1}
+{}
+{173 1}
+{126 1}
+{}
+{34 1,402 noband}
+{236 1,402 noband}
+{49 1,402 noband}
+{69 1,402 noband}
+{115 1,402 noband}
+{366 1}
+{353 1}
+{177 1}
+{390 1}
+{402 noband}
+{52 1,402 noband}
+{402 noband}
+{42 1,402 noband}
+{402 noband}
+{263 1,402 noband}
+{402 noband}
+{340 1}
+{}
+{267 1,402 noband}
+{234 1}
+{241 1}
+{402 noband}
+{402 noband}
+{28 1,402 noband}
+{171 1,402 noband}
+{152 1,402 noband}
+{125 1}
+{165 1}
+{330 1}
+{376 1}
+{146 1}
+{289 1}
+{}
+{300 1,402 noband}
+{107 1,402 noband}
+{402 noband}
+{6 1,402 noband}
+{244 1,402 noband}
+{}
+{344 1}
+{282 1}
+{316 1,402 noband}
+{2 1,402 noband}
+{45 1,402 noband}
+{140 1,402 noband}
+{79 1,402 noband}
+{87 1,402 noband}
+{68 1,402 noband}
+{55 1,402 noband}
+{276 1,402 noband}
+{338 1}
+{325 1}
+{129 1}
+{195 1,402 noband}
+{224 1,402 noband}
+{402 noband}
+{67 1,402 noband}
+{402 noband}
+{402 noband}
+{63 1,402 noband}
+{188 1,402 noband}
+{402 noband}
+{60 1,402 noband}
+{163 1,402 noband}
+{35 1,402 noband}
+{215 1,402 noband}
+{111 1,402 noband}
+{57 1,402 noband}
+{11 1,402 noband}
+{147 1,402 noband}
+{402 noband}
+{39 1,402 noband}
+{312 1,402 noband}
+{402 noband}
+{402 noband}
+{310 1}
+{400 1}
+{182 1}
+{253 1}
+{290 1}
+{385 1}
+{318 1}
+{}
+{217 1}
+{}
+{321 1}
+{101 1}
+{269 1}
+{250 1}
+{373 1}
+{302 1}
+{106 1}
+{306 1}
+{190 1}
+{349 1}
+{392 1}
+{386 1}
+{261 1}
+{339 1}
+{350 1}
+{161 1}
+{}
+{141 1}
+{181 1}
+{281 1}
+{}
+{329 1}
+{113 1}
+{98 1}
+{142 1}
+{213 1}
+{327 1}
+{305 1}
+{294 1}
+{367 1}
+{285 1}
+{332 1}
+{365 1}
+{218 1}
+{162 1}
+{326 1}
+{130 1}
+{270 1}
+{374 1}
+{202 1}
+{364 1}
+{117 1}
+{359 1}
+{398 1}
+{242 1}
+{369 1}
+{221 1}
+{336 1}
+{377 1}
+{380 1}
+{186 1}
+{90 1}
+{322 1}
+{262 1}
+{222 1}
+{370 1}
+{357 1}
+{121 1}
+{362 1}
+{331 1}
+{375 1}
+{354 1}
+{189 1}
+{214 1}
+{198 1}
+{309 1}
+{360 1}
+{86 1}
+{249 1}
+{273 1}
+{393 1}
+{201 1}
+{133 1}
+{}
+{97 1}
+{399 1}

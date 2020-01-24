@@ -28,9 +28,9 @@ config.classifier_names = [Constant.SVC, Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.NAIVE_BAYES]
 # config.classifier_names = [Constant.SVC]
 
-config.feature_selection_algorithm_name = "mrmr"
+# config.feature_selection_algorithm_name = "mrmr"
 # config.feature_selection_algorithm_name = "slcc"
-# config.feature_selection_algorithm_name = "bornfs"
+config.feature_selection_algorithm_name = "bornfs"
 
 config.if_one_hot_encoding = False
 ############################################################
@@ -45,11 +45,10 @@ config.if_one_hot_encoding = False
 
 # set the import path
 config.ifGetMultipleResults = True
-relativePath = config.feature_selection_algorithm_name + "_datasets\\mrmr-binarized\\*.arff"
+# relativePath = config.feature_selection_algorithm_name + "_datasets\\binarized\\*.arff"
+relativePath = config.feature_selection_algorithm_name + "_datasets\\binarized\\important\\*.arff"
 # relativePath = config.feature_selection_algorithm_name + "_datasets\\mrmr-binarized\\arcene.arff.digitized.arff.binarized.arff-mrmr.arff"
 
-# relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\tricky\\*.arff"
-# relativePath = config.feature_selection_algorithm_name + "_datasets\\out\\dexter-10*.arff"
 
 filePath = Util.getFilePath(relativePath)
 print("type(filePath): ", type(filePath))
@@ -182,35 +181,36 @@ for filePath in config.file_paths:
                                         config.true_positive, config.total_GridSearchCV_fit_time])
 
         elif config.crossValidationType == "hold-out":
-            ####################################################################
-            ############### classification with cross validation start ######################
-            ####################################################################
-            clf = my_CV.cross_validate_hold_out(clssifier_type, X_train, y_train, parameters)
-            # print("clf.cv_results_: ",clf.cv_results_)
-            print("clf.best_params: ",clf.best_params_ )
-            print("clf.best_score_: ",clf.best_score_ )
-            print("clf.best_estimator_: ",clf.best_estimator_)
-            print("clf.best_index_: ",clf.best_index_)
-            ###########################################################################
-            ############### classification with cross validation end ######################
-            ###########################################################################
-
-            ###########################################################################
-            ############### test the model start ####################
-            ###########################################################################
-            print("------------ start testing the model ------------")
-            accuracy, f_measure, my_roc_auc_score = Test.test_model_hold_out(classifier_name, clf, X_test, y_test)
-
-            # append the test result for export
-            # file_name = os.path.basename(filePath)
-            config.test_results.append([file_name ,classifier_name ,accuracy ,f_measure ,my_roc_auc_score])
-            print("------------ end testing the model ------------")
-            ###########################################################################
-            ############### test the model end ######################
-            ###########################################################################
+            pass
+            # ####################################################################
+            # ############### classification with cross validation start ######################
+            # ####################################################################
+            # clf = my_CV.cross_validate_hold_out(clssifier_type, X_train, y_train, parameters)
+            # # print("clf.cv_results_: ",clf.cv_results_)
+            # print("clf.best_params: ",clf.best_params_ )
+            # print("clf.best_score_: ",clf.best_score_ )
+            # print("clf.best_estimator_: ",clf.best_estimator_)
+            # print("clf.best_index_: ",clf.best_index_)
+            # ###########################################################################
+            # ############### classification with cross validation end ######################
+            # ###########################################################################
+            #
+            # ###########################################################################
+            # ############### test the model start ####################
+            # ###########################################################################
+            # print("------------ start testing the model ------------")
+            # accuracy, f_measure, my_roc_auc_score = Test.test_model_hold_out(classifier_name, clf, X_test, y_test)
+            #
+            # # append the test result for export
+            # # file_name = os.path.basename(filePath)
+            # config.test_results.append([file_name ,classifier_name ,accuracy ,f_measure ,my_roc_auc_score])
+            # print("------------ end testing the model ------------")
+            # ###########################################################################
+            # ############### test the model end ######################
+            # ###########################################################################
 
     ############### export the test result ###############
-    header = ["file_name","classifier","accuracy","f-measure","TP","TP","TP","TP", "CV_fit_time"]
+    header = ["file_name","classifier","accuracy","f-measure","TN","FN","FP","TP", "CV_fit_time(hh:mm:ss.)"]
     # https://note.nkmk.me/python-pathlib-name-suffix-parent/
     # Util.exportCSVFile(config, header, fileName=config.dataset_directory.parents[1].name + "_test_result")
     Util.exportCSVFile(config, header, filePath)

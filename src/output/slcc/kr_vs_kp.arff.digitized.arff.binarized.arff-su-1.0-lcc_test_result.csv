@@ -1,0 +1,5 @@
+file_name,classifier,accuracy,f-measure,TN,FN,FP,TP,CV_fit_time(hh:mm:ss.)
+kdd-20_.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,SVC,0.9870593839314068,0.9860659941870406,13331,208,118,11535,21:04:15.766772
+kdd-20_.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,naive_bayes,0.9025881232137186,0.8843434819492884,13356,2361,93,9382,0:00:24.365770
+kr_vs_kp.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,SVC,0.9918648310387985,0.9922341696535245,1509,8,18,1661,0:09:09.689942
+kr_vs_kp.arff.digitized.arff.binarized.arff-su-1.0-lcc.arff,naive_bayes,0.8103879849812266,0.8149053145998778,1256,335,271,1334,0:00:00.622338

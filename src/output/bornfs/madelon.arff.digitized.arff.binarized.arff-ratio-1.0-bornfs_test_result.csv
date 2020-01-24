@@ -1,0 +1,3 @@
+file_name,classifier,accuracy,f-measure,TN,FN,FP,TP,CV_fit_time(hh:mm:ss.)
+madelon.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,SVC,0.702,0.6956077630234934,723,319,277,681,0:24:23.314791
+madelon.arff.digitized.arff.binarized.arff-ratio-1.0-bornfs.arff,naive_bayes,0.5975,0.6809353943717796,336,141,664,859,0:00:01.259632

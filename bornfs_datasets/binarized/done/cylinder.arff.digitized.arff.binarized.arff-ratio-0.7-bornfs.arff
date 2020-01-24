@@ -1,0 +1,639 @@
+@relation 'datasets/cylinder.arff.digitized.arff.-weka.filters.unsupervised.attribute.Remove-V-R514,511,502,499,470,469,468,460,454,438,378,342,331,318,267,253,243,233,220,209,197,195,194,182,167,162,154,143,134,123,119,117,88,69,61,59,56,51,45,39,37,34,29,28,23,21,3,719,144,1045,909,1054,1021,928,920,911,907,905,825,693,472,683,643,615,612,503,569,91,498,461,406,366,362,275,141,86,66,402,239,1029,1012,769,203,84,773,310,401,136,723,189,135,606,128,8,1055'
+
+@attribute cylinder_number:m372 {0,1}
+@attribute cylinder_number:x304 {0,1}
+@attribute cylinder_number:i383 {0,1}
+@attribute cylinder_number:x720 {0,1}
+@attribute timestamp:19900330 {0,1}
+@attribute cylinder_number:x203 {0,1}
+@attribute customer:global {0,1}
+@attribute timestamp:19910511 {0,1}
+@attribute cylinder_number:y216 {0,1}
+@attribute cylinder_number:x67 {0,1}
+@attribute cylinder_number:t244 {0,1}
+@attribute timestamp:19911102 {0,1}
+@attribute timestamp:19910508 {0,1}
+@attribute cylinder_number:t195 {0,1}
+@attribute cylinder_number:i343 {0,1}
+@attribute cylinder_number:w785 {0,1}
+@attribute cylinder_number:x838 {0,1}
+@attribute timestamp:19910127 {0,1}
+@attribute timestamp:19900510 {0,1}
+@attribute customer:galls {0,1}
+@attribute timestamp:19900913 {0,1}
+@attribute cylinder_number:x281 {0,1}
+@attribute timestamp:19910619 {0,1}
+@attribute timestamp:19910528 {0,1}
+@attribute cylinder_number:g71 {0,1}
+@attribute cylinder_number:f77 {0,1}
+@attribute timestamp:19910622 {0,1}
+@attribute cylinder_number:i820 {0,1}
+@attribute cylinder_number:g98 {0,1}
+@attribute cylinder_number:t245 {0,1}
+@attribute ink_pct:17 {0,1}
+@attribute cylinder_number:x352 {0,1}
+@attribute cylinder_number:i349 {0,1}
+@attribute cylinder_number:x243 {0,1}
+@attribute timestamp:19900603 {0,1}
+@attribute ink_pct:65 {0,1}
+@attribute esa_voltage:55 {0,1}
+@attribute cylinder_number:g48 {0,1}
+@attribute timestamp:19920220 {0,1}
+@attribute timestamp:19900806 {0,1}
+@attribute cylinder_number:g84 {0,1}
+@attribute cylinder_number:r5 {0,1}
+@attribute cylinder_number:x356 {0,1}
+@attribute caliper:0.217 {0,1}
+@attribute cylinder_number:j6 {0,1}
+@attribute cylinder_number:x798 {0,1}
+@attribute customer:adco {0,1}
+@attribute hardener:139 {0,1}
+@attribute customer:burdines {0,1}
+@attribute wax:115 {0,1}
+@attribute viscosity:? {0,1}
+@attribute timestamp:19910201 {0,1}
+@attribute cylinder_number:j60 {0,1}
+@attribute ink_temperature:137 {0,1}
+@attribute cylinder_number:e84 {0,1}
+@attribute cylinder_number:x292 {0,1}
+@attribute timestamp:19910810 {0,1}
+@attribute customer:gurney {0,1}
+@attribute timestamp:19910502 {0,1}
+@attribute timestamp:19910311 {0,1}
+@attribute cylinder_number:e83 {0,1}
+@attribute cylinder_number:g634 {0,1}
+@attribute timestamp:19910609 {0,1}
+@attribute cylinder_number:i347 {0,1}
+@attribute customer:brendls {0,1}
+@attribute cylinder_number:i331 {0,1}
+@attribute roller_durometer:165 {0,1}
+@attribute press_speed:147 {0,1}
+@attribute timestamp:19910503 {0,1}
+@attribute timestamp:19910707 {0,1}
+@attribute caliper:0.25 {0,1}
+@attribute cylinder_number:x817 {0,1}
+@attribute cylinder_number:r32 {0,1}
+@attribute customer:woolwrth {0,1}
+@attribute customer:exxon {0,1}
+@attribute timestamp:19910724 {0,1}
+@attribute timestamp:19901230 {0,1}
+@attribute customer:woolworth {0,1}
+@attribute cylinder_number:g5 {0,1}
+@attribute timestamp:19901102 {0,1}
+@attribute cylinder_number:i49 {0,1}
+@attribute current_density:37 {0,1}
+@attribute chrome_content:? {0,1}
+@attribute timestamp:19901002 {0,1}
+@attribute cylinder_number:f601 {0,1}
+@attribute cylinder_number:r6 {0,1}
+@attribute customer:hanoverhouse {0,1}
+@attribute proof_cut:? {0,1}
+@attribute solvent_type:line {0,1}
+@attribute esa_amperage:37 {0,1}
+@attribute blade_mfg:? {0,1}
+@attribute proof_on_ctd_ink:? {0,1}
+@attribute solvent_pct:? {0,1}
+@attribute esa_voltage:? {0,1}
+@attribute band_type {band,noband}
+
+@data
+{88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{0 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{31 1,88 1,89 1}
+{9 1,88 1,89 1}
+{71 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{87 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{89 1,94 noband}
+{89 1,94 noband}
+{88 1,89 1,94 noband}
+{17 1,88 1,89 1}
+{54 1,88 1,89 1}
+{51 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{51 1,77 1,88 1,89 1}
+{55 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{73 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{41 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{66 1,88 1,89 1}
+{66 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1}
+{36 1,88 1,89 1}
+{54 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{60 1,87 1,88 1,89 1}
+{87 1,88 1,89 1}
+{59 1,60 1,87 1,88 1,89 1}
+{59 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{47 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{3 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{45 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{16 1,88 1,89 1}
+{47 1,49 1,77 1,88 1,89 1}
+{47 1,88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{7 1,88 1,89 1}
+{88 1,89 1}
+{58 1,88 1,89 1}
+{58 1,88 1,89 1}
+{68 1,88 1,89 1}
+{68 1,88 1,89 1}
+{71 1,88 1,89 1}
+{12 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1}
+{88 1,89 1}
+{42 1,88 1,89 1}
+{35 1,88 1,89 1}
+{88 1,89 1}
+{88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{87 1,88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{30 1,88 1,89 1}
+{88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,90 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{23 1,88 1,89 1}
+{8 1,88 1,89 1}
+{87 1,88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{87 1,88 1,89 1}
+{14 1,88 1,89 1}
+{26 1,88 1,89 1}
+{22 1,88 1,89 1}
+{2 1,88 1,89 1}
+{86 1,88 1,89 1}
+{62 1,88 1,89 1}
+{62 1,88 1,89 1}
+{88 1,89 1}
+{69 1,88 1,89 1}
+{69 1,88 1,89 1}
+{27 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{47 1,88 1,89 1}
+{89 1}
+{88 1,89 1}
+{65 1,66 1,67 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{47 1,49 1,88 1,89 1}
+{47 1,48 1,89 1}
+{74 1,88 1}
+{5 1,88 1,89 1}
+{74 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{10 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{18 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{34 1,88 1,89 1}
+{86 1,88 1,89 1}
+{88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{6 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{87 1,88 1,89 1,94 noband}
+{87 1,88 1,89 1,94 noband}
+{25 1,88 1,89 1}
+{81 1,88 1,89 1}
+{81 1,88 1,89 1}
+{63 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{81 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{44 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{4 1,88 1,89 1}
+{29 1,88 1,89 1}
+{88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{89 1,94 noband}
+{94 noband}
+{89 1,94 noband}
+{21 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,93 1,94 noband}
+{88 1,89 1,93 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{39 1,87 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{52 1,88 1,89 1}
+{52 1,88 1,89 1}
+{87 1,88 1,89 1,94 noband}
+{87 1,88 1,89 1,94 noband}
+{88 1,89 1,90 1,94 noband}
+{88 1,89 1,90 1,94 noband}
+{89 1,94 noband}
+{89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{19 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{85 1,88 1,89 1}
+{85 1,88 1,89 1}
+{82 1,87 1,88 1,89 1}
+{20 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{85 1,88 1,89 1}
+{83 1,88 1,89 1}
+{83 1,88 1,89 1}
+{88 1,89 1}
+{83 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,90 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,94 noband}
+{24 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1}
+{40 1,88 1,89 1}
+{88 1,89 1}
+{64 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1}
+{89 1,94 noband}
+{89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{73 1,88 1,89 1}
+{88 1,89 1}
+{79 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{79 1,88 1,89 1}
+{82 1,87 1,88 1,89 1}
+{77 1,88 1,89 1}
+{77 1,88 1,89 1}
+{28 1,88 1,89 1}
+{79 1,88 1,89 1}
+{88 1,89 1}
+{33 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1}
+{47 1,49 1,77 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{84 1,88 1,89 1}
+{84 1,88 1,89 1}
+{64 1,88 1,89 1}
+{77 1,88 1,89 1}
+{77 1,78 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{77 1,88 1,89 1}
+{47 1,49 1,88 1,89 1}
+{88 1,89 1}
+{84 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,91 1,94 noband}
+{88 1,89 1,91 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{78 1,88 1,89 1}
+{78 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,90 1,92 1}
+{1 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1}
+{88 1,89 1}
+{15 1,88 1,89 1}
+{32 1,88 1,89 1}
+{88 1,89 1}
+{67 1,88 1,89 1}
+{65 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{76 1,88 1,89 1}
+{72 1,88 1,89 1}
+{67 1,88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{76 1,88 1,89 1}
+{56 1,88 1,89 1}
+{88 1,89 1}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{87 1,88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{88 1,89 1,94 noband}
+{57 1,88 1,89 1}
+{46 1,88 1,89 1}
+{88 1,89 1}
+{86 1,88 1,89 1}
+{86 1,88 1,89 1}
+{37 1,88 1,89 1}
+{13 1,88 1,89 1}
+{84 1,88 1,89 1}
+{88 1,89 1}
+{53 1,88 1,89 1}
+{57 1,88 1,89 1}
+{88 1,89 1}
+{80 1,87 1,88 1,89 1}
+{80 1,87 1,88 1,89 1}
+{80 1,88 1,89 1}
+{61 1,88 1,89 1}
+{61 1,88 1,89 1}
+{11 1,88 1,89 1}
+{47 1,49 1,88 1,89 1}
+{48 1,88 1,89 1}
+{43 1,88 1,89 1}
+{38 1,88 1,89 1}
+{75 1,88 1,89 1}
+{50 1,88 1,89 1}
+{47 1,49 1,88 1,89 1}
+{56 1,88 1,89 1}
+{85 1,88 1,89 1}
+{75 1,88 1,89 1}
+{88 1,89 1}
+{47 1,88 1,89 1}
+{70 1,88 1,89 1}
+{90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{77 1,90 1,91 1,92 1,93 1}
+{70 1,90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{47 1,49 1,90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{53 1,90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{55 1,90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{90 1,91 1,92 1,93 1}
+{63 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{86 1,87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{72 1,87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{50 1,87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{82 1,87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{50 1,87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{47 1,49 1,50 1,87 1,90 1,91 1,92 1,93 1}
+{50 1,87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}
+{87 1,90 1,91 1,92 1,93 1}

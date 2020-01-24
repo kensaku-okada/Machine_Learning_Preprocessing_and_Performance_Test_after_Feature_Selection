@@ -141,7 +141,7 @@ def get_overall_accuracy(config):
     print("config.true_negative: ",config.true_negative)
     print("config.true_positive: ",config.true_positive)
     print("config.false_positive: ",config.false_positive)
-    print("config.true_positive: ",config.true_positive)
+    print("config.false_negative: ",config.false_negative)
 
     # source: https://www.python-course.eu/confusion_matrix.php
     overall_accuracy = (config.true_negative + config.true_positive) / \

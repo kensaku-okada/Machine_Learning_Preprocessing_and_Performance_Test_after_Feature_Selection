@@ -1,0 +1,820 @@
+@relation 'datasets/cylinder.arff.digitized.arff.-weka.filters.unsupervised.attribute.Remove-V-R470,946,182,650,342,902,1043,536,864,1036,69,132,903,743,521,577,897,535,33,30,102,620,344,272,546,199,395,735,299,368,1024,668,582,418,628,533,913,689,334,753,225,187,40,93,491,945,328,464,178,739,425,798,800,82,826,341,48,116,846,103,1014,647,387,850,570,619,394,891,329,65,614,791,534,943,935,227,46,19,640,437,396,745,853,27,513,236,681,813,156,229,276,517,137,447,659,240,939,525,248,559,152,821,7,213,303,968,975,816,265,67,724,430,912,594,60,166,389,52,862,4,427,255,583,843,522,759,738,755,772,630,507,882,501,688,1019,142,79,191,159,1023,350,509,824,766,364,6,934,1000,183,622,1009,367,674,415,730,226,262,863,992,138,560,748,722,263,201,488,997,819,479,129,171,599,806,706,991,795,186,1030,268,512,836,815,41,901,287,717,302,561,459,1050,118,960,283,837,165,361,1007,414,177,498,1054,66,737,672,293,319,589,666,936,495,404,584,812,655,768,473,951,89,725,245,996,428,492,685,715,168,307,528,733,53,780,349,36,219,35,918,987,31,176,249,756,523,865,434,658,457,200,1029,239,1028,16,925,64,206,467,698,896,609,38,462,1006,147,877,288,641,421,456,58,78,607,587,333,796,691,705,1055'
+
+@attribute timestamp:19900330 {0,1}
+@attribute timestamp:19910317 {0,1}
+@attribute timestamp:19910528 {0,1}
+@attribute cylinder_number:x95 {0,1}
+@attribute timestamp:19911102 {0,1}
+@attribute timestamp:19930421 {0,1}
+@attribute customer:ntlwildlife {0,1}
+@attribute timestamp:19901003 {0,1}
+@attribute cylinder_number:g604 {0,1}
+@attribute cylinder_number:g462 {0,1}
+@attribute cylinder_number:x243 {0,1}
+@attribute timestamp:19920826 {0,1}
+@attribute cylinder_number:x802 {0,1}
+@attribute timestamp:19910423 {0,1}
+@attribute timestamp:19910501 {0,1}
+@attribute timestamp:19900511 {0,1}
+@attribute cylinder_number:x91 {0,1}
+@attribute cylinder_number:3 {0,1}
+@attribute cylinder_number:x830 {0,1}
+@attribute timestamp:19910818 {0,1}
+@attribute cylinder_number:t280 {0,1}
+@attribute cylinder_number:i358 {0,1}
+@attribute cylinder_number:f294 {0,1}
+@attribute cylinder_number:g572 {0,1}
+@attribute caliper:0.533 {0,1}
+@attribute cylinder_number:m74 {0,1}
+@attribute cylinder_number:e91 {0,1}
+@attribute cylinder_number:o1 {0,1}
+@attribute cylinder_number:b181 {0,1}
+@attribute cylinder_number:t234 {0,1}
+@attribute cylinder_number:x21 {0,1}
+@attribute cylinder_number:b7 {0,1}
+@attribute cylinder_number:e90 {0,1}
+@attribute cylinder_number:x342 {0,1}
+@attribute cylinder_number:m257 {0,1}
+@attribute cylinder_number:g640 {0,1}
+@attribute cylinder_number:x272 {0,1}
+@attribute timestamp:19900809 {0,1}
+@attribute timestamp:19910310 {0,1}
+@attribute cylinder_number:g404 {0,1}
+@attribute timestamp:19910320 {0,1}
+@attribute cylinder_number:x819 {0,1}
+@attribute varnish_pct:121 {0,1}
+@attribute cylinder_number:t380 {0,1}
+@attribute cylinder_number:f135 {0,1}
+@attribute cylinder_number:r18 {0,1}
+@attribute cylinder_number:x65 {0,1}
+@attribute cylinder_number:x132 {0,1}
+@attribute cylinder_number:x804 {0,1}
+@attribute cylinder_number:x155 {0,1}
+@attribute cylinder_number:r17 {0,1}
+@attribute cylinder_number:x201 {0,1}
+@attribute cylinder_number:t333 {0,1}
+@attribute cylinder_number:o15 {0,1}
+@attribute cylinder_number:j33 {0,1}
+@attribute cylinder_number:m208 {0,1}
+@attribute cylinder_number:e92 {0,1}
+@attribute cylinder_number:x18 {0,1}
+@attribute cylinder_number:o2 {0,1}
+@attribute timestamp:19910308 {0,1}
+@attribute cylinder_number:x153 {0,1}
+@attribute cylinder_number:x108 {0,1}
+@attribute cylinder_number:m332 {0,1}
+@attribute cylinder_number:w516 {0,1}
+@attribute cylinder_number:i320 {0,1}
+@attribute cylinder_number:x315 {0,1}
+@attribute cylinder_number:f466 {0,1}
+@attribute timestamp:19910109 {0,1}
+@attribute cylinder_number:t32 {0,1}
+@attribute cylinder_number:e86 {0,1}
+@attribute cylinder_number:f067 {0,1}
+@attribute cylinder_number:t284 {0,1}
+@attribute cylinder_number:x713 {0,1}
+@attribute cylinder_number:f261 {0,1}
+@attribute cylinder_number:x25 {0,1}
+@attribute cylinder_number:r22 {0,1}
+@attribute cylinder_number:f450 {0,1}
+@attribute cylinder_number:r1 {0,1}
+@attribute cylinder_number:g412 {0,1}
+@attribute cylinder_number:j34 {0,1}
+@attribute cylinder_number:x127 {0,1}
+@attribute cylinder_number:g60 {0,1}
+@attribute cylinder_number:s180 {0,1}
+@attribute cylinder_number:x826 {0,1}
+@attribute cylinder_number:t218 {0,1}
+@attribute cylinder_number:f310 {0,1}
+@attribute cylinder_number:r43 {0,1}
+@attribute cylinder_number:m402 {0,1}
+@attribute cylinder_number:x96 {0,1}
+@attribute cylinder_number:m4 {0,1}
+@attribute cylinder_number:i303 {0,1}
+@attribute cylinder_number:x135 {0,1}
+@attribute timestamp:19900801 {0,1}
+@attribute cylinder_number:o7 {0,1}
+@attribute cylinder_number:x232 {0,1}
+@attribute cylinder_number:f633 {0,1}
+@attribute cylinder_number:s21 {0,1}
+@attribute cylinder_number:o6 {0,1}
+@attribute cylinder_number:i325 {0,1}
+@attribute cylinder_number:f331 {0,1}
+@attribute cylinder_number:x019 {0,1}
+@attribute cylinder_number:m309 {0,1}
+@attribute cylinder_number:e72 {0,1}
+@attribute blade_mfg:uddeholm {0,1}
+@attribute cylinder_number:m410 {0,1}
+@attribute cylinder_number:t78 {0,1}
+@attribute cylinder_number:f146 {0,1}
+@attribute cylinder_number:w357 {0,1}
+@attribute cylinder_number:f492 {0,1}
+@attribute cylinder_number:x184 {0,1}
+@attribute cylinder_number:x80 {0,1}
+@attribute cylinder_number:x420 {0,1}
+@attribute cylinder_number:f571 {0,1}
+@attribute cylinder_number:f308 {0,1}
+@attribute cylinder_number:m432 {0,1}
+@attribute cylinder_number:j9 {0,1}
+@attribute cylinder_number:t200 {0,1}
+@attribute cylinder_number:f121 {0,1}
+@attribute cylinder_number:j62 {0,1}
+@attribute cylinder_number:m200 {0,1}
+@attribute cylinder_number:x141 {0,1}
+@attribute cylinder_number:x771 {0,1}
+@attribute cylinder_number:f237 {0,1}
+@attribute cylinder_number:x809 {0,1}
+@attribute cylinder_number:f72 {0,1}
+@attribute timestamp:19900705 {0,1}
+@attribute cylinder_number:x414 {0,1}
+@attribute cylinder_number:x206 {0,1}
+@attribute cylinder_number:x770 {0,1}
+@attribute cylinder_number:f236 {0,1}
+@attribute cylinder_number:f85 {0,1}
+@attribute cylinder_number:t383 {0,1}
+@attribute cylinder_number:w406 {0,1}
+@attribute cylinder_number:x400 {0,1}
+@attribute cylinder_number:g78 {0,1}
+@attribute cylinder_number:g416 {0,1}
+@attribute cylinder_number:e74 {0,1}
+@attribute cylinder_number:x297 {0,1}
+@attribute cylinder_number:x001 {0,1}
+@attribute cylinder_number:x423 {0,1}
+@attribute cylinder_number:x9 {0,1}
+@attribute cylinder_number:f629 {0,1}
+@attribute cylinder_number:x158 {0,1}
+@attribute cylinder_number:x788 {0,1}
+@attribute cylinder_number:f25 {0,1}
+@attribute cylinder_number:x389 {0,1}
+@attribute cylinder_number:f38 {0,1}
+@attribute cylinder_number:x282 {0,1}
+@attribute cylinder_number:f89 {0,1}
+@attribute cylinder_number:e68 {0,1}
+@attribute cylinder_number:r3 {0,1}
+@attribute cylinder_number:f267 {0,1}
+@attribute cylinder_number:m65 {0,1}
+@attribute cylinder_number:r29 {0,1}
+@attribute cylinder_number:e77 {0,1}
+@attribute cylinder_number:x374 {0,1}
+@attribute cylinder_number:f19 {0,1}
+@attribute cylinder_number:m103 {0,1}
+@attribute cylinder_number:x837 {0,1}
+@attribute cylinder_number:f103 {0,1}
+@attribute cylinder_number:x221 {0,1}
+@attribute cylinder_number:x84 {0,1}
+@attribute cylinder_number:e303 {0,1}
+@attribute cylinder_number:f264 {0,1}
+@attribute cylinder_number:w364 {0,1}
+@attribute cylinder_number:x163 {0,1}
+@attribute cylinder_number:f685 {0,1}
+@attribute cylinder_number:x326 {0,1}
+@attribute cylinder_number:i354 {0,1}
+@attribute cylinder_number:m39 {0,1}
+@attribute cylinder_number:f383 {0,1}
+@attribute cylinder_number:x242 {0,1}
+@attribute cylinder_number:t133 {0,1}
+@attribute cylinder_number:e69 {0,1}
+@attribute cylinder_number:r4 {0,1}
+@attribute cylinder_number:r34 {0,1}
+@attribute cylinder_number:f569 {0,1}
+@attribute cylinder_number:m93 {0,1}
+@attribute cylinder_number:x103 {0,1}
+@attribute cylinder_number:f133 {0,1}
+@attribute cylinder_number:x102 {0,1}
+@attribute cylinder_number:f169 {0,1}
+@attribute cylinder_number:x333 {0,1}
+@attribute cylinder_number:g089 {0,1}
+@attribute cylinder_number:j68 {0,1}
+@attribute cylinder_number:f321 {0,1}
+@attribute cylinder_number:x147 {0,1}
+@attribute cylinder_number:x777 {0,1}
+@attribute cylinder_number:b6 {0,1}
+@attribute timestamp:19900414 {0,1}
+@attribute cylinder_number:f482 {0,1}
+@attribute cylinder_number:e85 {0,1}
+@attribute cylinder_number:x146 {0,1}
+@attribute cylinder_number:x776 {0,1}
+@attribute cylinder_number:i337 {0,1}
+@attribute cylinder_number:w717 {0,1}
+@attribute cylinder_number:g467 {0,1}
+@attribute cylinder_number:x308 {0,1}
+@attribute cylinder_number:x37 {0,1}
+@attribute timestamp:19910503 {0,1}
+@attribute timestamp:19910201 {0,1}
+@attribute timestamp:19901230 {0,1}
+@attribute cylinder_number:o14 {0,1}
+@attribute timestamp:19910405 {0,1}
+@attribute timestamp:19910706 {0,1}
+@attribute cylinder_number:x273 {0,1}
+@attribute cylinder_number:x271 {0,1}
+@attribute timestamp:19910727 {0,1}
+@attribute timestamp:19910517 {0,1}
+@attribute cylinder_number:r9 {0,1}
+@attribute cylinder_number:r23 {0,1}
+@attribute customer:campingworld {0,1}
+@attribute cylinder_number:f159 {0,1}
+@attribute cylinder_number:x197 {0,1}
+@attribute roller_durometer:3 {0,1}
+@attribute cylinder_number:x346 {0,1}
+@attribute cylinder_number:x138 {0,1}
+@attribute timestamp:19910505 {0,1}
+@attribute timestamp:19910712 {0,1}
+@attribute timestamp:19900719 {0,1}
+@attribute cylinder_number:x251 {0,1}
+@attribute cylinder_number:x766 {0,1}
+@attribute timestamp:19910804 {0,1}
+@attribute customer:childworld {0,1}
+@attribute customer:colortil {0,1}
+@attribute cylinder_number:t178 {0,1}
+@attribute timestamp:19900915 {0,1}
+@attribute timestamp:19900821 {0,1}
+@attribute timestamp:19910903 {0,1}
+@attribute timestamp:19900820 {0,1}
+@attribute timestamp:19910323 {0,1}
+@attribute cylinder_number:x60 {0,1}
+@attribute customer:abbypress {0,1}
+@attribute cylinder_number:j582 {0,1}
+@attribute cylinder_number:f126 {0,1}
+@attribute timestamp:19910611 {0,1}
+@attribute timestamp:19910212 {0,1}
+@attribute cylinder_number:x220 {0,1}
+@attribute cylinder_number:x818 {0,1}
+@attribute cylinder_number:x118 {0,1}
+@attribute cylinder_number:j42 {0,1}
+@attribute timestamp:19910327 {0,1}
+@attribute cylinder_number:f615 {0,1}
+@attribute cylinder_number:f337 {0,1}
+@attribute cylinder_number:x116 {0,1}
+@attribute timestamp:19910529 {0,1}
+@attribute cylinder_number:w30 {0,1}
+@attribute timestamp:19901102 {0,1}
+@attribute cylinder_number:g5 {0,1}
+@attribute timestamp:19900727 {0,1}
+@attribute timestamp:19910213 {0,1}
+@attribute timestamp:19900811 {0,1}
+@attribute cylinder_number:g518 {0,1}
+@attribute cylinder_number:b125 {0,1}
+@attribute cylinder_number:f510 {0,1}
+@attribute varnish_pct:179 {0,1}
+@attribute cylinder_number:x199 {0,1}
+@attribute cylinder_number:m260 {0,1}
+@attribute timestamp:19901108 {0,1}
+@attribute cylinder_number:x750 {0,1}
+@attribute cylinder_number:x249 {0,1}
+@attribute customer:hanhouse {0,1}
+@attribute cylinder_number:e310 {0,1}
+@attribute cylinder_number:f131 {0,1}
+@attribute cylinder_number:g608 {0,1}
+@attribute cylinder_number:x29 {0,1}
+@attribute cylinder_number:g69 {0,1}
+@attribute cylinder_number:r15 {0,1}
+@attribute timestamp:19901105 {0,1}
+@attribute esa_voltage:77 {0,1}
+@attribute timestamp:19901114 {0,1}
+@attribute customer:lurias {0,1}
+@attribute cylinder_number:f670 {0,1}
+@attribute cylinder_number:x799 {0,1}
+@attribute cylinder_number:x753 {0,1}
+@attribute band_type {band,noband}
+
+@data
+{}
+{67 1,275 noband}
+{31 1,275 noband}
+{172 1,275 noband}
+{79 1,275 noband}
+{84 1,275 noband}
+{260 1,275 noband}
+{143 1,275 noband}
+{}
+{64 1,275 noband}
+{194 1,275 noband}
+{}
+{}
+{}
+{205 1,275 noband}
+{}
+{122 1,275 noband}
+{151 1,275 noband}
+{96 1,275 noband}
+{108 1,275 noband}
+{224 1,273 1,275 noband}
+{224 1,275 noband}
+{165 1,275 noband}
+{}
+{}
+{200 1}
+{102 1,275 noband}
+{262 1,275 noband}
+{200 1,265 1}
+{}
+{115 1,275 noband}
+{233 1,275 noband}
+{120 1,275 noband}
+{238 1,275 noband}
+{}
+{232 1,275 noband}
+{}
+{54 1,275 noband}
+{250 1,275 noband}
+{236 1,275 noband}
+{236 1,275 noband}
+{232 1,275 noband}
+{269 1,275 noband}
+{269 1,275 noband}
+{137 1,275 noband}
+{192 1,275 noband}
+{250 1,275 noband}
+{162 1,275 noband}
+{149 1,275 noband}
+{240 1,275 noband}
+{}
+{}
+{239 1,275 noband}
+{83 1,275 noband}
+{210 1,275 noband}
+{250 1,275 noband}
+{168 1,275 noband}
+{21 1,275 noband}
+{}
+{}
+{}
+{173 1,275 noband}
+{154 1,275 noband}
+{}
+{}
+{}
+{}
+{32 1,275 noband}
+{206 1,275 noband}
+{113 1,275 noband}
+{59 1,275 noband}
+{70 1,275 noband}
+{38 1,275 noband}
+{26 1,275 noband}
+{242 1,275 noband}
+{254 1,275 noband}
+{272 1,275 noband}
+{1 1,262 1}
+{272 1,275 noband}
+{87 1,275 noband}
+{57 1,275 noband}
+{242 1,275 noband}
+{85 1,275 noband}
+{124 1,275 noband}
+{197 1,275 noband}
+{}
+{39 1,275 noband}
+{}
+{40 1,275 noband}
+{135 1,275 noband}
+{230 1,275 noband}
+{230 1,275 noband}
+{}
+{}
+{180 1,275 noband}
+{18 1,275 noband}
+{203 1,239 1,275 noband}
+{203 1,275 noband}
+{241 1,275 noband}
+{241 1,275 noband}
+{58 1,275 noband}
+{17 1,275 noband}
+{159 1,275 noband}
+{82 1,275 noband}
+{}
+{14 1,264 1}
+{}
+{}
+{199 1}
+{199 1,260 1}
+{}
+{}
+{208 1,275 noband}
+{208 1,275 noband}
+{217 1,275 noband}
+{68 1,275 noband}
+{104 1,275 noband}
+{217 1,275 noband}
+{}
+{}
+{}
+{}
+{12 1,261 1}
+{}
+{43 1,275 noband}
+{106 1,275 noband}
+{140 1,275 noband}
+{30 1,275 noband}
+{237 1,275 noband}
+{186 1,275 noband}
+{56 1,275 noband}
+{191 1,275 noband}
+{166 1,275 noband}
+{176 1,275 noband}
+{261 1,275 noband}
+{}
+{13 1,252 1}
+{244 1,275 noband}
+{238 1,275 noband}
+{215 1,275 noband}
+{178 1,275 noband}
+{136 1,275 noband}
+{69 1,275 noband}
+{245 1,275 noband}
+{49 1,275 noband}
+{265 1,275 noband}
+{252 1,275 noband}
+{264 1,275 noband}
+{}
+{245 1,275 noband}
+{233 1,275 noband}
+{118 1,275 noband}
+{2 1,254 1}
+{}
+{183 1,275 noband}
+{23 1,275 noband}
+{235 1,275 noband}
+{235 1,275 noband}
+{134 1,275 noband}
+{142 1,275 noband}
+{48 1,275 noband}
+{266 1,275 noband}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{204 1,275 noband}
+{204 1,275 noband}
+{}
+{}
+{15 1,257 1}
+{}
+{189 1,275 noband}
+{184 1,275 noband}
+{240 1,275 noband}
+{99 1,275 noband}
+{112 1,275 noband}
+{177 1,275 noband}
+{196 1,275 noband}
+{}
+{}
+{}
+{}
+{}
+{174 1,275 noband}
+{267 1,275 noband}
+{133 1,275 noband}
+{97 1,275 noband}
+{202 1,275 noband}
+{}
+{257 1,275 noband}
+{131 1,275 noband}
+{105 1,275 noband}
+{89 1,275 noband}
+{}
+{193 1,275 noband}
+{72 1,275 noband}
+{114 1,275 noband}
+{34 1,275 noband}
+{216 1,275 noband}
+{6 1,272 1}
+{}
+{}
+{156 1,275 noband}
+{148 1,275 noband}
+{50 1,275 noband}
+{153 1,275 noband}
+{139 1,275 noband}
+{126 1,275 noband}
+{161 1,275 noband}
+{88 1,275 noband}
+{223 1,275 noband}
+{223 1,275 noband}
+{187 1,275 noband}
+{188 1,275 noband}
+{130 1,275 noband}
+{}
+{44 1,275 noband}
+{225 1,275 noband}
+{211 1,275 noband}
+{211 1,275 noband}
+{}
+{3 1,255 1}
+{}
+{}
+{244 1,275 noband}
+{}
+{205 1,275 noband}
+{}
+{91 1,275 noband}
+{125 1,275 noband}
+{0 1,259 1}
+{}
+{}
+{28 1,275 noband}
+{62 1,275 noband}
+{29 1,275 noband}
+{169 1,275 noband}
+{76 1,275 noband}
+{}
+{215 1,269 1,275 noband}
+{269 1,275 noband}
+{253 1,275 noband}
+{20 1,275 noband}
+{}
+{249 1,275 noband}
+{73 1,275 noband}
+{163 1,275 noband}
+{22 1,275 noband}
+{94 1,275 noband}
+{259 1,275 noband}
+{42 1,275 noband}
+{74 1,275 noband}
+{93 1,275 noband}
+{53 1,275 noband}
+{219 1,274 1,275 noband}
+{219 1,275 noband}
+{231 1,275 noband}
+{}
+{60 1,275 noband}
+{36 1,275 noband}
+{263 1,275 noband}
+{249 1,275 noband}
+{170 1,275 noband}
+{249 1,275 noband}
+{92 1,275 noband}
+{251 1,275 noband}
+{}
+{}
+{251 1,275 noband}
+{251 1,275 noband}
+{65 1,275 noband}
+{221 1,275 noband}
+{195 1,275 noband}
+{63 1,275 noband}
+{37 1,275 noband}
+{95 1,275 noband}
+{119 1,275 noband}
+{267 1,275 noband}
+{46 1,275 noband}
+{182 1,275 noband}
+{147 1,275 noband}
+{109 1,275 noband}
+{75 1,275 noband}
+{210 1,275 noband}
+{129 1,275 noband}
+{146 1,275 noband}
+{16 1,275 noband}
+{47 1,275 noband}
+{229 1,275 noband}
+{229 1,275 noband}
+{}
+{213 1,275 noband}
+{216 1,275 noband}
+{24 1,275 noband}
+{231 1,275 noband}
+{214 1,275 noband}
+{214 1,275 noband}
+{227 1,275 noband}
+{227 1,275 noband}
+{}
+{}
+{}
+{}
+{234 1,275 noband}
+{212 1,275 noband}
+{243 1,275 noband}
+{103 1,275 noband}
+{157 1,275 noband}
+{101 1,275 noband}
+{71 1,275 noband}
+{52 1,275 noband}
+{226 1,275 noband}
+{212 1,226 1,275 noband}
+{}
+{}
+{}
+{7 1,274 1}
+{}
+{206 1,275 noband}
+{220 1,275 noband}
+{167 1,275 noband}
+{127 1,275 noband}
+{209 1,275 noband}
+{255 1,275 noband}
+{243 1,275 noband}
+{234 1,275 noband}
+{}
+{25 1,275 noband}
+{}
+{}
+{}
+{}
+{152 1,275 noband}
+{}
+{225 1,275 noband}
+{116 1,275 noband}
+{175 1,275 noband}
+{267 1,275 noband}
+{111 1,275 noband}
+{145 1,275 noband}
+{198 1,275 noband}
+{121 1,275 noband}
+{}
+{}
+{247 1,256 1}
+{220 1,275 noband}
+{256 1,275 noband}
+{247 1}
+{}
+{}
+{}
+{}
+{247 1}
+{}
+{10 1,270 1}
+{258 1,275 noband}
+{268 1,275 noband}
+{}
+{9 1,258 1}
+{268 1,275 noband}
+{35 1,275 noband}
+{268 1,275 noband}
+{268 1,275 noband}
+{80 1,275 noband}
+{155 1,275 noband}
+{}
+{}
+{}
+{8 1,270 1}
+{248 1}
+{107 1,275 noband}
+{164 1,275 noband}
+{81 1,275 noband}
+{78 1,275 noband}
+{132 1,275 noband}
+{}
+{}
+{}
+{}
+{270 1,275 noband}
+{27 1,275 noband}
+{202 1,275 noband}
+{128 1,275 noband}
+{221 1,275 noband}
+{138 1,275 noband}
+{271 1,275 noband}
+{248 1,271 1}
+{248 1,271 1}
+{100 1,275 noband}
+{}
+{}
+{246 1,275 noband}
+{237 1,275 noband}
+{123 1,275 noband}
+{55 1,275 noband}
+{66 1,275 noband}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{117 1,275 noband}
+{179 1,275 noband}
+{246 1,275 noband}
+{158 1,275 noband}
+{41 1,275 noband}
+{201 1,253 1}
+{}
+{}
+{77 1,275 noband}
+{150 1,275 noband}
+{209 1,275 noband}
+{33 1,275 noband}
+{171 1,275 noband}
+{160 1,275 noband}
+{61 1,275 noband}
+{110 1,275 noband}
+{190 1,275 noband}
+{201 1}
+{}
+{}
+{90 1,275 noband}
+{218 1,275 noband}
+{222 1,275 noband}
+{222 1,275 noband}
+{218 1,275 noband}
+{267 1,275 noband}
+{86 1,275 noband}
+{207 1,275 noband}
+{207 1,275 noband}
+{213 1,275 noband}
+{144 1,275 noband}
+{181 1,275 noband}
+{98 1,275 noband}
+{141 1,275 noband}
+{185 1,275 noband}
+{45 1,275 noband}
+{228 1,275 noband}
+{228 1,275 noband}
+{51 1,275 noband}
+{19 1,275 noband}
+{273 1,275 noband}
+{274 1,275 noband}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{4 1,266 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{11 1,263 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{5 1,273 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
